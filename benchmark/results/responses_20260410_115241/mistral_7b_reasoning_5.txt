@@ -1,0 +1,13 @@
+Model: mistral:7b
+Category: reasoning
+Prompt: You have two ropes that each take exactly one hour to burn, but they burn unevenly. How do you measure exactly 45 minutes using only these ropes and a lighter?
+========================================
+ Here's a strategy to measure exactly 45 minutes using the two ropes:
+
+1. Light both ropes at the same time. Since they each take one hour to burn, after 30 minutes, neither rope should be fully burned yet. However, one of the ropes would have burned more than the other.
+
+2. Take note of which rope has burned more (let's call this Rope A) and which one has burned less (Rope B). At this point, we know that Rope A has burned for more than 15 minutes, but less than 30 minutes, and Rope B has burned for less than 15 minutes.
+
+3. Let the burning continue until Rope A fully burns out (takes additional 25-15 = 10 minutes). At this point, Rope B has been burning for exactly 45 minutes - 30 (the first 30 minutes they were both lit) - 10 (time spent after the initial 30 minutes when Rope A was still burning).
+
+This method allows you to measure exactly 45 minutes using only the two ropes and a lighter.

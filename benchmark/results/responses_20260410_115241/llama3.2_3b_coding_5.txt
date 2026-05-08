@@ -1,0 +1,54 @@
+Model: llama3.2:3b
+Category: coding
+Prompt: Write a REST API endpoint in Python using Flask that accepts a JSON body with a username and password, validates that neither is empty, and returns a JWT token.
+========================================
+Below is an example of how you can create a REST API endpoint in Python using Flask to validate a user's credentials.
+
+```python
+from flask import Flask, request, jsonify
+import jwt
+from werkzeug.security import generate_password_hash, check_password_hash
+from your_module import User  # You need to replace this with the actual path to your User model
+
+app = Flask(__name__)
+
+# Set secret key for JWT token (replace it if you want)
+secret_key = "your-secret-key"
+
+# Validate credentials and return JWT token
+@app.route('/login', methods=['POST'])
+def login():
+    # Get JSON body from request
+    data = request.get_json()
+
+    # Check if username or password is empty
+    if not data['username'] or not data['password']:
+        return jsonify({'error': 'Username and password are required'}), 400
+
+    # Find user by username (replace this with your actual database query)
+    try:
+        user = User.query.filter_by(username=data['username']).first()
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+    
+    # Check if the provided password is correct
+    if not check_password_hash(user.password, data['password']):
+        return jsonify({'error': 'Invalid credentials'}), 401
+
+    # Generate JWT token for user
+    payload = {'username': user.username}
+    jwt_token = jwt.encode(payload=payload, secret_key=secret_key, algorithm='HS256')
+
+    return jsonify(jwt_token.decode('UTF-8')), 200
+
+
+if __name__ == '__main__':
+    app.run(debug=True)
+```
+
+In the code above:
+
+*   We create a Flask application with `app = Flask(__name__)`.
+*   The `/login` endpoint accepts JSON data containing a username and password, checks if both fields are not empty, retrieves the user from the database (replace this with your actual query), verifies that the provided password is correct using `check_password_hash()`, generates a JWT token for the authenticated user, and returns it in the response.
+
+Remember to replace `'your-secret-key'` with a secret key of your choice and ensure that you have set up your User model correctly (replace `'your_module'` and `User.query.filter_by(username=data['username']).first()` with your actual code).

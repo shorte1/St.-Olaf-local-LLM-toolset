@@ -1,0 +1,92 @@
+Model: gemma2:27b
+Category: coding
+Prompt: Write a REST API endpoint in Python using Flask that accepts a JSON body with a username and password, validates that neither is empty, and returns a JWT token.
+========================================
+```python
+from flask import Flask, request, jsonify
+import jwt
+
+app = Flask(__name__)
+app.config['SECRET_KEY'] = 'your-secret-key' # Replace with a strong secret key
+
+@app.route('/login', methods=['POST'])
+def login():
+    data = request.get_json()
+
+    username = data.get('username')
+    password = data.get('password')
+
+    if not username or not password:
+        return jsonify({'error': 'Username and password are required'}), 400
+
+    # In a real application, you'd authenticate against a database
+    # For simplicity, we'll just check if the username is 'testuser'
+    if username == 'testuser' and password == 'password':
+        token = jwt.encode({'username': username}, app.config['SECRET_KEY'])
+        return jsonify({'token': token.decode('utf-8')})
+    else:
+        return jsonify({'error': 'Invalid credentials'}), 401
+
+if __name__ == '__main__':
+    app.run(debug=True)
+```
+
+**Explanation:**
+
+
+1. **Import Necessary Libraries:**
+
+   - `flask`: For creating the REST API endpoint.
+   - `request`: To access incoming JSON data.
+   - `jsonify`: To return JSON responses.
+   - `jwt`: For generating and decoding JWT tokens.
+
+2. **Set Secret Key:**
+   - Replace `'your-secret-key'` with a strong, randomly generated secret key. This is crucial for the security of your JWTs. Keep it confidential!
+
+3. **Define `/login` Endpoint:**
+
+   - Uses the `POST` method to handle login requests.
+   - Retrieves JSON data from the request body using `request.get_json()`.
+   - Extracts `username` and `password` from the data.
+
+4. **Validate Input:**
+
+   - Checks if both `username` and `password` are provided. If either is missing, returns a 400 Bad Request error with an appropriate message.
+
+5. **Authentication Logic (Simplified):**
+   - In a real application, you would have database logic to compare the provided credentials against stored user information.
+
+   - This example simplifies authentication by checking if the `username` is 'testuser' and the `password` is 'password'. 
+
+6. **Generate JWT Token:**
+
+   - If authentication succeeds:
+     - Uses `jwt.encode()` to create a JWT token containing the `username` as a payload. The secret key (`app.config['SECRET_KEY']`) is used for signing the token, ensuring its integrity.
+
+7. **Return JWT Token:**
+
+   - Returns the generated JWT token as a JSON response in the format:
+     ```json
+     {'token': 'your-jwt-token'}
+     ```
+
+8. **Handle Invalid Credentials:**
+
+   - If authentication fails (username/password mismatch), returns a 401 Unauthorized error with an error message.
+
+
+
+**To Use This API:**
+
+1. Run the Python script (`python your_script_name.py`).
+2. Use a tool like `curl` or Postman to send a POST request to `http://127.0.0.1:5000/login`. The request body should be JSON formatted:
+
+   ```json
+   {
+       "username": "testuser",
+       "password": "password"
+   }
+   ```
+
+3. If successful, the API will return a JWT token that you can use for subsequent authenticated requests.

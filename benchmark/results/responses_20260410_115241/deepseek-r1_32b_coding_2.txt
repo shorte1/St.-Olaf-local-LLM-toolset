@@ -1,0 +1,38 @@
+Model: deepseek-r1:32b
+Category: coding
+Prompt: Debug this Python code and explain what is wrong: def fibonacci(n): if n == 0: return 0 elif n == 1: return 1 else: return fibonacci(n-1) + fibonacci(n-2) print(fibonacci(100))
+========================================
+The provided code uses a naive recursive approach to compute Fibonacci numbers, which is inefficient for large values of `n` and causes a maximum recursion depth error when `n=100`.
+
+**Problems Identified:**
+1. **Recursion Depth Limit:** Python has a default recursion limit (around 1000). For `fibonacci(100)`, the recursive calls exceed this limit, resulting in a `RecursionError`.
+2. **Exponential Time Complexity:** Each Fibonacci number is computed by recalculating previous numbers repeatedly, leading to an inefficiency of O(2^n).
+
+**Solution:**
+Implement an iterative approach to avoid recursion depth issues and improve efficiency.
+
+Here's the corrected code:
+
+```python
+def fibonacci(n):
+    if n == 0:
+        return 0
+    elif n == 1:
+        return 1
+    else:
+        a, b = 0, 1
+        for i in range(2, n + 1):
+            c = a + b
+            a = b
+            b = c
+        return b
+
+print(fibonacci(100))
+```
+
+**Explanation:**
+- **Iterative Approach:** This method calculates each Fibonacci number sequentially from the bottom up, reducing both time and space complexity.
+- **Efficiency:** Runs in O(n) time with O(1) space, making it suitable for large `n` like 100.
+
+**Output:**
+When executed, this code will print the 100th Fibonacci number efficiently without recursion errors.

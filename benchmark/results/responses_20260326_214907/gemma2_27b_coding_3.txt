@@ -1,0 +1,66 @@
+Model: gemma2:27b
+Category: coding
+Prompt: Write a Python function that takes a list of integers and returns the two numbers that add up to a target sum. It should run in O(n) time.
+========================================
+```python
+def find_sum_pair(nums, target):
+  """
+  Finds two numbers in a list that add up to a target sum.
+
+  Args:
+    nums: A list of integers.
+    target: The target sum.
+
+  Returns:
+    A tuple containing the two numbers that sum to the target, 
+    or None if no such pair exists.
+  """
+
+  seen = {}  # Dictionary to store seen numbers and their indices
+
+  for i, num in enumerate(nums):
+    complement = target - num
+    if complement in seen:
+      return (num, complement)
+    seen[num] = i
+
+  return None  # No pair found
+
+
+# Example usage:
+numbers = [2, 7, 11, 15]
+target_sum = 9
+
+result = find_sum_pair(numbers, target_sum)
+
+if result:
+  print(f"Numbers that sum to {target_sum}: {result}")
+else:
+  print("No pair found.")
+```
+
+**Explanation:**
+
+1. **Hash Table (Dictionary):** 
+   - We use a dictionary `seen` to store the numbers we've encountered so far along with their indices in the list. This allows for constant-time (O(1)) lookups.
+
+2. **Iterating through the List:**
+   - We iterate through the `nums` list using `enumerate`, which gives us both the number (`num`) and its index (`i`).
+
+3. **Calculating the Complement:**
+   - For each number `num`, we calculate its complement: `complement = target - num`.  This is the value we need to find in the list to reach the `target` sum.
+
+4. **Checking for Complement:**
+   - We check if the `complement` exists as a key in the `seen` dictionary. If it does, it means we've already encountered the other number needed to form the pair. We return the current `num` and the `complement` found in the dictionary.
+
+5. **Storing Seen Numbers:**
+   - If the `complement` is not in the dictionary, we add the current `num` as a key and its index `i` as the value to `seen`. This way, if we encounter the `complement` later in the list, we can quickly find the corresponding pair.
+
+6. **Returning None:**
+   - If the loop completes without finding a pair, it means no two numbers in the list add up to the `target`. We return `None` in this case.
+
+**Time Complexity:** O(n) -  Each number in the list is visited at most once. Dictionary lookups and insertions take constant time on average.
+
+
+
+Let me know if you have any other questions!

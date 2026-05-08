@@ -1,0 +1,30 @@
+Model: deepseek-r1:32b
+Category: reasoning
+Prompt: A bat and a ball cost $1.10 in total. The bat costs $1.00 more than the ball. How much does the ball cost? Show your working.
+========================================
+Let's solve the problem step by step.
+
+**Given:**
+- The total cost of a bat and a ball is **\$1.10**.
+- The bat costs **\$1.00** more than the ball.
+
+**Let’s define:**
+- Let \( x \) be the cost of the ball in dollars.
+- Then, the cost of the bat will be \( x + 1 \).
+
+**Set up the equation based on the total cost:**
+\[
+x \quad (\text{ball}) + (x + 1) \quad (\text{bat}) = 1.10
+\]
+
+**Simplify and solve for \( x \):**
+\[
+2x + 1 = 1.10 \\
+2x = 1.10 - 1 \\
+2x = 0.10 \\
+x = \frac{0.10}{2} \\
+x = 0.05
+\]
+
+**Final Answer:**
+The ball costs \(\boxed{\$0.05}\).

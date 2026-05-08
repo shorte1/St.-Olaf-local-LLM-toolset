@@ -1,0 +1,55 @@
+Model: mistral:7b
+Category: instruction
+Prompt: Write a formal email declining a job offer, then rewrite it as a casual text message, then rewrite it as a Shakespearean monologue.
+========================================
+ Email:
+
+Subject: Decline of Job Offer - [Your Name]
+
+Dear [Recipient's Name],
+
+I hope this message finds you well. I am writing to formally decline the job offer for the position of [Job Title] at [Company Name]. After careful consideration, I have decided to pursue a different opportunity that aligns more closely with my current career goals and aspirations.
+
+I want to express my gratitude for considering me for this role and offering me the position. The team and company culture seemed very welcoming and exciting, which is what initially attracted me to your organization. However, after much thought, I believe it would be best for both parties if I step back from the offer at this time.
+
+Once again, thank you for this opportunity, and I wish [Company Name] continued success in the future. If there are any potential openings in the future that may be suitable for my skills and interests, please do not hesitate to reach out.
+
+Warm regards,
+[Your Name]
+
+---
+
+Casual Text Message:
+
+Hey [Recipient's Name],
+
+Hope all is well! I wanted to chat about the job offer at [Company Name]. After thinking things over, I've decided it's best if I decline. There's another opportunity that I think better suits my career path right now. I just want to say thanks for considering me and offering me the position. The team seemed awesome, and the company culture looked great! If anything else comes up in the future that might be a good fit, let me know!
+
+Take care,
+[Your Name]
+
+---
+
+Shakespearean Monologue:
+
+Fair [Recipient's Name], my hearty greetings unto thee,
+I hope this missive finds thee in good health and spirits.
+Upon a matter of great import I write, regarding the offer bestowed upon me,
+For the esteemed position within the lofty halls of [Company Name].
+
+Methinks it behooves me to share my thoughts on this, for thy wisdom may guide mine own,
+I have pondered much upon the path that lies before me, and found a way less trodden.
+In contemplation of my career's journey, I perceive an opportunity that aligns with my ambitions,
+And so it is with regret, but also gratitude, that I must decline this noble offer presented to me.
+
+I am most grateful for the kindness extended in considering me worthy,
+The team and company culture, as I discovered, were most inviting and enticing indeed.
+Yet, 'twas with a heavy heart that I realized it would be best for both our parties to part ways now,
+And so I humbly decline the offer extended to me at this time.
+
+Rest assured, fair [Recipient's Name], that my deepest appreciation remains for this chance,
+And should opportunity knock again in future, do not hesitate to call upon me once more.
+Farewell, dear friend, and may fortune smile upon thee and thine noble enterprise.
+
+Yours most sincerely,
+[Your Name]

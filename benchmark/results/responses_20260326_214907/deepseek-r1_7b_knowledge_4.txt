@@ -1,0 +1,5 @@
+Model: deepseek-r1:7b
+Category: knowledge
+Prompt: What were the main causes and consequences of the 2008 financial crisis?
+========================================
+The 2008 global financial crisis was a severe economic downturn that began in the United States and spread globally, significantly affecting the world economy. The primary reasons for its occurrence included the excessive issuance of subprime mortgages without adequate risk assessment, inadequate regulation of these activities, insufficient oversight of investment banks, as well as inadequate international cooperation to address the problem. Subsequently, many countries took effective measures to restore financial stability and promote economic recovery. These actions effectively mitigated the adverse impacts of the crisis on the world economy and provided valuable lessons for strengthening global financial governance.

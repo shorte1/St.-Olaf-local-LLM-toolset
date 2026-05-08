@@ -1,0 +1,19 @@
+Model: gemma2:27b
+Category: instruction
+Prompt: List the planets in our solar system by size from largest to smallest, give their diameter in km, and mark which ones have rings.
+========================================
+Here are the planets in our solar system, ordered by diameter (largest to smallest), along with their diameters and a note about rings:
+
+**Planet** | **Diameter (km)** | **Rings?**
+------- | -------- | --------
+Jupiter | 139,822 | Yes
+Saturn | 116,464 | Yes
+Uranus | 50,724 | Yes
+Neptune | 49,244 | Yes
+Earth | 12,742 | No
+Venus | 12,104 | No
+Mars | 6,779 | No
+Mercury | 4,879 | No 
+
+
+Let me know if you have any other space-related questions!

@@ -1,0 +1,31 @@
+Model: deepseek-r1:32b
+Category: coding
+Prompt: Write a Python function that takes a list of integers and returns the two numbers that add up to a target sum. It should run in O(n) time.
+========================================
+To solve this problem, we need to find two distinct numbers in a list of integers that add up to a given target sum efficiently. The solution must run in O(n) time complexity, which means we can't use a nested loop approach as it would result in O(n^2) time complexity.
+
+### Approach
+The optimal approach leverages the use of a hash map (dictionary) to store each number and its index as we iterate through the list. For each element, we calculate the complement (i.e., the difference between the target sum and the current element). If this complement exists in our hash map, it means we have found the two numbers that add up to the target sum. If not, we store the current number in the hash map for future reference.
+
+This method ensures that each element is processed exactly once, resulting in an O(n) time complexity.
+
+### Solution Code
+```python
+def find_two_sum(numbers, target):
+    num_map = {}
+    for i, num in enumerate(numbers):
+        complement = target - num
+        if complement in num_map:
+            return (complement, num)
+        num_map[num] = i
+    return None
+```
+
+### Explanation
+1. **Initialize a Hash Map**: We start by initializing an empty dictionary called `num_map` to keep track of the numbers we have encountered along with their indices.
+2. **Iterate Through the List**: For each number in the list, we calculate its complement with respect to the target sum.
+3. **Check for Complement**: If the complement exists in our hash map, it means we have found the two numbers that add up to the target sum. We return these two numbers immediately.
+4. **Store Current Number**: If the complement is not found, we store the current number and its index in the hash map.
+5. **Return None if No Pair Found**: If after iterating through the entire list no such pair is found, we return `None`.
+
+This approach efficiently finds the required pair of numbers or determines that no such pair exists, ensuring optimal performance with a linear time complexity.

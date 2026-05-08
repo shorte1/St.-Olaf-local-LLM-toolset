@@ -1,0 +1,49 @@
+Model: qwen2.5:32b
+Category: instruction
+Prompt: Write a formal email declining a job offer, then rewrite it as a casual text message, then rewrite it as a Shakespearean monologue.
+========================================
+**Formal Email:**
+
+Subject: Regretful Decision Regarding Job Offer
+
+Dear [Employer's Name],
+
+I hope this message finds you well. I am writing to express my gratitude for the job offer extended to me by [Company Name] and to formally decline it.
+
+After much contemplation, I have decided that this role does not align with my current career objectives or personal goals at this time. While I greatly respect and admire your company's contributions and successes in the field, I feel it would be best for both of us if I do not pursue this opportunity.
+
+I am truly grateful for considering me as a potential member of the [Company Name] team and wish you all the best in finding an ideal candidate who will thrive within the organization.
+
+Thank you once again for your time and consideration. Please let me know if there is anything further required from my side or if I can assist with this transition in any way.
+
+Best regards,
+
+[Your Name]
+
+---
+
+**Casual Text Message:**
+
+Hey [Employer's Name],
+
+Thanks so much for the job offer! 🙌 After thinking it over, though, I don't think this role is the best fit right now. There are some career goals that align better with what I'm working towards at the moment.
+
+Really appreciate you considering me and all your team has done to get here. Hope we can keep in touch, maybe there'll be something down the line!
+
+Take care,
+[Your Name]
+
+---
+
+**Shakespearean Monologue:**
+
+O noble [Employer's Name], thy kind offer of employment doth grace mine ears with its melody; yet, alas! My heart and mind muse upon a path divergent from thine. 
+
+In contemplation deep, I've found this station not to accord with my current ambitions and life's design. Though I hold great admiration for thee and [Company Name], whose laurels of success adorn the fields of industry, I must decline thy generous proposition.
+
+Let it be known that gratitude fills my breast for the opportunity bestowed upon me, and may fortune smile upon your endeavors in selecting a candidate most fitting to enrich your esteemed ranks. 
+
+If there be any final courtesies required or assistance needed from this lowly one, speak now and I shall endeavor to fulfill thy request.
+
+Yours with deepest respect,
+[Your Name]

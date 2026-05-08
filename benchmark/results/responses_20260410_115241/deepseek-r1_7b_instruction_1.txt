@@ -1,0 +1,23 @@
+Model: deepseek-r1:7b
+Category: instruction
+Prompt: Write a haiku about autumn, then translate it to French, then explain the seasonal symbolism used.
+========================================
+**Haiku:**
+
+Fireflies dance under the moonlight,  
+The trees begin to lose their hue,  
+Chill winds mark the night’s arrival.
+
+---
+
+**French Translation:**
+
+Les éclaboussures jaunes chantent en baissant la lune,  
+Les arbres commencent à perler des teintes,  
+La houle froide marque la fin de la nuage.
+
+---
+
+**Seasonal Symbolism Explanation:**
+
+The haiku and its French translation capture the essence of autumn through imagery that reflects both its beauty and transition. The fireflies symbolize fleeting beauty as they prepare for winter's arrival, while the trees losing their leaves represent the cyclical nature of life—new growth emerging after decay. The chill winds and shortened nights foreshadow the onset of winter, highlighting the season's change and renewal. This symbolism resonates in both translations, emphasizing the natural cycle and the fleeting nature of autumn's transformations.

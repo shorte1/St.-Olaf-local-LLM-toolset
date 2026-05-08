@@ -1,0 +1,27 @@
+Model: mistral:7b
+Category: coding
+Prompt: Write a Python function that finds all prime numbers up to n using the Sieve of Eratosthenes.
+========================================
+ The Sieve of Eratosthenes is an algorithm used to find all prime numbers up to a given integer `n`. Here's how you can implement it in Python:
+
+```python
+def sieve_of_eratosthenes(n):
+    primes = [True] * (n + 1)
+    primes[0], primes[1] = False, False
+
+    for i in range(2, int(n**0.5) + 1):
+        if primes[i]:
+            for multiple in range(i*i, n+1, i):
+                primes[multiple] = False
+
+    return [num for num in range(2, len(primes)) if primes[num]]
+
+# Test the function
+print(sieve_of_eratosthenes(30))
+```
+
+In this code:
+
+1. `primes = [True] * (n + 1)` initializes a list of boolean values where all numbers are considered prime initially.
+2. We mark non-prime numbers starting from 2 by iterating through the list and removing multiples of each prime number `i`.
+3. The function returns the remaining true values in the list which represent the prime numbers up to `n`.

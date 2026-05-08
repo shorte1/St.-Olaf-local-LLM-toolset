@@ -1,0 +1,34 @@
+Model: llama3.2:3b
+Category: reasoning
+Prompt: A bat and a ball cost $1.10 in total. The bat costs $1.00 more than the ball. How much does the ball cost? Show your working.
+========================================
+Let's break this down step by step:
+
+Let x be the cost of the ball.
+
+Since the bat costs $1.00 more than the ball, the cost of the bat is x + 1.
+
+The total cost of the bat and the ball together is $1.10.
+
+We can set up an equation to represent this situation:
+
+x (cost of the ball) + (x + 1) (cost of the bat) = 1.10
+
+Combine like terms:
+
+2x + 1 = 1.10
+
+Subtract 1 from both sides:
+
+2x = 0.10
+
+Divide by 2:
+
+x = 0.05
+
+So, the ball costs $0.05.
+
+Let's check our answer:
+
+If the bat costs $1.00 more than the ball, and the ball costs $0.05, then the bat costs $1.00 + $0.05 = $1.05.
+The total cost of the bat and the ball together is indeed $1.10 ($1.05 + $0.05).

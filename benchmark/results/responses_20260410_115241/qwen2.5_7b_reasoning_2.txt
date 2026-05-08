@@ -1,0 +1,21 @@
+Model: qwen2.5:7b
+Category: reasoning
+Prompt: If it takes 5 machines 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 widgets? Show your working.
+========================================
+To solve this problem, let's first understand the rate at which the machines are working.
+
+Given that 5 machines can produce 5 widgets in 5 minutes, we can deduce that each machine is producing 1 widget in 5 minutes. This means the production rate of each machine is:
+
+\[ \text{Rate per machine} = \frac{1 \text{ widget}}{5 \text{ minutes}} \]
+
+Now, let's consider how many widgets 100 machines would produce in the same time frame if they work at the same rate. Since each machine produces 1 widget in 5 minutes, 100 machines would also produce:
+
+\[ 100 \times 1 \text{ widget} = 100 \text{ widgets} \]
+
+in 5 minutes.
+
+Therefore, it would take 100 machines exactly the same amount of time (5 minutes) to produce 100 widgets as it took 5 machines to produce 5 widgets. The key is recognizing that each machine works independently at the same rate.
+
+So, the answer is:
+
+\[ \text{It would take 100 machines 5 minutes to make 100 widgets.} \]

@@ -1,0 +1,61 @@
+Model: llama3.2:3b
+Category: coding
+Prompt: Write a REST API endpoint in Python using Flask that accepts a JSON body with a username and password, validates that neither is empty, and returns a JWT token.
+========================================
+Here's an example of how you can create a REST API endpoint in Python using Flask to validate user credentials and return a JWT token:
+
+```python
+from flask import Flask, request, jsonify
+import jwt
+import datetime
+from werkzeug.security import generate_password_hash, check_password_hash
+
+app = Flask(__name__)
+
+# Secret key for signing tokens
+secret_key = "your-secret-key"
+
+# In-memory database for storing user credentials (replace with a real DB in production)
+users = {
+    "user1": generate_password_hash("password1"),
+    "user2": generate_password_hash("password2")
+}
+
+@app.route("/login", methods=["POST"])
+def login():
+    """Validate user credentials and return JWT token."""
+    data = request.get_json()
+    if not data:
+        return jsonify({"error": "Missing JSON body"}), 400
+    
+    username = data.get("username")
+    password = data.get("password")
+
+    # Validate that neither the username nor the password is empty
+    if not username or not password:
+        return jsonify({"error": "Both username and password are required"}), 400
+
+    # Check the user credentials against our in-memory database
+    if username in users and check_password_hash(users[username], password):
+        # Generate a JWT token for the authenticated user
+        payload = {
+            "exp": datetime.datetime.utcnow() + datetime.timedelta(minutes=30),
+            "iat": datetime.datetime.utcnow(),
+            "sub": username,
+        }
+        token = jwt.encode(payload, secret_key, algorithm="HS256")
+        return jsonify({"token": token}), 200
+
+    # If the credentials are invalid, return an error message
+    return jsonify({"error": "Invalid username or password"}), 401
+
+if __name__ == "__main__":
+    app.run(debug=True)
+```
+
+In this example:
+
+*   We create a Flask application and define a `/login` endpoint that accepts JSON bodies.
+*   We check if the `username` and `password` are present in the request body. If either is missing, we return an error response with a 400 status code.
+*   We verify that both the username and password match our stored credentials using the `check_password_hash()` function from Flask-Werkzeug.
+*   If the credentials are valid, we generate a JWT token for the authenticated user using the `jwt.encode()` method.

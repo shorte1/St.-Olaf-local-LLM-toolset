@@ -1,0 +1,26 @@
+Model: deepseek-r1:7b
+Category: knowledge
+Prompt: Explain the difference between TCP and UDP protocols and when you would use each.
+========================================
+**Explanation of Differences Between TCP and UDP and When to Use Each**
+
+TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) are both transport layer protocols in the TCP/IP model, but they serve different purposes and are suited for different scenarios.
+
+1. **TCP:**
+   - **Connection-Oriented:** Before sending data, TCP establishes a connection, waits for an acknowledgment from the recipient, and ensures reliable delivery of each packet.
+   - **Reliable Data Transfer:** It handles errors gracefully, ensuring that all packets reach their destination without loss or corruption.
+   - **Use Cases:**
+     - Web browsing (HTTP/HTTPS)
+     - Email services
+     - File transfers where reliability is crucial
+     - Applications requiring low latency and high data integrity
+
+2. **UDP:**
+   - **Connection-Less:** UDP does not establish a connection and sends data packets immediately without waiting for an acknowledgment.
+   - **Less Reliable, More Efficient:** It sacrifices reliability for speed, making it suitable for scenarios where delays are less critical than volume of data transfer.
+   - **Use Cases:**
+     - Real-time audio and video streaming
+     - Online gaming (e.g., preventing lag)
+     - High-throughput applications like P2P file sharing
+
+**Summary:** Choose TCP when reliability is paramount, such as in web browsing or email. Opt for UDP when speed is more important, especially with real-time media streaming or high-performance online applications where some packet loss tolerance is acceptable.

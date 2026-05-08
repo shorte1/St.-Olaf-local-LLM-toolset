@@ -1,0 +1,35 @@
+Model: qwen2.5:32b
+Category: coding
+Prompt: Write a Python function that takes a list of integers and returns the two numbers that add up to a target sum. It should run in O(n) time.
+========================================
+To solve this problem efficiently with an O(n) runtime, we can use a hash table (dictionary in Python). The idea is to iterate through the list once while storing each element's value and its index into the dictionary. For each element, we check if the complement (target - current number) exists in the dictionary. If it does, then we have found the two numbers that add up to the target sum.
+
+Here is how you can implement this function:
+
+```python
+def find_two_sum(nums, target):
+    """
+    Finds two distinct indices i and j such that nums[i] + nums[j] == target.
+    
+    :param nums: List[int], a list of integers.
+    :param target: int, the target sum.
+    :return: tuple(int), a pair of numbers which add up to the target.
+             Returns None if no such pair exists.
+    """
+    num_to_index = {}
+    for i, num in enumerate(nums):
+        complement = target - num
+        if complement in num_to_index:
+            return (complement, num)
+        num_to_index[num] = i
+    return None
+
+# Example usage:
+nums_example = [2, 7, 11, 15]
+target_example = 9
+print(find_two_sum(nums_example, target_example))  # Output should be a tuple like (2, 7) or (7, 2)
+```
+
+This function iterates through the list only once, thus achieving O(n) time complexity. It uses extra space for the dictionary which holds at most n elements, leading to an O(n) space complexity as well.
+
+Note: The returned pair of numbers might not be in the same order they appear in the input list; it's based on when their sum matches the target during iteration. If you need them in a specific order (e.g., in the original order from `nums`), you can adjust how pairs are returned or processed further.

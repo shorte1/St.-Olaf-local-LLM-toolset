@@ -1,0 +1,18 @@
+Model: gemma2:27b
+Category: reasoning
+Prompt: Three friends split a restaurant bill. The bill is $30 so they each pay $10. The waiter realizes the bill was only $25 and returns $5. The friends each take $1 and tip the waiter $2. They each paid $9, totaling $27, plus the $2 tip is $29. Where is the missing dollar? Explain the flaw in this reasoning.
+========================================
+This is a classic riddle that plays on how we frame the math problem. Here's why the reasoning is flawed:
+
+**The mistake is adding the waiter's tip to the amount the friends effectively paid.**
+
+Here's a clearer breakdown:
+
+* **The bill:** $25
+* **What the friends actually paid:** $27 ($9 each)
+* **The waiter received:** $2
+
+The $27 the friends paid covers the $25 bill and the $2 tip. There is no missing dollar. 
+
+
+Let me know if you'd like to try another riddle! 😊 

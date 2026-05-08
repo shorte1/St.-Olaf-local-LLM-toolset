@@ -1,0 +1,39 @@
+Model: deepseek-r1:7b
+Category: coding
+Prompt: Write a Python function that finds all prime numbers up to n using the Sieve of Eratosthenes.
+========================================
+To solve this problem, we need to find all prime numbers up to a given number \( n \) using an efficient algorithm known as the Sieve of Eratosthenes. This method systematically marks the multiples of each prime starting from 2, which are not primes themselves.
+
+### Approach
+1. **Handle Edge Cases**: If \( n \) is less than 2, return an empty list since there are no prime numbers less than 2.
+2. **Initialize a Boolean Array**: Create a boolean array `sieve` where each index represents whether the number is prime or not. Initially, set all entries to `True` except for indices 0 and 1, which are set to `False`.
+3. **Mark Non-Primes**: Starting from the first prime number (2), mark all its multiples as non-prime. Continue this process for each number up to the square root of \( n \) because any composite number larger than the square root of \( n \) will have a factor less than or equal to the square root.
+4. **Collect Primes**: After processing, collect all indices that remain `True` in the boolean array as they represent prime numbers.
+
+### Solution Code
+```python
+def sieve_of_eratosthenes(n):
+    if n < 2:
+        return []
+    
+    # Initialize the sieve with True values and set 0 and 1 to False
+    sieve = [True] * (n + 1)
+    sieve[0], sieve[1] = False, False
+    
+    for p in range(2, int(n**0.5) + 1):
+        if sieve[p]:
+            # Mark multiples of p starting from p^2 as non-prime
+            sieve[p*p : n+1 : p] = [False] * len(sieve[p*p : n+1 : p])
+    
+    # Collect all prime indices
+    primes = [i for i, is_prime in enumerate(sieve) if is_prime]
+    return primes
+```
+
+### Explanation
+- **Edge Cases Handling**: The function immediately returns an empty list if \( n \) is less than 2.
+- **Boolean Array Initialization**: The boolean array `sieve` is initialized to `True`, indicating all numbers are initially considered prime. Indices 0 and 1 are set to `False` because they are not prime.
+- **Marking Non-Primes**: For each number \( p \) starting from 2 up to the square root of \( n \), if \( p \) is still marked as prime, all its multiples (starting from \( p^2 \)) are marked as non-prime. This ensures that any composite number will be marked multiple times but only needs to be processed once.
+- **Collecting Primes**: Finally, the function enumerates through the boolean array and collects all indices where the value is `True`, which correspond to prime numbers.
+
+This approach efficiently finds all primes up to \( n \) using a time complexity of \( O(n \log \log n) \), making it suitable for large values of \( n \).

@@ -1,0 +1,24 @@
+Model: llama3.2:3b
+Category: instruction
+Prompt: Write a formal email declining a job offer, then rewrite it as a casual text message, then rewrite it as a Shakespearean monologue.
+========================================
+**Formal Email**
+
+Subject: Declining Job Offer for [Job Title]
+
+Dear [Hiring Manager's Name],
+
+I am writing to express my gratitude for the job offer extended to me for the position of [Job Title] at [Company Name]. I was truly impressed by the company culture and the team's enthusiasm during my interview process.
+
+However, after careful consideration, I regret to inform you that I have decided to decline the offer. While the role aligns with my skills and interests, I have decided to pursue another opportunity that better suits my long-term career goals.
+
+Please know that my decision is in no way a reflection on the company or the position itself. I am confident that [Company Name] will continue to thrive and find an exceptional candidate for this role.
+
+Thank you again for the opportunity, and I wish the organization continued success in the future.
+
+Best regards,
+[Your Name]
+
+**Casual Text Message**
+
+"Hey [Hiring Manager's Name], it's me. Just wanted to let you know that I've decided to pass on the job offer for [Job Title] at [Company Name]. The role was really cool, but another opportunity just came up that feels like a better fit for me. Thanks again for the chance, and I hope everything works out!"

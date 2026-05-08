@@ -1,0 +1,5 @@
+Model: mistral:7b
+Category: instruction
+Prompt: Summarize the plot of Romeo and Juliet in exactly 50 words, no more no less.
+========================================
+ Young Montague (Romeo) and Capulet (Juliet) fall deeply in love despite their feuding families. Their secret union is discovered, leading to a tragic chain of events: Romeo kills Juliet's cousin Tybalt in a duel, Juliet's faked death leads Romeo to drink poison, and both die on the same day, reuniting in death and leaving their devastated families behind.

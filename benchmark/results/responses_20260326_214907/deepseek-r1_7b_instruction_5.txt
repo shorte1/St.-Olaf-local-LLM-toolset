@@ -1,0 +1,71 @@
+Model: deepseek-r1:7b
+Category: instruction
+Prompt: Write a formal email declining a job offer, then rewrite it as a casual text message, then rewrite it as a Shakespearean monologue.
+========================================
+**Formal Email:**  
+Subject: Declining Job Offer  
+
+Dear [Name],  
+
+I hope this message finds you well. I am writing to formally decline your offer for the position of [Job Title] at [Company Name]. After careful consideration, I have decided not to accept the role as it does not align with my current priorities and future goals.  
+
+However, I want to express my sincere gratitude for extending such an opportunity and for considering my application. Your time and effort in reaching out are greatly appreciated, and I hope this experience continues to benefit our professional relationship in the future.  
+
+Thank you once again for your understanding, and please feel free to contact me if you have any further questions or need additional information.  
+
+Warm regards,  
+[Your Name]  
+[Your Contact Information]
+
+---
+
+**Casual Text Message:**  
+Hi [Name],  
+
+I hope you're doing well! I just wanted to let you know that after thinking about it, I’ve decided not to accept the job offer for [Job Title] at [Company Name]. It’s a tough decision, but I think this is the right path for me.  
+
+I really appreciate your offer and all the time you took to reach out. Please don’t hesitate to get in touch if you need anything or have any questions—I’ll be here when I’m ready to hear from you.  
+
+Looking forward to staying professionals!  
+Take care,  
+[Your Name]
+
+---
+
+**Shakespearean Monologue:**  
+To the fair and learned Mars,  
+By nightfall, I do owe  
+A most lamentable declaration,  
+For Fortune's hand hath dealt me ill,  
+And I must needs decline my claim.  
+
+O Death, my bitter friend!  
+Take this opportunity, my heart doth yearn,  
+That which neither profit nor grace  
+Can bring me forth to thee.  
+
+Yet, withal, I cannot forbear  
+To speak of what others see:  
+The title of [Job Title],  
+From [Company Name] I had applie,  
+But now the thought doth trouble me sore.  
+
+And while it grieves my soul,  
+It is but one part of a whole,  
+For many a glimmer of hope lies  
+In ventures yet to come or laid.  
+
+Thus end this sad narrative:  
+A token of resolve and care,  
+To future friendships strong and fair,  
+And to ourselves who dare to bear  
+The weight of such重量 and compare it to other opportunities that may lie ahead.
+
+Hark! And fortune's fickle hand doth play,  
+We must each take our portion well.  
+Let this suffice for my tale:  
+Grateful I remain, though sad the fall.  
+
+Thus concludes my story.  
+To you, [Name],  
+My thanks, and hope of future ways.

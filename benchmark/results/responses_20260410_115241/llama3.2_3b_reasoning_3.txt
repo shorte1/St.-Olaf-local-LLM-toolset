@@ -1,0 +1,41 @@
+Model: llama3.2:3b
+Category: reasoning
+Prompt: A lily pad doubles in size every day. It takes 48 days to cover a lake. How long does it take to cover half the lake? Show your working.
+========================================
+To solve this problem, we need to understand that the lily pad doubles in size every day.
+
+Let's assume the initial area of the lily pad is x. On the first day, it will double to 2x.
+
+On the second day, it will again double to 4x.
+
+This process continues for 48 days, so on the 47th day, the lily pad will cover an area of 32x (since 2^47 = 64).
+
+However, we want to know how long it takes to cover half the lake. Since the lake is being covered by doubling in size every day, covering half the lake would be equivalent to covering half of the initial area.
+
+If the lily pad covers an area of x on the first day, then on the second day, it will cover 2x (double the original area). To cover half the lake, we need to find the number of days it takes for the lily pad to reach half of the initial area.
+
+Let's analyze the pattern:
+
+Day 1: covers 0.5x (half of the initial area)
+Day 2: covers 1x (double the original area)
+
+We can see that on day 2, the lily pad covers more than half the lake. However, we want to know how many days it takes to cover exactly half the lake.
+
+Let's try again:
+
+On the first day, the lily pad covers an area of x.
+On the second day, it doubles and covers an area of 2x.
+Since 1x + 0.5x = 1.5x, we can see that on the third day, when it doubles again, it will cover more than half the lake.
+
+Let's recalculate:
+
+Day 0: initial area x
+Day 1: covers 0.5x (half of the initial area)
+
+To find the number of days to reach half the lake, we can use logarithms or simply realize that if it doubles in size every day and covers more than half the lake on the second day, then it must have doubled in size at least once.
+
+Since the lily pad doubles in size every day, covering half the lake would take:
+
+Day 1: covers 0.5x (half of the initial area)
+
+Therefore, it takes 1 day to cover half the lake.

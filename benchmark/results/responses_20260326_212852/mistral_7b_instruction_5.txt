@@ -1,0 +1,50 @@
+Model: mistral:7b
+Category: instruction
+Prompt: Write a formal email declining a job offer, then rewrite it as a casual text message, then rewrite it as a Shakespearean monologue.
+========================================
+ Formal Email:
+
+Subject: Declination of Job Offer - [Your Name]
+
+Dear [Recipient's Name],
+
+I hope this email finds you well. I am writing to formally decline the job offer for the position of [Job Title] at [Company Name]. After careful consideration, I have decided that this opportunity is not the best fit for me at this time.
+
+I would like to express my gratitude for offering me the position and for considering me as a potential candidate. The team at [Company Name] seemed like a fantastic group of professionals, and I am impressed by the company's mission and values. However, after much thought, I have decided to pursue other opportunities that align more closely with my current career goals and personal aspirations.
+
+Please accept my sincere apologies for any inconvenience this may cause. I hope that we can keep in touch, as I believe [Company Name] is an exceptional organization, and I would love to stay connected.
+
+Once again, thank you for the opportunity, and I wish [Company Name] continued success in all its endeavors.
+
+Best regards,
+[Your Name]
+
+Casual Text Message:
+
+Hey [Recipient's Name],
+
+Hope you're doing well! Just wanted to reach out and formally decline the job offer for the [Job Title] position at [Company Name]. I've given it some thought, and it turns out it's not quite what I'm looking for right now. But I want to say a huge thanks for offering me the role - your team seemed great, and I was really impressed by [Company Name].
+
+I hope this doesn't cause any trouble. Let's stay in touch though - I think [Company Name] is awesome, and I wouldn't mind keeping in contact!
+
+Once again, thanks for the opportunity. Wishing [Company Name] all the best!
+
+Take care,
+[Your Name]
+
+Shakespearean Monologue:
+
+Dear esteemed [Recipient's Name],
+
+Greetings and salutations to thee from thine humble servant. I find myself compelled to write this missive, addressing a matter of great import. 'Tis concerning a recent proposition that hath been bestowed upon me: the noble offer of employment within thy esteemed establishment, [Company Name].
+
+With sincere gratitude for the honor and respect thou hast shown me by considering my qualifications for the esteemed position of [Job Title], I must confess that I find myself at a crossroads. After much reflection and contemplation upon my present station in life, I have reached a decision which hath weighed heavy upon mine heart.
+
+'Tis with a heavy heart, then, that I must inform thee, noble [Recipient's Name], that I am compelled to decline this gracious offer. Though the opportunity to join thy esteemed ranks is one of great allure, I find that it doth not align perfectly with my own personal ambitions and aspirations at this time.
+
+I beseech thee to understand that this decision hath not been made lightly. The honor thou hast bestowed upon me by offering me a place within thy organization is one I shall ever cherish, for I have witnessed firsthand the noble purpose and virtuous values that thine enterprise upholds. I can only hope that our paths may cross again in future, allowing us to forge a bond of mutual respect and collaboration.
+
+I remain eternally grateful for the opportunity thou hast afforded me, and I wish thy esteemed establishment every success in its future endeavors. May it flourish and grow, reaching greater heights in pursuit of its noble purpose.
+
+Yours most sincerely,
+[Your Name]

@@ -1,0 +1,29 @@
+Model: mistral:7b
+Category: reasoning
+Prompt: A bat and a ball cost $1.10 in total. The bat costs $1.00 more than the ball. How much does the ball cost? Show your working.
+========================================
+ Let's denote the cost of the ball as x dollars.
+
+The cost of the bat is then (x + 1) dollars.
+
+According to the problem, the total cost of the bat and the ball is $1.10:
+
+x (ball cost) + (x + 1) (bat cost) = 1.10
+
+Combining the terms gives us:
+
+x + x + 1 = 1.10
+
+Simplifying this equation, we get:
+
+2x + 1 = 1.10
+
+Subtracting 1 from both sides:
+
+2x = 0.10
+
+Dividing by 2:
+
+x = 0.05
+
+So, the ball costs $0.05.

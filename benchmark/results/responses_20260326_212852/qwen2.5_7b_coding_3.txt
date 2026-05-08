@@ -1,0 +1,47 @@
+Model: qwen2.5:7b
+Category: coding
+Prompt: Write a Python function that takes a list of integers and returns the two numbers that add up to a target sum. It should run in O(n) time.
+========================================
+To solve this problem efficiently in O(n) time, you can use a hash map (or dictionary in Python) to store the difference between the target sum and each element as you iterate through the list. Here's how you can implement it:
+
+```python
+def two_sum(numbers, target):
+    # Create an empty dictionary to store the differences
+    num_map = {}
+    
+    # Iterate over the list of numbers
+    for i, number in enumerate(numbers):
+        # Calculate the complement that would add up to the target sum with the current number
+        complement = target - number
+        
+        # Check if this complement is already in the dictionary
+        if complement in num_map:
+            # If it is, return the indices of the two numbers
+            return (num_map[complement], i)
+        
+        # Otherwise, add the current number and its index to the dictionary
+        num_map[number] = i
+    
+    # Return None or raise an error if no solution is found
+    return None
+
+# Example usage:
+numbers = [2, 7, 11, 15]
+target = 9
+result = two_sum(numbers, target)
+print(result)  # Output should be a tuple of indices, e.g., (0, 1)
+```
+
+### Explanation:
+
+1. **Dictionary Initialization**: A dictionary (`num_map`) is used to store each number and its index as you iterate through the list.
+
+2. **Iterating Through the List**: For each number in the list:
+   - Compute the complement that would add up to `target` when added with the current number.
+   - Check if this complement exists in the dictionary. If it does, return the indices of these two numbers (the index stored in the dictionary and the current index).
+
+3. **Adding Numbers to Dictionary**: If the complement is not found, store the current number along with its index in the dictionary.
+
+4. **Handling No Solution**: The function returns `None` if no such pair exists. However, you can modify this behavior based on your requirements, for example by raising an exception or returning a specific value.
+
+This approach ensures that each element is processed only once, leading to an O(n) time complexity.

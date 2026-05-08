@@ -1,0 +1,16 @@
+Model: qwen2.5:32b
+Category: reasoning
+Prompt: A lily pad doubles in size every day. It takes 48 days to cover a lake. How long does it take to cover half the lake? Show your working.
+========================================
+To solve this problem, we need to understand that the lily pad doubles in size each day. This means if on one day the lily pad covers \( x \) amount of the lake, then the next day it will cover \( 2x \).
+
+Given:
+- It takes 48 days for the lily pad to cover the entire lake.
+
+Since the lily pad doubles its coverage every day, this implies that the day before (on the 47th day), the lily pad must have covered half of the lake. This is because doubling a quantity that covers half the lake will result in covering the whole lake.
+
+So:
+- On the 48th day: The entire lake.
+- Therefore, on the 47th day: Half of the lake (since it doubles to cover the full lake the next day).
+
+Thus, it takes **47 days** for the lily pad to cover half the lake.

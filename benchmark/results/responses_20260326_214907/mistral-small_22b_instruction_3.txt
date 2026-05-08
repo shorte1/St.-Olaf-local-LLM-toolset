@@ -1,0 +1,5 @@
+Model: mistral-small:22b
+Category: instruction
+Prompt: Summarize the plot of Romeo and Juliet in exactly 50 words, no more no less.
+========================================
+ In fair Verona, Montagues and Capulets feud. Their children, Romeo and Juliet, meet at a dance and fall instantly in love. Secretly married by Friar Laurence, they hope to end the feud. But a series of tragic miscommunications lead to their deaths, ending the play with their families reconciled over their graves.

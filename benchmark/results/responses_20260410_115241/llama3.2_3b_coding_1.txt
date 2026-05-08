@@ -1,0 +1,20 @@
+Model: llama3.2:3b
+Category: coding
+Prompt: Write a Python function that finds all prime numbers up to n using the Sieve of Eratosthenes.
+========================================
+def sieve_of_eratosthenes(n):
+    # Create a list to store the primality of each number
+    primes = [True] * (n + 1)
+    primes[0:2] = [False, False]
+
+    for current_prime in range(2, int(n ** 0.5) + 1):
+        if primes[current_prime]:
+            # Mark multiples of the current prime as non-prime
+            for multiple in range(current_prime * current_prime, n + 1, current_prime):
+                primes[multiple] = False
+
+    return [prime for prime in range(n + 1) if primes[prime]]
+
+# Example usage:
+n = 100
+print(sieve_of_eratosthenes(n))

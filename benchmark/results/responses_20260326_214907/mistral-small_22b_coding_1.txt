@@ -1,0 +1,43 @@
+Model: mistral-small:22b
+Category: coding
+Prompt: Write a Python function that finds all prime numbers up to n using the Sieve of Eratosthenes.
+========================================
+ Certainly! The Sieve of Eratosthenes is an efficient algorithm for finding all prime numbers up to a given limit \( n \). Here's how you can implement it in Python:
+
+```python
+def sieve_of_eratosthenes(n):
+    """Find all prime numbers up to n using the Sieve of Eratosthenes."""
+    if n < 2:
+        return []
+
+    # Initialize a list of boolean values. Index represents the number, value represents if it's prime.
+    is_prime = [True] * (n + 1)
+    is_prime[0] = is_prime[1] = False  # 0 and 1 are not primes
+
+    p = 2
+    while (p * p <= n):
+        # If is_prime[p] is still True, then it's a prime number
+        if is_prime[p]:
+            # Updating all multiples of p to False indicating they are not primes
+            for i in range(p * p, n + 1, p):
+                is_prime[i] = False
+        p += 1
+
+    # Collecting all prime numbers
+    prime_numbers = [p for p in range(2, n + 1) if is_prime[p]]
+    return prime_numbers
+
+# Example usage:
+n = 30
+print(f"Prime numbers up to {n}:")
+print(sieve_of_eratosthenes(n))
+```
+
+### Explanation:
+1. **Initialization**: Create a boolean list `is_prime` where the index represents the number, and the value at that index indicates whether it is prime (True) or not (False).
+2. **Base Cases**: Set `is_prime[0]` and `is_prime[1]` to False because 0 and 1 are not prime numbers.
+3. **Mark Non-Primes**: Start from the first prime number, 2, and mark all its multiples as non-prime (False).
+4. **Iterate**: Repeat the process for the next number that is still marked as True.
+5. **Collect Primes**: After completing the sieve algorithm, collect all indices which are still marked as True and return them as a list of prime numbers.
+
+This function will efficiently find all prime numbers up to \( n \).

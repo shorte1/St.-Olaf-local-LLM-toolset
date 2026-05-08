@@ -1,0 +1,115 @@
+Model: deepseek-r1:32b
+Category: coding
+Prompt: Write a REST API endpoint in Python using Flask that accepts a JSON body with a username and password, validates that neither is empty, and returns a JWT token.
+========================================
+Here's an example of a REST API endpoint using Flask that handles JSON input, validates credentials, and returns a JWT token:
+
+```python
+from flask import Flask, jsonify, request
+from datetime import datetime, timedelta
+import jwt
+import os
+
+app = Flask(__name__)
+app.config['SECRET_KEY'] = 'your-secret-key-here'  # Replace with your secret key
+
+@app.route('/login', methods=['POST'])
+def login():
+    data = request.get_json()
+    
+    if not data:
+        return jsonify({'message': 'No data provided'}), 400
+    
+    username = data.get('username')
+    password = data.get('password')
+    
+    # Validate input
+    if not isinstance(username, str) or not isinstance(password, str):
+        return jsonify({'message': 'Username and password must be strings'}), 400
+    
+    if not username.strip() or not password.strip():
+        return jsonify({'message': 'Username and password cannot be empty'}), 400
+    
+    # Create JWT token
+    try:
+        payload = {
+            'username': username,
+            'roles': ['user'],
+            'exp': datetime.utcnow() + timedelta(minutes=30)
+        }
+        
+        token = jwt.encode(
+            payload,
+            app.config['SECRET_KEY'],
+            algorithm='HS256'
+        ).decode('utf-8')
+        
+        return jsonify({'token': token}), 200
+    
+    except Exception as e:
+        return jsonify({'message': 'Error generating token'}), 500
+
+@app.route('/health', methods=['GET'])
+def health():
+    return jsonify({'status': 'ok'}), 200
+
+@app.errorhandler(404)
+def not_found(error):
+    return jsonify({'error': 'Resource not found'}), 404
+
+if __name__ == '__main__':
+    app.run(debug=True)
+```
+
+**Key points about this implementation:**
+
+1. **Endpoint Setup**: The `/login` endpoint is created to handle POST requests.
+
+2. **Input Validation**:
+   - Checks if the request contains JSON data
+   - Validates that both username and password are provided as non-empty strings
+
+3. **JWT Token Generation**:
+   - Uses a secret key (replace with your own secure key)
+   - Includes an expiration time of 30 minutes from generation
+   - Encodes the token using HS256 algorithm
+
+4. **Error Handling**:
+   - Returns appropriate error messages and status codes for invalid requests
+   - Catches exceptions during token generation
+
+5. **Health Check**: A simple `/health` endpoint is added to verify the service is running.
+
+**To use this code:**
+
+1. Install required packages:
+
+```bash
+pip install flask pyjwt
+```
+
+2. Replace `'your-secret-key-here'` with a secure secret key in production.
+
+3. Start the Flask application:
+
+```bash
+python app.py
+```
+
+4. Send a POST request to `http://localhost:5000/login` with a JSON body like:
+
+```json
+{
+    "username": "test_user",
+    "password": "test_password"
+}
+```
+
+**Note**: This is a basic implementation and should be augmented for production use with additional security measures, such as:
+- Password hashing
+- User authentication against a database
+- Token revocation mechanisms
+- Proper error handling
+- Input sanitization
+
+Also, never expose your secret key in production code. Use environment variables to store sensitive information.

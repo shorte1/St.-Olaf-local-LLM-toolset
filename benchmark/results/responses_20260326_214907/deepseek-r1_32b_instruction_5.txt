@@ -1,0 +1,43 @@
+Model: deepseek-r1:32b
+Category: instruction
+Prompt: Write a formal email declining a job offer, then rewrite it as a casual text message, then rewrite it as a Shakespearean monologue.
+========================================
+**1. Formal Email:**
+
+Subject: Thank You for the Opportunity  
+
+Dear [Hiring Manager's Name],  
+
+I hope this message finds you well. I wanted to take a moment to express my heartfelt gratitude for extending me the opportunity to join your esteemed team at [Company Name]. This decision has not been an easy one, as I have greatly admired the work your organization does and the incredible potential this role holds.  
+
+After careful consideration, I have decided that this is not the right opportunity for me at this time. My circumstances and aspirations lead me in a different direction, though I remain hopeful about future possibilities where our paths may cross again.  
+
+Thank you once more for your time, support, and confidence in my abilities. Wishing you and your team continued success as you continue to make an impact in your field.  
+
+Sincerely,  
+[Your Full Name]  
+
+---
+
+**2. Casual Text Message:**
+
+Hey [Hiring Manager's Name],  
+
+Just wanted to say a huge thank you for the job offer! I really appreciate the time and effort that went into considering me for this role. It was a tough decision, but I’ve decided it’s not the right fit for me at the moment.  
+
+I’m truly grateful for the opportunity and hope we can stay in touch in the future. Wishing you all the best with everything—thanks again!  
+
+Take care,  
+[Your Name]  
+
+---
+
+**3. Shakespearean Monologue:**
+
+Hark, dear [Hiring Manager's Name], I come before thee with a heart both heavy and grateful. Verily, thou hast bestowed upon me an offer most generous, a chance to join thy noble company and ply my trade in the halls of [Company Name]. Yet, alas, fate doth pull me in another direction, for mine own path is but a different star to follow.
+
+I thank thee with all that I am, for thine kindness and faith in my abilities. Mayhaps one day our paths shall cross again, and then perchance I may serve thee better. Until such time, go forth and prosper, for thou art surely a beacon of success.
+
+Farewell, kind [Hiring Manager's Name], and keep thy head high.  
+Thy humble servant,  
+[Your Name]

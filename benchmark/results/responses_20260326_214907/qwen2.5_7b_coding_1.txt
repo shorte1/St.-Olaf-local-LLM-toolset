@@ -1,0 +1,44 @@
+Model: qwen2.5:7b
+Category: coding
+Prompt: Write a Python function that finds all prime numbers up to n using the Sieve of Eratosthenes.
+========================================
+Certainly! The Sieve of Eratosthenes is an efficient algorithm for finding all primes smaller than a given number `n`. Below is a Python function that implements this algorithm:
+
+```python
+def sieve_of_eratosthenes(n):
+    # Initialize a list to track prime status of numbers from 0 to n
+    primes = [True] * (n + 1)
+    p = 2
+    
+    while p * p <= n:
+        # If primes[p] is not changed, then it is a prime
+        if primes[p]:
+            # Update all multiples of p
+            for i in range(p * p, n + 1, p):
+                primes[i] = False
+        p += 1
+    
+    # Collecting the prime numbers from the list
+    result = [p for p in range(2, n) if primes[p]]
+    
+    return result
+
+# Example usage:
+n = 30
+print(f"Prime numbers up to {n} are: {sieve_of_eratosthenes(n)}")
+```
+
+### Explanation:
+1. **Initialization**: We create a list `primes` of boolean values initialized to `True`, representing that all numbers are initially considered prime.
+2. **Marking Non-Primes**: Starting from the first prime number 2, we mark its multiples as non-prime by setting their corresponding indices in the `primes` list to `False`.
+3. **Iterate Over Remaining Numbers**: We continue this process for each subsequent unmarked (prime) number until we have processed all numbers up to \(\sqrt{n}\).
+4. **Collect Primes**: Finally, we collect and return all the prime numbers from the list.
+
+### Example:
+If you run the function with `n = 30`, it will output:
+
+```
+Prime numbers up to 30 are: [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
+```
+
+This implementation is efficient for finding all primes up to a given number `n`.

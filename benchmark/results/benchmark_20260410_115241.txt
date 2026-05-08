@@ -1,0 +1,2055 @@
+LLM Benchmark Report
+Generated: 2026-04-10 11:52:41
+Models tested: deepseek-r1:7b, deepseek-r1:32b, llama3.2:3b, llama3.2:8b, qwen2.5:7b, mistral:7b, qwen2.5:32b, gemma2:27b, mistral-small:22b
+================================================================================
+
+Model: deepseek-r1:7b
+----------------------------------------
+
+  [reasoning] Prompt 1: A bat and a ball cost $1.10 in total. The bat costs $1.00 mo...
+    Total time:          2.81s
+    Time to first token: 1.21s
+    Tokens per second:   160.7
+    Token count:         452
+    Avg GPU0 util:       73.4%
+    Avg GPU1 util:       0.0%
+    Avg GPU0 VRAM:       12214.0MB
+    Avg GPU1 VRAM:       4.0MB
+    Avg power draw:      96.0W
+
+  [reasoning] Prompt 2: If it takes 5 machines 5 minutes to make 5 widgets, how long...
+    Total time:          3.45s
+    Time to first token: 0.92s
+    Tokens per second:   156.94
+    Token count:         542
+    Avg GPU0 util:       75.4%
+    Avg GPU1 util:       0.0%
+    Avg GPU0 VRAM:       12214.0MB
+    Avg GPU1 VRAM:       4.0MB
+    Avg power draw:      132.2W
+
+  [reasoning] Prompt 3: A lily pad doubles in size every day. It takes 48 days to co...
+    Total time:          5.59s
+    Time to first token: 4.22s
+    Tokens per second:   163.66
+    Token count:         915
+    Avg GPU0 util:       74.1%
+    Avg GPU1 util:       0.0%
+    Avg GPU0 VRAM:       12214.0MB
+    Avg GPU1 VRAM:       4.0MB
+    Avg power draw:      135.1W
+
+  [reasoning] Prompt 4: Three friends split a restaurant bill. The bill is $30 so th...
+    Total time:          17.62s
+    Time to first token: 15.49s
+    Tokens per second:   162.74
+    Token count:         2867
+    Avg GPU0 util:       75.7%
+    Avg GPU1 util:       0.0%
+    Avg GPU0 VRAM:       12215.0MB
+    Avg GPU1 VRAM:       4.0MB
+    Avg power draw:      141.1W
+
+  [reasoning] Prompt 5: You have two ropes that each take exactly one hour to burn, ...
+    Total time:          13.66s
+    Time to first token: 12.23s
+    Tokens per second:   170.03
+    Token count:         2322
+    Avg GPU0 util:       78.1%
+    Avg GPU1 util:       0.0%
+    Avg GPU0 VRAM:       12216.0MB
+    Avg GPU1 VRAM:       4.0MB
+    Avg power draw:      148.2W
+
+  [coding] Prompt 1: Write a Python function that finds all prime numbers up to n...
+    Total time:          25.65s
+    Time to first token: 21.92s
+    Tokens per second:   167.03
+    Token count:         4284
+    Avg GPU0 util:       79.8%
+    Avg GPU1 util:       0.0%
+    Avg GPU0 VRAM:       12216.0MB
+    Avg GPU1 VRAM:       4.0MB
+    Avg power draw:      154.1W
+
+  [coding] Prompt 2: Debug this Python code and explain what is wrong: def fibona...
+    Total time:          5.26s
+    Time to first token: 2.48s
+    Tokens per second:   165.68
+    Token count:         872
+    Avg GPU0 util:       75.0%
+    Avg GPU1 util:       0.0%
+    Avg GPU0 VRAM:       12216.0MB
+    Avg GPU1 VRAM:       4.0MB
+    Avg power draw:      151.0W
+
+  [coding] Prompt 3: Write a Python function that takes a list of integers and re...
+    Total time:          24.56s
+    Time to first token: 21.53s
+    Tokens per second:   166.79
+    Token count:         4096
+    Avg GPU0 util:       79.8%
+    Avg GPU1 util:       0.0%
+    Avg GPU0 VRAM:       12216.0MB
+    Avg GPU1 VRAM:       4.0MB
+    Avg power draw:      155.2W
+
+  [coding] Prompt 4: Explain what this code does and identify any potential issue...
+    Total time:          8.89s
+    Time to first token: 5.09s
+    Tokens per second:   166.18
+    Token count:         1478
+    Avg GPU0 util:       76.9%
+    Avg GPU1 util:       0.0%
+    Avg GPU0 VRAM:       12216.0MB
+    Avg GPU1 VRAM:       4.0MB
+    Avg power draw:      152.8W
+
+  [coding] Prompt 5: Write a REST API endpoint in Python using Flask that accepts...
+    Total time:          6.61s
+    Time to first token: 2.34s
+    Tokens per second:   163.89
+    Token count:         1084
+    Avg GPU0 util:       77.0%
+    Avg GPU1 util:       0.0%
+    Avg GPU0 VRAM:       12216.0MB
+    Avg GPU1 VRAM:       4.0MB
+    Avg power draw:      153.3W
+
+  [knowledge] Prompt 1: Explain the difference between supervised, unsupervised, and...
+    Total time:          6.1s
+    Time to first token: 3.23s
+    Tokens per second:   164.06
+    Token count:         1001
+    Avg GPU0 util:       75.6%
+    Avg GPU1 util:       0.0%
+    Avg GPU0 VRAM:       12216.0MB
+    Avg GPU1 VRAM:       4.0MB
+    Avg power draw:      152.1W
+
+  [knowledge] Prompt 2: What is the CAP theorem in distributed systems and what are ...
+    Total time:          6.75s
+    Time to first token: 4.53s
+    Tokens per second:   166.45
+    Token count:         1124
+    Avg GPU0 util:       76.9%
+    Avg GPU1 util:       0.0%
+    Avg GPU0 VRAM:       12218.0MB
+    Avg GPU1 VRAM:       4.0MB
+    Avg power draw:      152.6W
+
+  [knowledge] Prompt 3: Explain how CRISPR-Cas9 gene editing works at a molecular le...
+    Total time:          8.4s
+    Time to first token: 5.89s
+    Tokens per second:   164.27
+    Token count:         1380
+    Avg GPU0 util:       76.0%
+    Avg GPU1 util:       0.0%
+    Avg GPU0 VRAM:       12219.0MB
+    Avg GPU1 VRAM:       4.0MB
+    Avg power draw:      153.7W
+
+  [knowledge] Prompt 4: What were the main causes and consequences of the 2008 finan...
+    Total time:          1.32s
+    Time to first token: 0.16s
+    Tokens per second:   138.12
+    Token count:         182
+    Avg GPU0 util:       58.4%
+    Avg GPU1 util:       0.0%
+    Avg GPU0 VRAM:       12220.0MB
+    Avg GPU1 VRAM:       4.0MB
+    Avg power draw:      136.8W
+
+  [knowledge] Prompt 5: Explain the difference between TCP and UDP protocols and whe...
+    Total time:          4.61s
+    Time to first token: 2.76s
+    Tokens per second:   162.38
+    Token count:         748
+    Avg GPU0 util:       73.5%
+    Avg GPU1 util:       0.0%
+    Avg GPU0 VRAM:       12220.0MB
+    Avg GPU1 VRAM:       4.0MB
+    Avg power draw:      151.4W
+
+  [instruction] Prompt 1: Write a haiku about autumn, then translate it to French, the...
+    Total time:          11.89s
+    Time to first token: 10.69s
+    Tokens per second:   167.77
+    Token count:         1994
+    Avg GPU0 util:       78.2%
+    Avg GPU1 util:       0.0%
+    Avg GPU0 VRAM:       12220.0MB
+    Avg GPU1 VRAM:       4.0MB
+    Avg power draw:      154.2W
+
+  [instruction] Prompt 2: List the planets in our solar system by size from largest to...
+    Total time:          6.6s
+    Time to first token: 5.25s
+    Tokens per second:   164.86
+    Token count:         1088
+    Avg GPU0 util:       77.5%
+    Avg GPU1 util:       0.0%
+    Avg GPU0 VRAM:       12220.0MB
+    Avg GPU1 VRAM:       4.0MB
+    Avg power draw:      153.9W
+
+  [instruction] Prompt 3: Summarize the plot of Romeo and Juliet in exactly 50 words, ...
+    Total time:          6.39s
+    Time to first token: 5.96s
+    Tokens per second:   166.93
+    Token count:         1066
+    Avg GPU0 util:       76.5%
+    Avg GPU1 util:       0.0%
+    Avg GPU0 VRAM:       12220.0MB
+    Avg GPU1 VRAM:       4.0MB
+    Avg power draw:      152.1W
+
+  [instruction] Prompt 4: Give me a recipe for chocolate chip cookies. Format it with ...
+    Total time:          3.92s
+    Time to first token: 1.36s
+    Tokens per second:   162.32
+    Token count:         637
+    Avg GPU0 util:       72.0%
+    Avg GPU1 util:       0.0%
+    Avg GPU0 VRAM:       12220.0MB
+    Avg GPU1 VRAM:       4.0MB
+    Avg power draw:      150.7W
+
+  [instruction] Prompt 5: Write a formal email declining a job offer, then rewrite it ...
+    Total time:          5.74s
+    Time to first token: 3.04s
+    Tokens per second:   168.58
+    Token count:         968
+    Avg GPU0 util:       78.7%
+    Avg GPU1 util:       0.0%
+    Avg GPU0 VRAM:       12220.0MB
+    Avg GPU1 VRAM:       4.0MB
+    Avg power draw:      153.4W
+
+  [context] Prompt 1: Read the following text and answer the questions below it. T...
+    Total time:          3.95s
+    Time to first token: 3.54s
+    Tokens per second:   164.64
+    Token count:         651
+    Avg GPU0 util:       77.8%
+    Avg GPU1 util:       0.0%
+    Avg GPU0 VRAM:       12220.0MB
+    Avg GPU1 VRAM:       4.0MB
+    Avg power draw:      153.5W
+
+  [context] Prompt 2: Read this code and answer the questions: def mystery(lst): i...
+    Total time:          5.09s
+    Time to first token: 3.99s
+    Tokens per second:   163.31
+    Token count:         832
+    Avg GPU0 util:       77.3%
+    Avg GPU1 util:       0.0%
+    Avg GPU0 VRAM:       12220.0MB
+    Avg GPU1 VRAM:       4.0MB
+    Avg power draw:      152.8W
+
+  [context] Prompt 3: Read the following paragraph and identify: 1) the main argum...
+    Total time:          4.28s
+    Time to first token: 1.85s
+    Tokens per second:   165.08
+    Token count:         706
+    Avg GPU0 util:       74.0%
+    Avg GPU1 util:       0.0%
+    Avg GPU0 VRAM:       12220.0MB
+    Avg GPU1 VRAM:       4.0MB
+    Avg power draw:      151.0W
+
+Model: deepseek-r1:32b
+----------------------------------------
+
+  [reasoning] Prompt 1: A bat and a ball cost $1.10 in total. The bat costs $1.00 mo...
+    Total time:          24.96s
+    Time to first token: 19.9s
+    Tokens per second:   16.26
+    Token count:         406
+    Avg GPU0 util:       16.8%
+    Avg GPU1 util:       16.4%
+    Avg GPU0 VRAM:       11059.0MB
+    Avg GPU1 VRAM:       10157.0MB
+    Avg power draw:      100.0W
+
+  [reasoning] Prompt 2: If it takes 5 machines 5 minutes to make 5 widgets, how long...
+    Total time:          10.56s
+    Time to first token: 2.83s
+    Tokens per second:   50.28
+    Token count:         531
+    Avg GPU0 util:       46.1%
+    Avg GPU1 util:       46.0%
+    Avg GPU0 VRAM:       27958.0MB
+    Avg GPU1 VRAM:       26494.0MB
+    Avg power draw:      206.7W
+
+  [reasoning] Prompt 3: A lily pad doubles in size every day. It takes 48 days to co...
+    Total time:          8.55s
+    Time to first token: 2.66s
+    Tokens per second:   49.36
+    Token count:         422
+    Avg GPU0 util:       45.1%
+    Avg GPU1 util:       45.6%
+    Avg GPU0 VRAM:       27958.0MB
+    Avg GPU1 VRAM:       26494.0MB
+    Avg power draw:      206.7W
+
+  [reasoning] Prompt 4: Three friends split a restaurant bill. The bill is $30 so th...
+    Total time:          44.75s
+    Time to first token: 39.73s
+    Tokens per second:   49.98
+    Token count:         2237
+    Avg GPU0 util:       46.3%
+    Avg GPU1 util:       46.0%
+    Avg GPU0 VRAM:       27958.0MB
+    Avg GPU1 VRAM:       26494.0MB
+    Avg power draw:      215.0W
+
+  [reasoning] Prompt 5: You have two ropes that each take exactly one hour to burn, ...
+    Total time:          36.27s
+    Time to first token: 32.63s
+    Tokens per second:   50.43
+    Token count:         1829
+    Avg GPU0 util:       46.5%
+    Avg GPU1 util:       46.4%
+    Avg GPU0 VRAM:       27959.0MB
+    Avg GPU1 VRAM:       26495.0MB
+    Avg power draw:      220.8W
+
+  [coding] Prompt 1: Write a Python function that finds all prime numbers up to n...
+    Total time:          86.57s
+    Time to first token: 75.57s
+    Tokens per second:   49.87
+    Token count:         4317
+    Avg GPU0 util:       46.8%
+    Avg GPU1 util:       46.6%
+    Avg GPU0 VRAM:       27960.0MB
+    Avg GPU1 VRAM:       26496.0MB
+    Avg power draw:      224.1W
+
+  [coding] Prompt 2: Debug this Python code and explain what is wrong: def fibona...
+    Total time:          21.17s
+    Time to first token: 14.78s
+    Tokens per second:   50.3
+    Token count:         1065
+    Avg GPU0 util:       46.4%
+    Avg GPU1 util:       46.3%
+    Avg GPU0 VRAM:       27960.0MB
+    Avg GPU1 VRAM:       26496.0MB
+    Avg power draw:      224.4W
+
+  [coding] Prompt 3: Write a Python function that takes a list of integers and re...
+    Total time:          49.65s
+    Time to first token: 41.54s
+    Tokens per second:   50.27
+    Token count:         2496
+    Avg GPU0 util:       46.6%
+    Avg GPU1 util:       46.6%
+    Avg GPU0 VRAM:       27960.0MB
+    Avg GPU1 VRAM:       26496.0MB
+    Avg power draw:      226.0W
+
+  [coding] Prompt 4: Explain what this code does and identify any potential issue...
+    Total time:          28.89s
+    Time to first token: 20.09s
+    Tokens per second:   50.39
+    Token count:         1456
+    Avg GPU0 util:       46.4%
+    Avg GPU1 util:       46.2%
+    Avg GPU0 VRAM:       27960.0MB
+    Avg GPU1 VRAM:       26496.0MB
+    Avg power draw:      225.8W
+
+  [coding] Prompt 5: Write a REST API endpoint in Python using Flask that accepts...
+    Total time:          29.72s
+    Time to first token: 11.63s
+    Tokens per second:   50.23
+    Token count:         1493
+    Avg GPU0 util:       46.3%
+    Avg GPU1 util:       46.0%
+    Avg GPU0 VRAM:       27960.0MB
+    Avg GPU1 VRAM:       26496.0MB
+    Avg power draw:      225.4W
+
+  [knowledge] Prompt 1: Explain the difference between supervised, unsupervised, and...
+    Total time:          19.48s
+    Time to first token: 10.96s
+    Tokens per second:   50.56
+    Token count:         985
+    Avg GPU0 util:       46.1%
+    Avg GPU1 util:       46.2%
+    Avg GPU0 VRAM:       27960.0MB
+    Avg GPU1 VRAM:       26496.0MB
+    Avg power draw:      225.8W
+
+  [knowledge] Prompt 2: What is the CAP theorem in distributed systems and what are ...
+    Total time:          19.67s
+    Time to first token: 13.87s
+    Tokens per second:   50.18
+    Token count:         987
+    Avg GPU0 util:       46.4%
+    Avg GPU1 util:       46.2%
+    Avg GPU0 VRAM:       27962.0MB
+    Avg GPU1 VRAM:       26498.0MB
+    Avg power draw:      225.9W
+
+  [knowledge] Prompt 3: Explain how CRISPR-Cas9 gene editing works at a molecular le...
+    Total time:          31.78s
+    Time to first token: 21.83s
+    Tokens per second:   50.6
+    Token count:         1608
+    Avg GPU0 util:       46.5%
+    Avg GPU1 util:       46.5%
+    Avg GPU0 VRAM:       27962.0MB
+    Avg GPU1 VRAM:       26498.0MB
+    Avg power draw:      226.5W
+
+  [knowledge] Prompt 4: What were the main causes and consequences of the 2008 finan...
+    Total time:          2.33s
+    Time to first token: 0.25s
+    Tokens per second:   47.25
+    Token count:         110
+    Avg GPU0 util:       43.7%
+    Avg GPU1 util:       44.0%
+    Avg GPU0 VRAM:       27962.0MB
+    Avg GPU1 VRAM:       26498.0MB
+    Avg power draw:      217.6W
+
+  [knowledge] Prompt 5: Explain the difference between TCP and UDP protocols and whe...
+    Total time:          15.85s
+    Time to first token: 10.52s
+    Tokens per second:   50.34
+    Token count:         798
+    Avg GPU0 util:       46.5%
+    Avg GPU1 util:       46.2%
+    Avg GPU0 VRAM:       27962.0MB
+    Avg GPU1 VRAM:       26498.0MB
+    Avg power draw:      226.2W
+
+  [instruction] Prompt 1: Write a haiku about autumn, then translate it to French, the...
+    Total time:          14.74s
+    Time to first token: 10.68s
+    Tokens per second:   50.2
+    Token count:         740
+    Avg GPU0 util:       45.5%
+    Avg GPU1 util:       45.7%
+    Avg GPU0 VRAM:       27962.0MB
+    Avg GPU1 VRAM:       26498.0MB
+    Avg power draw:      224.3W
+
+  [instruction] Prompt 2: List the planets in our solar system by size from largest to...
+    Total time:          19.94s
+    Time to first token: 14.75s
+    Tokens per second:   50.25
+    Token count:         1002
+    Avg GPU0 util:       46.4%
+    Avg GPU1 util:       46.3%
+    Avg GPU0 VRAM:       27962.0MB
+    Avg GPU1 VRAM:       26498.0MB
+    Avg power draw:      226.1W
+
+  [instruction] Prompt 3: Summarize the plot of Romeo and Juliet in exactly 50 words, ...
+    Total time:          21.15s
+    Time to first token: 19.45s
+    Tokens per second:   50.54
+    Token count:         1069
+    Avg GPU0 util:       46.1%
+    Avg GPU1 util:       46.2%
+    Avg GPU0 VRAM:       27962.0MB
+    Avg GPU1 VRAM:       26498.0MB
+    Avg power draw:      226.0W
+
+  [instruction] Prompt 4: Give me a recipe for chocolate chip cookies. Format it with ...
+    Total time:          20.62s
+    Time to first token: 12.67s
+    Tokens per second:   50.43
+    Token count:         1040
+    Avg GPU0 util:       46.4%
+    Avg GPU1 util:       46.4%
+    Avg GPU0 VRAM:       27962.0MB
+    Avg GPU1 VRAM:       26498.0MB
+    Avg power draw:      226.3W
+
+  [instruction] Prompt 5: Write a formal email declining a job offer, then rewrite it ...
+    Total time:          22.72s
+    Time to first token: 10.05s
+    Tokens per second:   50.31
+    Token count:         1143
+    Avg GPU0 util:       46.5%
+    Avg GPU1 util:       46.2%
+    Avg GPU0 VRAM:       27963.0MB
+    Avg GPU1 VRAM:       26499.0MB
+    Avg power draw:      226.3W
+
+  [context] Prompt 1: Read the following text and answer the questions below it. T...
+    Total time:          6.6s
+    Time to first token: 5.52s
+    Tokens per second:   48.31
+    Token count:         319
+    Avg GPU0 util:       44.5%
+    Avg GPU1 util:       45.1%
+    Avg GPU0 VRAM:       27964.0MB
+    Avg GPU1 VRAM:       26500.0MB
+    Avg power draw:      222.2W
+
+  [context] Prompt 2: Read this code and answer the questions: def mystery(lst): i...
+    Total time:          15.98s
+    Time to first token: 11.32s
+    Tokens per second:   49.7
+    Token count:         794
+    Avg GPU0 util:       45.7%
+    Avg GPU1 util:       45.7%
+    Avg GPU0 VRAM:       27964.0MB
+    Avg GPU1 VRAM:       26500.0MB
+    Avg power draw:      224.5W
+
+  [context] Prompt 3: Read the following paragraph and identify: 1) the main argum...
+    Total time:          17.04s
+    Time to first token: 8.19s
+    Tokens per second:   50.07
+    Token count:         853
+    Avg GPU0 util:       46.2%
+    Avg GPU1 util:       45.9%
+    Avg GPU0 VRAM:       27964.0MB
+    Avg GPU1 VRAM:       26500.0MB
+    Avg power draw:      224.7W
+
+Model: llama3.2:3b
+----------------------------------------
+
+  [reasoning] Prompt 1: A bat and a ball cost $1.10 in total. The bat costs $1.00 mo...
+    Total time:          4.38s
+    Time to first token: 3.49s
+    Tokens per second:   50.86
+    Token count:         223
+    Avg GPU0 util:       16.2%
+    Avg GPU1 util:       1.6%
+    Avg GPU0 VRAM:       12822.0MB
+    Avg GPU1 VRAM:       7478.0MB
+    Avg power draw:      105.9W
+
+  [reasoning] Prompt 2: If it takes 5 machines 5 minutes to make 5 widgets, how long...
+    Total time:          0.95s
+    Time to first token: 0.16s
+    Tokens per second:   227.31
+    Token count:         215
+    Avg GPU0 util:       49.0%
+    Avg GPU1 util:       0.0%
+    Avg GPU0 VRAM:       17128.0MB
+    Avg GPU1 VRAM:       4.0MB
+    Avg power draw:      136.0W
+
+  [reasoning] Prompt 3: A lily pad doubles in size every day. It takes 48 days to co...
+    Total time:          2.04s
+    Time to first token: 0.16s
+    Tokens per second:   238.82
+    Token count:         486
+    Avg GPU0 util:       67.0%
+    Avg GPU1 util:       0.0%
+    Avg GPU0 VRAM:       17128.0MB
+    Avg GPU1 VRAM:       4.0MB
+    Avg power draw:      145.4W
+
+  [reasoning] Prompt 4: Three friends split a restaurant bill. The bill is $30 so th...
+    Total time:          2.5s
+    Time to first token: 0.16s
+    Tokens per second:   261.43
+    Token count:         654
+    Avg GPU0 util:       66.1%
+    Avg GPU1 util:       0.0%
+    Avg GPU0 VRAM:       17128.0MB
+    Avg GPU1 VRAM:       4.0MB
+    Avg power draw:      141.8W
+
+  [reasoning] Prompt 5: You have two ropes that each take exactly one hour to burn, ...
+    Total time:          1.12s
+    Time to first token: 0.16s
+    Tokens per second:   204.11
+    Token count:         229
+    Avg GPU0 util:       60.9%
+    Avg GPU1 util:       0.0%
+    Avg GPU0 VRAM:       17128.0MB
+    Avg GPU1 VRAM:       4.0MB
+    Avg power draw:      136.1W
+
+  [coding] Prompt 1: Write a Python function that finds all prime numbers up to n...
+    Total time:          0.84s
+    Time to first token: 0.17s
+    Tokens per second:   185.63
+    Token count:         156
+    Avg GPU0 util:       41.7%
+    Avg GPU1 util:       0.0%
+    Avg GPU0 VRAM:       17128.0MB
+    Avg GPU1 VRAM:       4.0MB
+    Avg power draw:      124.7W
+
+  [coding] Prompt 2: Debug this Python code and explain what is wrong: def fibona...
+    Total time:          1.26s
+    Time to first token: 0.16s
+    Tokens per second:   245.42
+    Token count:         310
+    Avg GPU0 util:       59.2%
+    Avg GPU1 util:       0.0%
+    Avg GPU0 VRAM:       17128.0MB
+    Avg GPU1 VRAM:       4.0MB
+    Avg power draw:      124.2W
+
+  [coding] Prompt 3: Write a Python function that takes a list of integers and re...
+    Total time:          0.7s
+    Time to first token: 0.16s
+    Tokens per second:   189.65
+    Token count:         133
+    Avg GPU0 util:       45.6%
+    Avg GPU1 util:       0.0%
+    Avg GPU0 VRAM:       17128.0MB
+    Avg GPU1 VRAM:       4.0MB
+    Avg power draw:      137.6W
+
+  [coding] Prompt 4: Explain what this code does and identify any potential issue...
+    Total time:          2.39s
+    Time to first token: 0.16s
+    Tokens per second:   243.96
+    Token count:         582
+    Avg GPU0 util:       62.2%
+    Avg GPU1 util:       0.0%
+    Avg GPU0 VRAM:       17128.0MB
+    Avg GPU1 VRAM:       4.0MB
+    Avg power draw:      135.1W
+
+  [coding] Prompt 5: Write a REST API endpoint in Python using Flask that accepts...
+    Total time:          1.96s
+    Time to first token: 0.17s
+    Tokens per second:   242.09
+    Token count:         475
+    Avg GPU0 util:       60.9%
+    Avg GPU1 util:       0.0%
+    Avg GPU0 VRAM:       17128.0MB
+    Avg GPU1 VRAM:       4.0MB
+    Avg power draw:      136.0W
+
+  [knowledge] Prompt 1: Explain the difference between supervised, unsupervised, and...
+    Total time:          2.53s
+    Time to first token: 0.16s
+    Tokens per second:   258.59
+    Token count:         654
+    Avg GPU0 util:       64.2%
+    Avg GPU1 util:       0.0%
+    Avg GPU0 VRAM:       17128.0MB
+    Avg GPU1 VRAM:       4.0MB
+    Avg power draw:      137.5W
+
+  [knowledge] Prompt 2: What is the CAP theorem in distributed systems and what are ...
+    Total time:          1.68s
+    Time to first token: 0.16s
+    Tokens per second:   251.75
+    Token count:         424
+    Avg GPU0 util:       66.0%
+    Avg GPU1 util:       0.0%
+    Avg GPU0 VRAM:       17128.0MB
+    Avg GPU1 VRAM:       4.0MB
+    Avg power draw:      139.7W
+
+  [knowledge] Prompt 3: Explain how CRISPR-Cas9 gene editing works at a molecular le...
+    Total time:          2.81s
+    Time to first token: 0.16s
+    Tokens per second:   260.99
+    Token count:         734
+    Avg GPU0 util:       70.2%
+    Avg GPU1 util:       0.0%
+    Avg GPU0 VRAM:       17128.0MB
+    Avg GPU1 VRAM:       4.0MB
+    Avg power draw:      144.3W
+
+  [knowledge] Prompt 4: What were the main causes and consequences of the 2008 finan...
+    Total time:          2.53s
+    Time to first token: 0.16s
+    Tokens per second:   257.5
+    Token count:         651
+    Avg GPU0 util:       67.6%
+    Avg GPU1 util:       0.0%
+    Avg GPU0 VRAM:       17128.0MB
+    Avg GPU1 VRAM:       4.0MB
+    Avg power draw:      141.3W
+
+  [knowledge] Prompt 5: Explain the difference between TCP and UDP protocols and whe...
+    Total time:          2.1s
+    Time to first token: 0.16s
+    Tokens per second:   243.09
+    Token count:         511
+    Avg GPU0 util:       63.2%
+    Avg GPU1 util:       0.0%
+    Avg GPU0 VRAM:       17130.0MB
+    Avg GPU1 VRAM:       4.0MB
+    Avg power draw:      140.0W
+
+  [instruction] Prompt 1: Write a haiku about autumn, then translate it to French, the...
+    Total time:          1.26s
+    Time to first token: 0.16s
+    Tokens per second:   237.1
+    Token count:         299
+    Avg GPU0 util:       58.2%
+    Avg GPU1 util:       0.0%
+    Avg GPU0 VRAM:       17130.0MB
+    Avg GPU1 VRAM:       4.0MB
+    Avg power draw:      132.0W
+
+  [instruction] Prompt 2: List the planets in our solar system by size from largest to...
+    Total time:          0.98s
+    Time to first token: 0.16s
+    Tokens per second:   213.4
+    Token count:         210
+    Avg GPU0 util:       60.9%
+    Avg GPU1 util:       0.0%
+    Avg GPU0 VRAM:       17130.0MB
+    Avg GPU1 VRAM:       4.0MB
+    Avg power draw:      134.5W
+
+  [instruction] Prompt 3: Summarize the plot of Romeo and Juliet in exactly 50 words, ...
+    Total time:          0.56s
+    Time to first token: 0.16s
+    Tokens per second:   131.43
+    Token count:         73
+    Avg GPU0 util:       47.2%
+    Avg GPU1 util:       0.0%
+    Avg GPU0 VRAM:       17130.0MB
+    Avg GPU1 VRAM:       4.0MB
+    Avg power draw:      128.6W
+
+  [instruction] Prompt 4: Give me a recipe for chocolate chip cookies. Format it with ...
+    Total time:          1.69s
+    Time to first token: 0.17s
+    Tokens per second:   238.95
+    Token count:         403
+    Avg GPU0 util:       60.3%
+    Avg GPU1 util:       0.0%
+    Avg GPU0 VRAM:       17132.0MB
+    Avg GPU1 VRAM:       4.0MB
+    Avg power draw:      126.2W
+
+  [instruction] Prompt 5: Write a formal email declining a job offer, then rewrite it ...
+    Total time:          1.13s
+    Time to first token: 0.16s
+    Tokens per second:   231.75
+    Token count:         261
+    Avg GPU0 util:       50.8%
+    Avg GPU1 util:       0.0%
+    Avg GPU0 VRAM:       17132.0MB
+    Avg GPU1 VRAM:       4.0MB
+    Avg power draw:      131.6W
+
+  [context] Prompt 1: Read the following text and answer the questions below it. T...
+    Total time:          0.56s
+    Time to first token: 0.17s
+    Tokens per second:   127.7
+    Token count:         71
+    Avg GPU0 util:       52.8%
+    Avg GPU1 util:       0.0%
+    Avg GPU0 VRAM:       17132.0MB
+    Avg GPU1 VRAM:       4.0MB
+    Avg power draw:      136.2W
+
+  [context] Prompt 2: Read this code and answer the questions: def mystery(lst): i...
+    Total time:          1.13s
+    Time to first token: 0.17s
+    Tokens per second:   225.57
+    Token count:         254
+    Avg GPU0 util:       54.9%
+    Avg GPU1 util:       0.0%
+    Avg GPU0 VRAM:       17132.0MB
+    Avg GPU1 VRAM:       4.0MB
+    Avg power draw:      118.7W
+
+  [context] Prompt 3: Read the following paragraph and identify: 1) the main argum...
+    Total time:          1.26s
+    Time to first token: 0.17s
+    Tokens per second:   221.37
+    Token count:         280
+    Avg GPU0 util:       61.2%
+    Avg GPU1 util:       0.0%
+    Avg GPU0 VRAM:       17132.0MB
+    Avg GPU1 VRAM:       4.0MB
+    Avg power draw:      134.5W
+
+Model: llama3.2:8b
+----------------------------------------
+
+Model: qwen2.5:7b
+----------------------------------------
+
+  [reasoning] Prompt 1: A bat and a ball cost $1.10 in total. The bat costs $1.00 mo...
+    Total time:          5.15s
+    Time to first token: 3.6s
+    Tokens per second:   51.05
+    Token count:         263
+    Avg GPU0 util:       0.0%
+    Avg GPU1 util:       24.0%
+    Avg GPU0 VRAM:       17228.0MB
+    Avg GPU1 VRAM:       3038.0MB
+    Avg power draw:      94.1W
+
+  [reasoning] Prompt 2: If it takes 5 machines 5 minutes to make 5 widgets, how long...
+    Total time:          1.74s
+    Time to first token: 0.14s
+    Tokens per second:   145.67
+    Token count:         253
+    Avg GPU0 util:       0.0%
+    Avg GPU1 util:       73.9%
+    Avg GPU0 VRAM:       17471.0MB
+    Avg GPU1 VRAM:       6808.0MB
+    Avg power draw:      169.6W
+
+  [reasoning] Prompt 3: A lily pad doubles in size every day. It takes 48 days to co...
+    Total time:          1.34s
+    Time to first token: 0.14s
+    Tokens per second:   138.58
+    Token count:         185
+    Avg GPU0 util:       0.0%
+    Avg GPU1 util:       61.6%
+    Avg GPU0 VRAM:       17471.0MB
+    Avg GPU1 VRAM:       6808.0MB
+    Avg power draw:      159.4W
+
+  [reasoning] Prompt 4: Three friends split a restaurant bill. The bill is $30 so th...
+    Total time:          3.09s
+    Time to first token: 0.14s
+    Tokens per second:   156.97
+    Token count:         485
+    Avg GPU0 util:       0.0%
+    Avg GPU1 util:       71.1%
+    Avg GPU0 VRAM:       17471.0MB
+    Avg GPU1 VRAM:       6808.0MB
+    Avg power draw:      171.2W
+
+  [reasoning] Prompt 5: You have two ropes that each take exactly one hour to burn, ...
+    Total time:          1.08s
+    Time to first token: 0.14s
+    Tokens per second:   143.98
+    Token count:         155
+    Avg GPU0 util:       0.0%
+    Avg GPU1 util:       59.6%
+    Avg GPU0 VRAM:       17471.0MB
+    Avg GPU1 VRAM:       6808.0MB
+    Avg power draw:      158.8W
+
+  [coding] Prompt 1: Write a Python function that finds all prime numbers up to n...
+    Total time:          2.82s
+    Time to first token: 0.15s
+    Tokens per second:   157.25
+    Token count:         444
+    Avg GPU0 util:       0.0%
+    Avg GPU1 util:       72.0%
+    Avg GPU0 VRAM:       17471.0MB
+    Avg GPU1 VRAM:       6808.0MB
+    Avg power draw:      173.0W
+
+  [coding] Prompt 2: Debug this Python code and explain what is wrong: def fibona...
+    Total time:          3.9s
+    Time to first token: 0.14s
+    Tokens per second:   163.51
+    Token count:         637
+    Avg GPU0 util:       0.0%
+    Avg GPU1 util:       74.3%
+    Avg GPU0 VRAM:       17471.0MB
+    Avg GPU1 VRAM:       6810.0MB
+    Avg power draw:      176.2W
+
+  [coding] Prompt 3: Write a Python function that takes a list of integers and re...
+    Total time:          2.91s
+    Time to first token: 0.14s
+    Tokens per second:   158.67
+    Token count:         461
+    Avg GPU0 util:       0.0%
+    Avg GPU1 util:       70.6%
+    Avg GPU0 VRAM:       17471.0MB
+    Avg GPU1 VRAM:       6810.0MB
+    Avg power draw:      166.1W
+
+  [coding] Prompt 4: Explain what this code does and identify any potential issue...
+    Total time:          4.57s
+    Time to first token: 0.14s
+    Tokens per second:   161.83
+    Token count:         740
+    Avg GPU0 util:       0.0%
+    Avg GPU1 util:       75.1%
+    Avg GPU0 VRAM:       17471.0MB
+    Avg GPU1 VRAM:       6810.0MB
+    Avg power draw:      151.5W
+
+  [coding] Prompt 5: Write a REST API endpoint in Python using Flask that accepts...
+    Total time:          4.27s
+    Time to first token: 0.14s
+    Tokens per second:   165.08
+    Token count:         705
+    Avg GPU0 util:       0.0%
+    Avg GPU1 util:       73.9%
+    Avg GPU0 VRAM:       17471.0MB
+    Avg GPU1 VRAM:       6810.0MB
+    Avg power draw:      149.7W
+
+  [knowledge] Prompt 1: Explain the difference between supervised, unsupervised, and...
+    Total time:          3.84s
+    Time to first token: 0.14s
+    Tokens per second:   168.11
+    Token count:         646
+    Avg GPU0 util:       0.0%
+    Avg GPU1 util:       77.8%
+    Avg GPU0 VRAM:       17471.0MB
+    Avg GPU1 VRAM:       6810.0MB
+    Avg power draw:      153.0W
+
+  [knowledge] Prompt 2: What is the CAP theorem in distributed systems and what are ...
+    Total time:          3.43s
+    Time to first token: 0.14s
+    Tokens per second:   164.92
+    Token count:         566
+    Avg GPU0 util:       0.0%
+    Avg GPU1 util:       75.4%
+    Avg GPU0 VRAM:       17471.0MB
+    Avg GPU1 VRAM:       6810.0MB
+    Avg power draw:      152.2W
+
+  [knowledge] Prompt 3: Explain how CRISPR-Cas9 gene editing works at a molecular le...
+    Total time:          3.57s
+    Time to first token: 0.14s
+    Tokens per second:   165.73
+    Token count:         591
+    Avg GPU0 util:       0.0%
+    Avg GPU1 util:       78.2%
+    Avg GPU0 VRAM:       17471.0MB
+    Avg GPU1 VRAM:       6810.0MB
+    Avg power draw:      154.0W
+
+  [knowledge] Prompt 4: What were the main causes and consequences of the 2008 finan...
+    Total time:          4.28s
+    Time to first token: 0.13s
+    Tokens per second:   161.86
+    Token count:         692
+    Avg GPU0 util:       0.0%
+    Avg GPU1 util:       74.5%
+    Avg GPU0 VRAM:       17471.0MB
+    Avg GPU1 VRAM:       6812.0MB
+    Avg power draw:      152.3W
+
+  [knowledge] Prompt 5: Explain the difference between TCP and UDP protocols and whe...
+    Total time:          3.28s
+    Time to first token: 0.13s
+    Tokens per second:   165.42
+    Token count:         542
+    Avg GPU0 util:       0.0%
+    Avg GPU1 util:       71.8%
+    Avg GPU0 VRAM:       17471.0MB
+    Avg GPU1 VRAM:       6812.0MB
+    Avg power draw:      149.4W
+
+  [instruction] Prompt 1: Write a haiku about autumn, then translate it to French, the...
+    Total time:          1.57s
+    Time to first token: 0.14s
+    Tokens per second:   142.22
+    Token count:         223
+    Avg GPU0 util:       0.0%
+    Avg GPU1 util:       71.8%
+    Avg GPU0 VRAM:       17471.0MB
+    Avg GPU1 VRAM:       6812.0MB
+    Avg power draw:      148.8W
+
+  [instruction] Prompt 2: List the planets in our solar system by size from largest to...
+    Total time:          2.0s
+    Time to first token: 0.14s
+    Tokens per second:   156.81
+    Token count:         313
+    Avg GPU0 util:       0.0%
+    Avg GPU1 util:       67.4%
+    Avg GPU0 VRAM:       17471.0MB
+    Avg GPU1 VRAM:       6812.0MB
+    Avg power draw:      143.1W
+
+  [instruction] Prompt 3: Summarize the plot of Romeo and Juliet in exactly 50 words, ...
+    Total time:          0.57s
+    Time to first token: 0.14s
+    Tokens per second:   98.63
+    Token count:         56
+    Avg GPU0 util:       0.0%
+    Avg GPU1 util:       55.2%
+    Avg GPU0 VRAM:       17471.0MB
+    Avg GPU1 VRAM:       6812.0MB
+    Avg power draw:      142.9W
+
+  [instruction] Prompt 4: Give me a recipe for chocolate chip cookies. Format it with ...
+    Total time:          2.42s
+    Time to first token: 0.14s
+    Tokens per second:   162.95
+    Token count:         394
+    Avg GPU0 util:       0.0%
+    Avg GPU1 util:       69.5%
+    Avg GPU0 VRAM:       17471.0MB
+    Avg GPU1 VRAM:       6812.0MB
+    Avg power draw:      142.8W
+
+  [instruction] Prompt 5: Write a formal email declining a job offer, then rewrite it ...
+    Total time:          2.7s
+    Time to first token: 0.14s
+    Tokens per second:   162.38
+    Token count:         439
+    Avg GPU0 util:       0.0%
+    Avg GPU1 util:       75.8%
+    Avg GPU0 VRAM:       17471.0MB
+    Avg GPU1 VRAM:       6812.0MB
+    Avg power draw:      153.5W
+
+  [context] Prompt 1: Read the following text and answer the questions below it. T...
+    Total time:          0.99s
+    Time to first token: 0.15s
+    Tokens per second:   134.22
+    Token count:         133
+    Avg GPU0 util:       0.0%
+    Avg GPU1 util:       64.1%
+    Avg GPU0 VRAM:       17471.0MB
+    Avg GPU1 VRAM:       6812.0MB
+    Avg power draw:      145.7W
+
+  [context] Prompt 2: Read this code and answer the questions: def mystery(lst): i...
+    Total time:          3.26s
+    Time to first token: 0.15s
+    Tokens per second:   163.13
+    Token count:         532
+    Avg GPU0 util:       0.0%
+    Avg GPU1 util:       75.3%
+    Avg GPU0 VRAM:       17471.0MB
+    Avg GPU1 VRAM:       6812.0MB
+    Avg power draw:      151.5W
+
+  [context] Prompt 3: Read the following paragraph and identify: 1) the main argum...
+    Total time:          1.99s
+    Time to first token: 0.14s
+    Tokens per second:   154.2
+    Token count:         307
+    Avg GPU0 util:       0.0%
+    Avg GPU1 util:       73.4%
+    Avg GPU0 VRAM:       17471.0MB
+    Avg GPU1 VRAM:       6812.0MB
+    Avg power draw:      147.7W
+
+Model: mistral:7b
+----------------------------------------
+
+  [reasoning] Prompt 1: A bat and a ball cost $1.10 in total. The bat costs $1.00 mo...
+    Total time:          3.99s
+    Time to first token: 3.04s
+    Tokens per second:   44.61
+    Token count:         178
+    Avg GPU0 util:       0.0%
+    Avg GPU1 util:       24.6%
+    Avg GPU0 VRAM:       17559.0MB
+    Avg GPU1 VRAM:       10529.0MB
+    Avg power draw:      78.7W
+
+  [reasoning] Prompt 2: If it takes 5 machines 5 minutes to make 5 widgets, how long...
+    Total time:          0.54s
+    Time to first token: 0.04s
+    Tokens per second:   160.16
+    Token count:         87
+    Avg GPU0 util:       0.0%
+    Avg GPU1 util:       84.5%
+    Avg GPU0 VRAM:       17810.0MB
+    Avg GPU1 VRAM:       15621.0MB
+    Avg power draw:      174.6W
+
+  [reasoning] Prompt 3: A lily pad doubles in size every day. It takes 48 days to co...
+    Total time:          1.9s
+    Time to first token: 0.04s
+    Tokens per second:   190.71
+    Token count:         362
+    Avg GPU0 util:       0.0%
+    Avg GPU1 util:       84.9%
+    Avg GPU0 VRAM:       17810.0MB
+    Avg GPU1 VRAM:       15621.0MB
+    Avg power draw:      176.1W
+
+  [reasoning] Prompt 4: Three friends split a restaurant bill. The bill is $30 so th...
+    Total time:          1.49s
+    Time to first token: 0.04s
+    Tokens per second:   181.02
+    Token count:         269
+    Avg GPU0 util:       0.0%
+    Avg GPU1 util:       84.4%
+    Avg GPU0 VRAM:       17810.0MB
+    Avg GPU1 VRAM:       15621.0MB
+    Avg power draw:      178.2W
+
+  [reasoning] Prompt 5: You have two ropes that each take exactly one hour to burn, ...
+    Total time:          1.36s
+    Time to first token: 0.04s
+    Tokens per second:   187.3
+    Token count:         254
+    Avg GPU0 util:       0.0%
+    Avg GPU1 util:       88.9%
+    Avg GPU0 VRAM:       17810.0MB
+    Avg GPU1 VRAM:       15621.0MB
+    Avg power draw:      173.5W
+
+  [coding] Prompt 1: Write a Python function that finds all prime numbers up to n...
+    Total time:          1.62s
+    Time to first token: 0.04s
+    Tokens per second:   179.27
+    Token count:         291
+    Avg GPU0 util:       0.0%
+    Avg GPU1 util:       85.5%
+    Avg GPU0 VRAM:       17810.0MB
+    Avg GPU1 VRAM:       15621.0MB
+    Avg power draw:      179.4W
+
+  [coding] Prompt 2: Debug this Python code and explain what is wrong: def fibona...
+    Total time:          1.49s
+    Time to first token: 0.04s
+    Tokens per second:   190.11
+    Token count:         283
+    Avg GPU0 util:       0.0%
+    Avg GPU1 util:       87.0%
+    Avg GPU0 VRAM:       17810.0MB
+    Avg GPU1 VRAM:       15621.0MB
+    Avg power draw:      174.6W
+
+  [coding] Prompt 3: Write a Python function that takes a list of integers and re...
+    Total time:          1.09s
+    Time to first token: 0.04s
+    Tokens per second:   179.65
+    Token count:         195
+    Avg GPU0 util:       0.0%
+    Avg GPU1 util:       92.1%
+    Avg GPU0 VRAM:       17810.0MB
+    Avg GPU1 VRAM:       15621.0MB
+    Avg power draw:      179.5W
+
+  [coding] Prompt 4: Explain what this code does and identify any potential issue...
+    Total time:          2.72s
+    Time to first token: 0.04s
+    Tokens per second:   190.51
+    Token count:         518
+    Avg GPU0 util:       0.0%
+    Avg GPU1 util:       86.7%
+    Avg GPU0 VRAM:       17810.0MB
+    Avg GPU1 VRAM:       15621.0MB
+    Avg power draw:      180.1W
+
+  [coding] Prompt 5: Write a REST API endpoint in Python using Flask that accepts...
+    Total time:          3.66s
+    Time to first token: 0.04s
+    Tokens per second:   190.36
+    Token count:         697
+    Avg GPU0 util:       0.0%
+    Avg GPU1 util:       91.3%
+    Avg GPU0 VRAM:       17810.0MB
+    Avg GPU1 VRAM:       15621.0MB
+    Avg power draw:      181.7W
+
+  [knowledge] Prompt 1: Explain the difference between supervised, unsupervised, and...
+    Total time:          1.95s
+    Time to first token: 0.04s
+    Tokens per second:   183.16
+    Token count:         358
+    Avg GPU0 util:       0.0%
+    Avg GPU1 util:       82.9%
+    Avg GPU0 VRAM:       17810.0MB
+    Avg GPU1 VRAM:       15621.0MB
+    Avg power draw:      169.5W
+
+  [knowledge] Prompt 2: What is the CAP theorem in distributed systems and what are ...
+    Total time:          2.86s
+    Time to first token: 0.03s
+    Tokens per second:   190.18
+    Token count:         544
+    Avg GPU0 util:       0.0%
+    Avg GPU1 util:       88.6%
+    Avg GPU0 VRAM:       17810.0MB
+    Avg GPU1 VRAM:       15621.0MB
+    Avg power draw:      157.2W
+
+  [knowledge] Prompt 3: Explain how CRISPR-Cas9 gene editing works at a molecular le...
+    Total time:          3.16s
+    Time to first token: 0.04s
+    Tokens per second:   195.86
+    Token count:         618
+    Avg GPU0 util:       0.0%
+    Avg GPU1 util:       89.5%
+    Avg GPU0 VRAM:       17810.0MB
+    Avg GPU1 VRAM:       15621.0MB
+    Avg power draw:      156.0W
+
+  [knowledge] Prompt 4: What were the main causes and consequences of the 2008 finan...
+    Total time:          3.01s
+    Time to first token: 0.03s
+    Tokens per second:   190.41
+    Token count:         573
+    Avg GPU0 util:       0.0%
+    Avg GPU1 util:       89.5%
+    Avg GPU0 VRAM:       17810.0MB
+    Avg GPU1 VRAM:       15621.0MB
+    Avg power draw:      157.9W
+
+  [knowledge] Prompt 5: Explain the difference between TCP and UDP protocols and whe...
+    Total time:          2.3s
+    Time to first token: 0.03s
+    Tokens per second:   193.63
+    Token count:         445
+    Avg GPU0 util:       0.0%
+    Avg GPU1 util:       85.5%
+    Avg GPU0 VRAM:       17810.0MB
+    Avg GPU1 VRAM:       15621.0MB
+    Avg power draw:      154.2W
+
+  [instruction] Prompt 1: Write a haiku about autumn, then translate it to French, the...
+    Total time:          1.01s
+    Time to first token: 0.03s
+    Tokens per second:   177.09
+    Token count:         178
+    Avg GPU0 util:       0.0%
+    Avg GPU1 util:       82.4%
+    Avg GPU0 VRAM:       17810.0MB
+    Avg GPU1 VRAM:       15621.0MB
+    Avg power draw:      154.5W
+
+  [instruction] Prompt 2: List the planets in our solar system by size from largest to...
+    Total time:          1.29s
+    Time to first token: 0.04s
+    Tokens per second:   185.67
+    Token count:         239
+    Avg GPU0 util:       0.0%
+    Avg GPU1 util:       80.3%
+    Avg GPU0 VRAM:       17810.0MB
+    Avg GPU1 VRAM:       15623.0MB
+    Avg power draw:      151.2W
+
+  [instruction] Prompt 3: Summarize the plot of Romeo and Juliet in exactly 50 words, ...
+    Total time:          0.43s
+    Time to first token: 0.04s
+    Tokens per second:   174.36
+    Token count:         75
+    Avg GPU0 util:       0.0%
+    Avg GPU1 util:       64.3%
+    Avg GPU0 VRAM:       17810.0MB
+    Avg GPU1 VRAM:       15625.0MB
+    Avg power draw:      151.9W
+
+  [instruction] Prompt 4: Give me a recipe for chocolate chip cookies. Format it with ...
+    Total time:          2.0s
+    Time to first token: 0.04s
+    Tokens per second:   185.58
+    Token count:         372
+    Avg GPU0 util:       0.0%
+    Avg GPU1 util:       88.5%
+    Avg GPU0 VRAM:       17810.0MB
+    Avg GPU1 VRAM:       15625.0MB
+    Avg power draw:      155.7W
+
+  [instruction] Prompt 5: Write a formal email declining a job offer, then rewrite it ...
+    Total time:          3.88s
+    Time to first token: 0.04s
+    Tokens per second:   188.48
+    Token count:         731
+    Avg GPU0 util:       0.0%
+    Avg GPU1 util:       87.4%
+    Avg GPU0 VRAM:       17810.0MB
+    Avg GPU1 VRAM:       15625.0MB
+    Avg power draw:      156.1W
+
+  [context] Prompt 1: Read the following text and answer the questions below it. T...
+    Total time:          0.57s
+    Time to first token: 0.05s
+    Tokens per second:   136.1
+    Token count:         77
+    Avg GPU0 util:       0.0%
+    Avg GPU1 util:       65.5%
+    Avg GPU0 VRAM:       17810.0MB
+    Avg GPU1 VRAM:       15625.0MB
+    Avg power draw:      149.7W
+
+  [context] Prompt 2: Read this code and answer the questions: def mystery(lst): i...
+    Total time:          1.57s
+    Time to first token: 0.05s
+    Tokens per second:   177.01
+    Token count:         278
+    Avg GPU0 util:       0.0%
+    Avg GPU1 util:       83.6%
+    Avg GPU0 VRAM:       17810.0MB
+    Avg GPU1 VRAM:       15625.0MB
+    Avg power draw:      146.6W
+
+  [context] Prompt 3: Read the following paragraph and identify: 1) the main argum...
+    Total time:          1.0s
+    Time to first token: 0.04s
+    Tokens per second:   184.27
+    Token count:         185
+    Avg GPU0 util:       0.0%
+    Avg GPU1 util:       80.1%
+    Avg GPU0 VRAM:       17810.0MB
+    Avg GPU1 VRAM:       15625.0MB
+    Avg power draw:      146.9W
+
+Model: qwen2.5:32b
+----------------------------------------
+
+  [reasoning] Prompt 1: A bat and a ball cost $1.10 in total. The bat costs $1.00 mo...
+    Total time:          16.67s
+    Time to first token: 11.12s
+    Tokens per second:   16.97
+    Token count:         283
+    Avg GPU0 util:       15.8%
+    Avg GPU1 util:       18.8%
+    Avg GPU0 VRAM:       23806.0MB
+    Avg GPU1 VRAM:       22771.0MB
+    Avg power draw:      114.3W
+
+  [reasoning] Prompt 2: If it takes 5 machines 5 minutes to make 5 widgets, how long...
+    Total time:          4.94s
+    Time to first token: 0.17s
+    Tokens per second:   49.0
+    Token count:         242
+    Avg GPU0 util:       40.9%
+    Avg GPU1 util:       48.6%
+    Avg GPU0 VRAM:       30808.0MB
+    Avg GPU1 VRAM:       31246.0MB
+    Avg power draw:      211.6W
+
+  [reasoning] Prompt 3: A lily pad doubles in size every day. It takes 48 days to co...
+    Total time:          3.02s
+    Time to first token: 0.17s
+    Tokens per second:   46.43
+    Token count:         140
+    Avg GPU0 util:       40.0%
+    Avg GPU1 util:       48.8%
+    Avg GPU0 VRAM:       30808.0MB
+    Avg GPU1 VRAM:       31246.0MB
+    Avg power draw:      209.2W
+
+  [reasoning] Prompt 4: Three friends split a restaurant bill. The bill is $30 so th...
+    Total time:          5.91s
+    Time to first token: 0.18s
+    Tokens per second:   49.22
+    Token count:         291
+    Avg GPU0 util:       40.5%
+    Avg GPU1 util:       48.6%
+    Avg GPU0 VRAM:       30808.0MB
+    Avg GPU1 VRAM:       31246.0MB
+    Avg power draw:      212.5W
+
+  [reasoning] Prompt 5: You have two ropes that each take exactly one hour to burn, ...
+    Total time:          4.12s
+    Time to first token: 0.17s
+    Tokens per second:   47.61
+    Token count:         196
+    Avg GPU0 util:       41.4%
+    Avg GPU1 util:       47.9%
+    Avg GPU0 VRAM:       30808.0MB
+    Avg GPU1 VRAM:       31246.0MB
+    Avg power draw:      214.1W
+
+  [coding] Prompt 1: Write a Python function that finds all prime numbers up to n...
+    Total time:          6.47s
+    Time to first token: 0.18s
+    Tokens per second:   48.87
+    Token count:         316
+    Avg GPU0 util:       41.1%
+    Avg GPU1 util:       48.0%
+    Avg GPU0 VRAM:       30808.0MB
+    Avg GPU1 VRAM:       31246.0MB
+    Avg power draw:      214.7W
+
+  [coding] Prompt 2: Debug this Python code and explain what is wrong: def fibona...
+    Total time:          8.35s
+    Time to first token: 0.17s
+    Tokens per second:   49.56
+    Token count:         414
+    Avg GPU0 util:       41.6%
+    Avg GPU1 util:       49.8%
+    Avg GPU0 VRAM:       30810.0MB
+    Avg GPU1 VRAM:       31248.0MB
+    Avg power draw:      218.5W
+
+  [coding] Prompt 3: Write a Python function that takes a list of integers and re...
+    Total time:          8.13s
+    Time to first token: 0.17s
+    Tokens per second:   49.33
+    Token count:         401
+    Avg GPU0 util:       40.8%
+    Avg GPU1 util:       48.8%
+    Avg GPU0 VRAM:       30810.0MB
+    Avg GPU1 VRAM:       31248.0MB
+    Avg power draw:      218.2W
+
+  [coding] Prompt 4: Explain what this code does and identify any potential issue...
+    Total time:          11.98s
+    Time to first token: 0.17s
+    Tokens per second:   50.01
+    Token count:         599
+    Avg GPU0 util:       41.8%
+    Avg GPU1 util:       49.9%
+    Avg GPU0 VRAM:       30810.0MB
+    Avg GPU1 VRAM:       31248.0MB
+    Avg power draw:      220.7W
+
+  [coding] Prompt 5: Write a REST API endpoint in Python using Flask that accepts...
+    Total time:          13.23s
+    Time to first token: 0.16s
+    Tokens per second:   49.68
+    Token count:         657
+    Avg GPU0 util:       41.7%
+    Avg GPU1 util:       49.9%
+    Avg GPU0 VRAM:       30810.0MB
+    Avg GPU1 VRAM:       31248.0MB
+    Avg power draw:      222.4W
+
+  [knowledge] Prompt 1: Explain the difference between supervised, unsupervised, and...
+    Total time:          10.6s
+    Time to first token: 0.16s
+    Tokens per second:   49.51
+    Token count:         525
+    Avg GPU0 util:       41.4%
+    Avg GPU1 util:       49.5%
+    Avg GPU0 VRAM:       30810.0MB
+    Avg GPU1 VRAM:       31248.0MB
+    Avg power draw:      221.7W
+
+  [knowledge] Prompt 2: What is the CAP theorem in distributed systems and what are ...
+    Total time:          10.04s
+    Time to first token: 0.16s
+    Tokens per second:   50.01
+    Token count:         502
+    Avg GPU0 util:       41.5%
+    Avg GPU1 util:       49.6%
+    Avg GPU0 VRAM:       30812.0MB
+    Avg GPU1 VRAM:       31250.0MB
+    Avg power draw:      222.7W
+
+  [knowledge] Prompt 3: Explain how CRISPR-Cas9 gene editing works at a molecular le...
+    Total time:          13.04s
+    Time to first token: 0.16s
+    Tokens per second:   50.3
+    Token count:         656
+    Avg GPU0 util:       42.3%
+    Avg GPU1 util:       49.8%
+    Avg GPU0 VRAM:       30812.0MB
+    Avg GPU1 VRAM:       31250.0MB
+    Avg power draw:      225.5W
+
+  [knowledge] Prompt 4: What were the main causes and consequences of the 2008 finan...
+    Total time:          11.96s
+    Time to first token: 0.16s
+    Tokens per second:   49.99
+    Token count:         598
+    Avg GPU0 util:       42.0%
+    Avg GPU1 util:       50.0%
+    Avg GPU0 VRAM:       30812.0MB
+    Avg GPU1 VRAM:       31250.0MB
+    Avg power draw:      225.9W
+
+  [knowledge] Prompt 5: Explain the difference between TCP and UDP protocols and whe...
+    Total time:          10.16s
+    Time to first token: 0.16s
+    Tokens per second:   49.6
+    Token count:         504
+    Avg GPU0 util:       42.1%
+    Avg GPU1 util:       49.4%
+    Avg GPU0 VRAM:       30812.0MB
+    Avg GPU1 VRAM:       31250.0MB
+    Avg power draw:      225.6W
+
+  [instruction] Prompt 1: Write a haiku about autumn, then translate it to French, the...
+    Total time:          5.08s
+    Time to first token: 0.16s
+    Tokens per second:   48.47
+    Token count:         246
+    Avg GPU0 util:       40.4%
+    Avg GPU1 util:       48.4%
+    Avg GPU0 VRAM:       30812.0MB
+    Avg GPU1 VRAM:       31250.0MB
+    Avg power draw:      221.8W
+
+  [instruction] Prompt 2: List the planets in our solar system by size from largest to...
+    Total time:          4.66s
+    Time to first token: 0.16s
+    Tokens per second:   48.93
+    Token count:         228
+    Avg GPU0 util:       39.5%
+    Avg GPU1 util:       47.8%
+    Avg GPU0 VRAM:       30812.0MB
+    Avg GPU1 VRAM:       31250.0MB
+    Avg power draw:      221.3W
+
+  [instruction] Prompt 3: Summarize the plot of Romeo and Juliet in exactly 50 words, ...
+    Total time:          1.91s
+    Time to first token: 0.16s
+    Tokens per second:   45.98
+    Token count:         88
+    Avg GPU0 util:       39.4%
+    Avg GPU1 util:       44.4%
+    Avg GPU0 VRAM:       30812.0MB
+    Avg GPU1 VRAM:       31250.0MB
+    Avg power draw:      216.2W
+
+  [instruction] Prompt 4: Give me a recipe for chocolate chip cookies. Format it with ...
+    Total time:          6.34s
+    Time to first token: 0.17s
+    Tokens per second:   49.23
+    Token count:         312
+    Avg GPU0 util:       40.9%
+    Avg GPU1 util:       49.0%
+    Avg GPU0 VRAM:       30812.0MB
+    Avg GPU1 VRAM:       31250.0MB
+    Avg power draw:      224.3W
+
+  [instruction] Prompt 5: Write a formal email declining a job offer, then rewrite it ...
+    Total time:          9.05s
+    Time to first token: 0.17s
+    Tokens per second:   49.81
+    Token count:         451
+    Avg GPU0 util:       42.0%
+    Avg GPU1 util:       50.0%
+    Avg GPU0 VRAM:       30812.0MB
+    Avg GPU1 VRAM:       31250.0MB
+    Avg power draw:      225.8W
+
+  [context] Prompt 1: Read the following text and answer the questions below it. T...
+    Total time:          2.63s
+    Time to first token: 0.22s
+    Tokens per second:   45.71
+    Token count:         120
+    Avg GPU0 util:       39.8%
+    Avg GPU1 util:       45.6%
+    Avg GPU0 VRAM:       30812.0MB
+    Avg GPU1 VRAM:       31250.0MB
+    Avg power draw:      218.8W
+
+  [context] Prompt 2: Read this code and answer the questions: def mystery(lst): i...
+    Total time:          8.53s
+    Time to first token: 0.2s
+    Tokens per second:   49.26
+    Token count:         420
+    Avg GPU0 util:       41.4%
+    Avg GPU1 util:       49.4%
+    Avg GPU0 VRAM:       30812.0MB
+    Avg GPU1 VRAM:       31250.0MB
+    Avg power draw:      225.3W
+
+  [context] Prompt 3: Read the following paragraph and identify: 1) the main argum...
+    Total time:          7.69s
+    Time to first token: 0.19s
+    Tokens per second:   49.66
+    Token count:         382
+    Avg GPU0 util:       41.4%
+    Avg GPU1 util:       49.6%
+    Avg GPU0 VRAM:       30812.0MB
+    Avg GPU1 VRAM:       31250.0MB
+    Avg power draw:      224.1W
+
+Model: gemma2:27b
+----------------------------------------
+
+  [reasoning] Prompt 1: A bat and a ball cost $1.10 in total. The bat costs $1.00 mo...
+    Total time:          12.41s
+    Time to first token: 9.2s
+    Tokens per second:   15.15
+    Token count:         188
+    Avg GPU0 util:       11.8%
+    Avg GPU1 util:       14.5%
+    Avg GPU0 VRAM:       24693.0MB
+    Avg GPU1 VRAM:       35751.0MB
+    Avg power draw:      113.7W
+
+  [reasoning] Prompt 2: If it takes 5 machines 5 minutes to make 5 widgets, how long...
+    Total time:          2.04s
+    Time to first token: 0.19s
+    Tokens per second:   52.88
+    Token count:         108
+    Avg GPU0 util:       35.7%
+    Avg GPU1 util:       44.2%
+    Avg GPU0 VRAM:       22662.0MB
+    Avg GPU1 VRAM:       42064.0MB
+    Avg power draw:      189.7W
+
+  [reasoning] Prompt 3: A lily pad doubles in size every day. It takes 48 days to co...
+    Total time:          1.78s
+    Time to first token: 0.18s
+    Tokens per second:   50.46
+    Token count:         90
+    Avg GPU0 util:       34.5%
+    Avg GPU1 util:       43.0%
+    Avg GPU0 VRAM:       22664.0MB
+    Avg GPU1 VRAM:       42064.0MB
+    Avg power draw:      188.9W
+
+  [reasoning] Prompt 4: Three friends split a restaurant bill. The bill is $30 so th...
+    Total time:          2.44s
+    Time to first token: 0.2s
+    Tokens per second:   53.24
+    Token count:         130
+    Avg GPU0 util:       35.8%
+    Avg GPU1 util:       41.5%
+    Avg GPU0 VRAM:       22664.0MB
+    Avg GPU1 VRAM:       42064.0MB
+    Avg power draw:      189.0W
+
+  [reasoning] Prompt 5: You have two ropes that each take exactly one hour to burn, ...
+    Total time:          3.27s
+    Time to first token: 0.19s
+    Tokens per second:   54.72
+    Token count:         179
+    Avg GPU0 util:       34.9%
+    Avg GPU1 util:       45.4%
+    Avg GPU0 VRAM:       22664.0MB
+    Avg GPU1 VRAM:       42064.0MB
+    Avg power draw:      193.0W
+
+  [coding] Prompt 1: Write a Python function that finds all prime numbers up to n...
+    Total time:          8.5s
+    Time to first token: 0.19s
+    Tokens per second:   56.33
+    Token count:         479
+    Avg GPU0 util:       37.5%
+    Avg GPU1 util:       46.3%
+    Avg GPU0 VRAM:       22664.0MB
+    Avg GPU1 VRAM:       42066.0MB
+    Avg power draw:      196.8W
+
+  [coding] Prompt 2: Debug this Python code and explain what is wrong: def fibona...
+    Total time:          9.08s
+    Time to first token: 0.2s
+    Tokens per second:   56.72
+    Token count:         515
+    Avg GPU0 util:       36.9%
+    Avg GPU1 util:       46.2%
+    Avg GPU0 VRAM:       22664.0MB
+    Avg GPU1 VRAM:       42066.0MB
+    Avg power draw:      196.6W
+
+  [coding] Prompt 3: Write a Python function that takes a list of integers and re...
+    Total time:          9.1s
+    Time to first token: 0.18s
+    Tokens per second:   56.4
+    Token count:         513
+    Avg GPU0 util:       37.8%
+    Avg GPU1 util:       46.2%
+    Avg GPU0 VRAM:       22664.0MB
+    Avg GPU1 VRAM:       42066.0MB
+    Avg power draw:      197.7W
+
+  [coding] Prompt 4: Explain what this code does and identify any potential issue...
+    Total time:          9.63s
+    Time to first token: 0.2s
+    Tokens per second:   56.57
+    Token count:         545
+    Avg GPU0 util:       37.5%
+    Avg GPU1 util:       45.8%
+    Avg GPU0 VRAM:       22664.0MB
+    Avg GPU1 VRAM:       42066.0MB
+    Avg power draw:      196.8W
+
+  [coding] Prompt 5: Write a REST API endpoint in Python using Flask that accepts...
+    Total time:          13.58s
+    Time to first token: 0.18s
+    Tokens per second:   56.92
+    Token count:         773
+    Avg GPU0 util:       37.5%
+    Avg GPU1 util:       46.9%
+    Avg GPU0 VRAM:       22639.0MB
+    Avg GPU1 VRAM:       41575.0MB
+    Avg power draw:      199.1W
+
+  [knowledge] Prompt 1: Explain the difference between supervised, unsupervised, and...
+    Total time:          10.34s
+    Time to first token: 0.18s
+    Tokens per second:   56.55
+    Token count:         585
+    Avg GPU0 util:       37.5%
+    Avg GPU1 util:       46.1%
+    Avg GPU0 VRAM:       22325.0MB
+    Avg GPU1 VRAM:       35259.0MB
+    Avg power draw:      198.0W
+
+  [knowledge] Prompt 2: What is the CAP theorem in distributed systems and what are ...
+    Total time:          7.43s
+    Time to first token: 0.18s
+    Tokens per second:   56.95
+    Token count:         423
+    Avg GPU0 util:       37.4%
+    Avg GPU1 util:       46.5%
+    Avg GPU0 VRAM:       22326.0MB
+    Avg GPU1 VRAM:       35260.0MB
+    Avg power draw:      197.5W
+
+  [knowledge] Prompt 3: Explain how CRISPR-Cas9 gene editing works at a molecular le...
+    Total time:          9.35s
+    Time to first token: 0.18s
+    Tokens per second:   57.63
+    Token count:         539
+    Avg GPU0 util:       38.3%
+    Avg GPU1 util:       46.9%
+    Avg GPU0 VRAM:       22326.0MB
+    Avg GPU1 VRAM:       35260.0MB
+    Avg power draw:      200.2W
+
+  [knowledge] Prompt 4: What were the main causes and consequences of the 2008 finan...
+    Total time:          11.78s
+    Time to first token: 0.18s
+    Tokens per second:   56.73
+    Token count:         668
+    Avg GPU0 util:       37.2%
+    Avg GPU1 util:       46.6%
+    Avg GPU0 VRAM:       22326.0MB
+    Avg GPU1 VRAM:       35260.0MB
+    Avg power draw:      199.0W
+
+  [knowledge] Prompt 5: Explain the difference between TCP and UDP protocols and whe...
+    Total time:          7.66s
+    Time to first token: 0.18s
+    Tokens per second:   55.64
+    Token count:         426
+    Avg GPU0 util:       36.6%
+    Avg GPU1 util:       46.0%
+    Avg GPU0 VRAM:       22213.0MB
+    Avg GPU1 VRAM:       32323.0MB
+    Avg power draw:      197.4W
+
+  [instruction] Prompt 1: Write a haiku about autumn, then translate it to French, the...
+    Total time:          3.17s
+    Time to first token: 0.18s
+    Tokens per second:   53.28
+    Token count:         169
+    Avg GPU0 util:       35.5%
+    Avg GPU1 util:       44.1%
+    Avg GPU0 VRAM:       21987.0MB
+    Avg GPU1 VRAM:       26447.0MB
+    Avg power draw:      190.0W
+
+  [instruction] Prompt 2: List the planets in our solar system by size from largest to...
+    Total time:          3.02s
+    Time to first token: 0.19s
+    Tokens per second:   53.23
+    Token count:         161
+    Avg GPU0 util:       34.3%
+    Avg GPU1 util:       44.9%
+    Avg GPU0 VRAM:       21987.0MB
+    Avg GPU1 VRAM:       26447.0MB
+    Avg power draw:      191.6W
+
+  [instruction] Prompt 3: Summarize the plot of Romeo and Juliet in exactly 50 words, ...
+    Total time:          0.96s
+    Time to first token: 0.19s
+    Tokens per second:   47.1
+    Token count:         45
+    Avg GPU0 util:       29.3%
+    Avg GPU1 util:       36.1%
+    Avg GPU0 VRAM:       21987.0MB
+    Avg GPU1 VRAM:       26447.0MB
+    Avg power draw:      177.5W
+
+  [instruction] Prompt 4: Give me a recipe for chocolate chip cookies. Format it with ...
+    Total time:          5.65s
+    Time to first token: 0.19s
+    Tokens per second:   55.73
+    Token count:         315
+    Avg GPU0 util:       36.8%
+    Avg GPU1 util:       46.3%
+    Avg GPU0 VRAM:       21987.0MB
+    Avg GPU1 VRAM:       26447.0MB
+    Avg power draw:      195.7W
+
+  [instruction] Prompt 5: Write a formal email declining a job offer, then rewrite it ...
+    Total time:          6.37s
+    Time to first token: 0.19s
+    Tokens per second:   55.71
+    Token count:         355
+    Avg GPU0 util:       37.2%
+    Avg GPU1 util:       45.0%
+    Avg GPU0 VRAM:       21987.0MB
+    Avg GPU1 VRAM:       26447.0MB
+    Avg power draw:      196.0W
+
+  [context] Prompt 1: Read the following text and answer the questions below it. T...
+    Total time:          2.34s
+    Time to first token: 0.22s
+    Tokens per second:   49.57
+    Token count:         116
+    Avg GPU0 util:       35.2%
+    Avg GPU1 util:       44.6%
+    Avg GPU0 VRAM:       21987.0MB
+    Avg GPU1 VRAM:       26447.0MB
+    Avg power draw:      190.0W
+
+  [context] Prompt 2: Read this code and answer the questions: def mystery(lst): i...
+    Total time:          7.07s
+    Time to first token: 0.21s
+    Tokens per second:   55.61
+    Token count:         393
+    Avg GPU0 util:       36.9%
+    Avg GPU1 util:       45.2%
+    Avg GPU0 VRAM:       21987.0MB
+    Avg GPU1 VRAM:       26447.0MB
+    Avg power draw:      195.6W
+
+  [context] Prompt 3: Read the following paragraph and identify: 1) the main argum...
+    Total time:          6.49s
+    Time to first token: 0.2s
+    Tokens per second:   55.63
+    Token count:         361
+    Avg GPU0 util:       37.2%
+    Avg GPU1 util:       46.4%
+    Avg GPU0 VRAM:       21987.0MB
+    Avg GPU1 VRAM:       26447.0MB
+    Avg power draw:      196.6W
+
+Model: mistral-small:22b
+----------------------------------------
+
+  [reasoning] Prompt 1: A bat and a ball cost $1.10 in total. The bat costs $1.00 mo...
+    Total time:          12.34s
+    Time to first token: 9.58s
+    Tokens per second:   17.26
+    Token count:         213
+    Avg GPU0 util:       12.5%
+    Avg GPU1 util:       13.2%
+    Avg GPU0 VRAM:       9334.0MB
+    Avg GPU1 VRAM:       9784.0MB
+    Avg power draw:      98.0W
+
+  [reasoning] Prompt 2: If it takes 5 machines 5 minutes to make 5 widgets, how long...
+    Total time:          3.59s
+    Time to first token: 0.05s
+    Tokens per second:   78.59
+    Token count:         282
+    Avg GPU0 util:       46.6%
+    Avg GPU1 util:       47.0%
+    Avg GPU0 VRAM:       21994.0MB
+    Avg GPU1 VRAM:       21512.0MB
+    Avg power draw:      208.8W
+
+  [reasoning] Prompt 3: A lily pad doubles in size every day. It takes 48 days to co...
+    Total time:          1.23s
+    Time to first token: 0.05s
+    Tokens per second:   69.98
+    Token count:         86
+    Avg GPU0 util:       47.8%
+    Avg GPU1 util:       46.6%
+    Avg GPU0 VRAM:       21994.0MB
+    Avg GPU1 VRAM:       21512.0MB
+    Avg power draw:      208.1W
+
+  [reasoning] Prompt 4: Three friends split a restaurant bill. The bill is $30 so th...
+    Total time:          2.88s
+    Time to first token: 0.07s
+    Tokens per second:   75.65
+    Token count:         218
+    Avg GPU0 util:       46.0%
+    Avg GPU1 util:       45.1%
+    Avg GPU0 VRAM:       21996.0MB
+    Avg GPU1 VRAM:       21512.0MB
+    Avg power draw:      206.0W
+
+  [reasoning] Prompt 5: You have two ropes that each take exactly one hour to burn, ...
+    Total time:          2.88s
+    Time to first token: 0.05s
+    Tokens per second:   78.19
+    Token count:         225
+    Avg GPU0 util:       46.0%
+    Avg GPU1 util:       45.5%
+    Avg GPU0 VRAM:       21996.0MB
+    Avg GPU1 VRAM:       21512.0MB
+    Avg power draw:      207.1W
+
+  [coding] Prompt 1: Write a Python function that finds all prime numbers up to n...
+    Total time:          7.02s
+    Time to first token: 0.05s
+    Tokens per second:   76.83
+    Token count:         539
+    Avg GPU0 util:       46.6%
+    Avg GPU1 util:       48.3%
+    Avg GPU0 VRAM:       21996.0MB
+    Avg GPU1 VRAM:       21512.0MB
+    Avg power draw:      213.0W
+
+  [coding] Prompt 2: Debug this Python code and explain what is wrong: def fibona...
+    Total time:          7.43s
+    Time to first token: 0.06s
+    Tokens per second:   78.89
+    Token count:         586
+    Avg GPU0 util:       46.4%
+    Avg GPU1 util:       47.3%
+    Avg GPU0 VRAM:       21996.0MB
+    Avg GPU1 VRAM:       21512.0MB
+    Avg power draw:      213.3W
+
+  [coding] Prompt 3: Write a Python function that takes a list of integers and re...
+    Total time:          6.46s
+    Time to first token: 0.05s
+    Tokens per second:   77.73
+    Token count:         502
+    Avg GPU0 util:       46.7%
+    Avg GPU1 util:       48.0%
+    Avg GPU0 VRAM:       21996.0MB
+    Avg GPU1 VRAM:       21512.0MB
+    Avg power draw:      216.4W
+
+  [coding] Prompt 4: Explain what this code does and identify any potential issue...
+    Total time:          10.2s
+    Time to first token: 0.06s
+    Tokens per second:   78.45
+    Token count:         800
+    Avg GPU0 util:       46.4%
+    Avg GPU1 util:       48.1%
+    Avg GPU0 VRAM:       21996.0MB
+    Avg GPU1 VRAM:       21512.0MB
+    Avg power draw:      217.3W
+
+  [coding] Prompt 5: Write a REST API endpoint in Python using Flask that accepts...
+    Total time:          9.79s
+    Time to first token: 0.05s
+    Tokens per second:   78.71
+    Token count:         771
+    Avg GPU0 util:       47.0%
+    Avg GPU1 util:       48.3%
+    Avg GPU0 VRAM:       21996.0MB
+    Avg GPU1 VRAM:       21512.0MB
+    Avg power draw:      219.9W
+
+  [knowledge] Prompt 1: Explain the difference between supervised, unsupervised, and...
+    Total time:          8.95s
+    Time to first token: 0.05s
+    Tokens per second:   78.97
+    Token count:         707
+    Avg GPU0 util:       46.5%
+    Avg GPU1 util:       48.3%
+    Avg GPU0 VRAM:       21996.0MB
+    Avg GPU1 VRAM:       21512.0MB
+    Avg power draw:      219.0W
+
+  [knowledge] Prompt 2: What is the CAP theorem in distributed systems and what are ...
+    Total time:          7.43s
+    Time to first token: 0.05s
+    Tokens per second:   79.32
+    Token count:         589
+    Avg GPU0 util:       46.5%
+    Avg GPU1 util:       47.6%
+    Avg GPU0 VRAM:       21996.0MB
+    Avg GPU1 VRAM:       21512.0MB
+    Avg power draw:      219.2W
+
+  [knowledge] Prompt 3: Explain how CRISPR-Cas9 gene editing works at a molecular le...
+    Total time:          11.16s
+    Time to first token: 0.05s
+    Tokens per second:   78.82
+    Token count:         880
+    Avg GPU0 util:       47.0%
+    Avg GPU1 util:       48.5%
+    Avg GPU0 VRAM:       21996.0MB
+    Avg GPU1 VRAM:       21512.0MB
+    Avg power draw:      221.2W
+
+  [knowledge] Prompt 4: What were the main causes and consequences of the 2008 finan...
+    Total time:          9.63s
+    Time to first token: 0.05s
+    Tokens per second:   79.25
+    Token count:         763
+    Avg GPU0 util:       46.7%
+    Avg GPU1 util:       47.6%
+    Avg GPU0 VRAM:       21996.0MB
+    Avg GPU1 VRAM:       21512.0MB
+    Avg power draw:      219.4W
+
+  [knowledge] Prompt 5: Explain the difference between TCP and UDP protocols and whe...
+    Total time:          9.09s
+    Time to first token: 0.05s
+    Tokens per second:   78.96
+    Token count:         718
+    Avg GPU0 util:       46.8%
+    Avg GPU1 util:       48.3%
+    Avg GPU0 VRAM:       21998.0MB
+    Avg GPU1 VRAM:       21514.0MB
+    Avg power draw:      220.0W
+
+  [instruction] Prompt 1: Write a haiku about autumn, then translate it to French, the...
+    Total time:          4.24s
+    Time to first token: 0.05s
+    Tokens per second:   77.08
+    Token count:         327
+    Avg GPU0 util:       45.9%
+    Avg GPU1 util:       47.1%
+    Avg GPU0 VRAM:       21998.0MB
+    Avg GPU1 VRAM:       21514.0MB
+    Avg power draw:      217.6W
+
+  [instruction] Prompt 2: List the planets in our solar system by size from largest to...
+    Total time:          3.71s
+    Time to first token: 0.05s
+    Tokens per second:   78.74
+    Token count:         292
+    Avg GPU0 util:       45.7%
+    Avg GPU1 util:       46.4%
+    Avg GPU0 VRAM:       21998.0MB
+    Avg GPU1 VRAM:       21514.0MB
+    Avg power draw:      214.1W
+
+  [instruction] Prompt 3: Summarize the plot of Romeo and Juliet in exactly 50 words, ...
+    Total time:          1.64s
+    Time to first token: 0.05s
+    Tokens per second:   77.37
+    Token count:         127
+    Avg GPU0 util:       47.1%
+    Avg GPU1 util:       46.3%
+    Avg GPU0 VRAM:       21998.0MB
+    Avg GPU1 VRAM:       21514.0MB
+    Avg power draw:      215.7W
+
+  [instruction] Prompt 4: Give me a recipe for chocolate chip cookies. Format it with ...
+    Total time:          5.63s
+    Time to first token: 0.05s
+    Tokens per second:   77.81
+    Token count:         438
+    Avg GPU0 util:       46.6%
+    Avg GPU1 util:       47.7%
+    Avg GPU0 VRAM:       21998.0MB
+    Avg GPU1 VRAM:       21514.0MB
+    Avg power draw:      218.7W
+
+  [instruction] Prompt 5: Write a formal email declining a job offer, then rewrite it ...
+    Total time:          7.29s
+    Time to first token: 0.05s
+    Tokens per second:   77.32
+    Token count:         564
+    Avg GPU0 util:       45.8%
+    Avg GPU1 util:       47.8%
+    Avg GPU0 VRAM:       21998.0MB
+    Avg GPU1 VRAM:       21514.0MB
+    Avg power draw:      217.3W
+
+  [context] Prompt 1: Read the following text and answer the questions below it. T...
+    Total time:          1.52s
+    Time to first token: 0.09s
+    Tokens per second:   74.54
+    Token count:         113
+    Avg GPU0 util:       44.4%
+    Avg GPU1 util:       48.7%
+    Avg GPU0 VRAM:       21998.0MB
+    Avg GPU1 VRAM:       21514.0MB
+    Avg power draw:      213.3W
+
+  [context] Prompt 2: Read this code and answer the questions: def mystery(lst): i...
+    Total time:          6.19s
+    Time to first token: 0.07s
+    Tokens per second:   77.36
+    Token count:         479
+    Avg GPU0 util:       46.6%
+    Avg GPU1 util:       48.3%
+    Avg GPU0 VRAM:       21998.0MB
+    Avg GPU1 VRAM:       21514.0MB
+    Avg power draw:      218.7W
+
+  [context] Prompt 3: Read the following paragraph and identify: 1) the main argum...
+    Total time:          5.08s
+    Time to first token: 0.07s
+    Tokens per second:   78.13
+    Token count:         397
+    Avg GPU0 util:       45.5%
+    Avg GPU1 util:       47.9%
+    Avg GPU0 VRAM:       21998.0MB
+    Avg GPU1 VRAM:       21514.0MB
+    Avg power draw:      216.4W

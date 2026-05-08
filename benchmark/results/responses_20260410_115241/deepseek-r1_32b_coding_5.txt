@@ -1,0 +1,112 @@
+Model: deepseek-r1:32b
+Category: coding
+Prompt: Write a REST API endpoint in Python using Flask that accepts a JSON body with a username and password, validates that neither is empty, and returns a JWT token.
+========================================
+To create a REST API endpoint in Python using Flask that accepts a JSON body with a username and password, validates them, and returns a JWT token, follow these steps:
+
+1. **Install Required Libraries**: Make sure you have `Flask` and `PyJWT` installed.
+
+   ```bash
+   pip install flask python-jose[cryptography]
+   ```
+
+2. **Import Necessary Modules**:
+   
+   - Flask for creating the web service.
+   - JWT for generating tokens.
+   - os for accessing environment variables.
+   - datetime for handling time-related operations.
+
+3. **Set Up Your Flask Application**:
+
+4. **Create the POST Endpoint**:
+
+   ```python
+   from flask import Flask, jsonify, request
+   import jwt
+   import os
+   from datetime import datetime, timedelta
+
+   app = Flask(__name__)
+
+   @app.route('/login', methods=['POST'])
+   def login():
+       data = request.get_json()
+       username = data.get('username')
+       password = data.get('password')
+
+       if not username or not password:
+           return jsonify({'message': 'Username and password are required'}), 400
+
+       # Validate credentials (this is a simplified example)
+       # In a real application, you would check against a database
+       if username == "admin" and password == "password":
+           # Create the JWT payload
+           exp_time = datetime.utcnow() + timedelta(minutes=30)
+           payload = {
+               'username': username,
+               'exp': exp_time.timestamp()
+           }
+
+           # Generate the JWT token using HS256 algorithm with a secret key
+           secret_key = os.environ.get('JWT_SECRET_KEY')
+           if not secret_key:
+               return jsonify({'message': 'Secret key is not set'}), 500
+
+           try:
+               token = jwt.encode(payload, secret_key, algorithm='HS256')
+               return jsonify({'token': token}), 200
+           except Exception as e:
+               return jsonify({'message': str(e)}), 500
+       else:
+           return jsonify({'message': 'Invalid credentials'}), 401
+
+   if __name__ == '__main__':
+       app.run(debug=True)
+   ```
+
+**Explanation of the Code**:
+
+- **Imports**: The necessary modules are imported for creating the Flask application, handling JSON data, working with JWTs, accessing environment variables, and managing time.
+
+- **Flask App Setup**: A Flask application instance is created.
+
+- **Login Route (/login)**: 
+  - This endpoint handles POST requests.
+  - It extracts `username` and `password` from the incoming JSON data.
+  - Checks if either username or password is missing, returning an error if so.
+  - Validates the credentials (simplified for this example).
+  - Creates a JWT payload with an expiration time set to 30 minutes from now.
+  - Encodes the payload into a JWT token using a secret key retrieved from environment variables.
+  - Returns the token in a JSON response.
+
+**Important Notes**:
+
+- **Secret Key**: The `JWT_SECRET_KEY` should be securely stored and not hard-coded. It's best practice to store it in environment variables.
+
+- **Security Considerations**:
+  - Use HTTPS in production to secure data in transit.
+  - Implement proper user authentication and authorization mechanisms.
+  - Store passwords securely (e.g., hashed) in a real application.
+
+- **Testing**: You can test this endpoint using tools like `curl` or Postman by sending a POST request with a JSON body containing `username` and `password`.
+
+**Example Request Using curl**:
+
+```bash
+curl -X POST http://localhost:5000/login \
+     -H "Content-Type: application/json" \
+     -d '{"username":"admin","password":"password"}'
+```
+
+**Response Example**:
+
+A successful response would look like:
+
+```json
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiZXhwIjoxNjY0MzcyODAwfQ.SFlKxw"
+}
+```
+
+This setup provides a basic implementation of a JWT-based authentication system using Flask. For production use, consider adding additional security measures and handling more edge cases.

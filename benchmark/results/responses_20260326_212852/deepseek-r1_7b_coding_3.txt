@@ -1,0 +1,33 @@
+Model: deepseek-r1:7b
+Category: coding
+Prompt: Write a Python function that takes a list of integers and returns the two numbers that add up to a target sum. It should run in O(n) time.
+========================================
+To solve this problem, we need to write a Python function that takes a list of integers and a target sum as input, then returns two numbers from the list that add up to the target sum. The solution must run in linear time, O(n), which can be achieved using a hash map (dictionary) or set for efficient lookups.
+
+### Approach
+The approach involves iterating through each number in the list while maintaining a set of seen numbers encountered so far. For each number, we calculate its complement with respect to the target sum and check if this complement has already been seen. If it has, we return the pair immediately. If not, we add the current number to the set of seen numbers.
+
+This method ensures that we only need a single pass through the list, making the solution efficient with O(n) time complexity and O(n) space complexity for storing the seen numbers.
+
+### Solution Code
+```python
+def two_sum(nums, target):
+    seen = set()
+    for num in nums:
+        complement = target - num
+        if complement in seen:
+            return [complement, num]
+        seen.add(num)
+    return None
+```
+
+### Explanation
+1. **Initialization**: We start with an empty set called `seen` to keep track of the numbers we have encountered so far.
+2. **Iteration**: For each number in the input list:
+   - Calculate the complement as `target - current number`.
+   - Check if this complement is present in the `seen` set.
+   - If the complement exists, return the pair `[complement, current number]`.
+   - If the complement does not exist, add the current number to the `seen` set and continue to the next iteration.
+3. **Termination**: If no valid pair is found after processing all numbers, the function returns `None`.
+
+This approach efficiently finds the two required numbers by leveraging a set for constant-time lookups, ensuring the solution runs in linear time.

@@ -1,0 +1,51 @@
+Model: deepseek-r1:32b
+Category: instruction
+Prompt: Give me a recipe for chocolate chip cookies. Format it with an ingredients section using a bulleted list and a steps section using a numbered list. Include prep time and cook time at the top.
+========================================
+**Chocolate Chip Cookies Recipe**
+
+**Prep Time:** 15 minutes  
+**Cook Time:** 30 minutes (including baking time for two batches)  
+
+---
+
+### **Ingredients**
+- 1 cup (2 sticks) unsalted butter, softened
+- 3/4 cup granulated sugar
+- 3/4 cup brown sugar, packed
+- 2 teaspoons vanilla extract
+- 2 large eggs
+- 2 1/4 cups all-purpose flour
+- 1 teaspoon baking soda
+- 1/2 teaspoon salt
+- 2 cups semi-sweet chocolate chips
+
+---
+
+### **Instructions**
+
+1. **Preheat the oven** to 375°F (190°C). Line two baking sheets with parchment paper or silicone mats.
+
+2. In a large mixing bowl, cream together the softened butter, granulated sugar, and brown sugar until smooth. This can be done using an electric mixer on medium speed for about 2 minutes.
+
+3. Add the vanilla extract and eggs to the mixture, beating well after each addition until fully incorporated.
+
+4. In a separate bowl, whisk together the flour, baking soda, and salt. Gradually add this dry mixture to the wet ingredients, mixing until just combined. Be careful not to overmix; the dough should still be slightly lumpy.
+
+5. Fold in the chocolate chips using a spatula or wooden spoon, ensuring they are evenly distributed throughout the dough.
+
+6. Drop rounded tablespoons of dough onto the prepared baking sheets, spacing them about 2 inches apart to allow for spreading.
+
+7. Bake for **9-11 minutes**, or until the edges are golden brown but the centers are still soft. Avoid overbaking to keep the cookies chewy.
+
+8. Allow the cookies to cool on the baking sheets for about 5 minutes before transferring them to a wire rack to cool completely.
+
+---
+
+**Tips:**
+- For best results, use room temperature butter and eggs.
+- Ensure all ingredients are at room temperature before mixing to help the dough come together more easily.
+- Letting the cookies cool slightly after baking helps them set properly without becoming too crispy.
+- Use high-quality chocolate chips for a richer flavor, or add chopped nuts if desired.
+
+Enjoy your delicious homemade chocolate chip cookies!

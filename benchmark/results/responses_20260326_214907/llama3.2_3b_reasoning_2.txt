@@ -1,0 +1,30 @@
+Model: llama3.2:3b
+Category: reasoning
+Prompt: If it takes 5 machines 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 widgets? Show your working.
+========================================
+Let's break down the problem step by step.
+
+We know that:
+
+* 5 machines can make 5 widgets in 5 minutes.
+* We want to find out how long it will take for 100 machines to make 100 widgets.
+
+First, we need to find the rate at which each machine makes widgets. Let's do some math:
+
+5 machines x 5 minutes = 25 widget-minutes (this is the total amount of time required to make 5 widgets)
+
+Since there are 5 machines working together, we can divide the total amount of time by the number of machines to find the rate per machine:
+
+25 widget-minutes ÷ 5 machines = 5 widget-minutes per machine
+
+Now that we know the rate at which each machine makes widgets, we can apply it to the new scenario:
+
+100 machines x 5 widget-minutes per machine = 500 widget-minutes (this is the total amount of time required to make 100 widgets)
+
+Finally, we can divide the total amount of time by the number of widgets to find the time per widget:
+
+500 widget-minutes ÷ 100 widgets = 5 minutes per widget
+
+So, it would take each machine 5 minutes to make one widget. However, since there are 100 machines working together, the total time required to make 100 widgets is still 500 widget-minutes, which is equal to 8.33 minutes (500/60).
+
+Therefore, the answer is 8.33 minutes for 100 machines to make 100 widgets.

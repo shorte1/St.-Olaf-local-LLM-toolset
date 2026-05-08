@@ -1,0 +1,32 @@
+Model: deepseek-r1:32b
+Category: coding
+Prompt: Write a Python function that finds all prime numbers up to n using the Sieve of Eratosthenes.
+========================================
+To solve this problem, we need to find all prime numbers up to a given number `n` using the Sieve of Eratosthenes algorithm. This algorithm efficiently marks non-prime numbers by iterating through each number and marking its multiples starting from the square of the number.
+
+### Approach
+1. **Initialization**: Create a boolean list `sieve` where each index represents whether the number is prime. Initialize all values to `True` except for indices 0 and 1, which are set to `False` since they are not prime.
+2. **Mark Non-Primes**: For each number starting from 2 up to the square root of `n`, if the number is still marked as prime (`True`), mark all its multiples as non-prime (`False`). This step starts marking from the square of the current number, which optimizes the algorithm by skipping numbers already marked by smaller primes.
+3. **Collect Primes**: After processing all numbers up to the square root of `n`, collect all indices that are still marked as prime and return them.
+
+### Solution Code
+
+```python
+def sieve_of_eratosthenes(n):
+    if n < 2:
+        return []
+    sieve = [True] * (n + 1)
+    sieve[0], sieve[1] = False, False
+    for i in range(2, int(n ** 0.5) + 1):
+        if sieve[i]:
+            sieve[i*i : n+1 : i] = [False] * len(sieve[i*i : n+1 : i])
+    primes = [i for i, is_prime in enumerate(sieve) if is_prime]
+    return primes
+```
+
+### Explanation
+- **Initialization**: The boolean list `sieve` is created with size `n + 1`, where each element is initially set to `True`. Indices 0 and 1 are set to `False` because they are not prime numbers.
+- **Marking Non-Primes**: For each number starting from 2 up to the square root of `n`, if the number is still marked as prime, all its multiples (starting from the square of the number) are marked as non-prime. This step ensures that we efficiently mark non-prime numbers without redundant checks.
+- **Collecting Primes**: After processing, the indices of the boolean list that remain `True` are collected and returned as the list of prime numbers up to `n`.
+
+This approach ensures that we efficiently find all prime numbers using a well-known algorithm, making it both effective and easy to understand.

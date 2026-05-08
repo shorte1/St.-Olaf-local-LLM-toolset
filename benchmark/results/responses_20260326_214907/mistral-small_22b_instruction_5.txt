@@ -1,0 +1,41 @@
+Model: mistral-small:22b
+Category: instruction
+Prompt: Write a formal email declining a job offer, then rewrite it as a casual text message, then rewrite it as a Shakespearean monologue.
+========================================
+ ### Formal Email
+
+Subject: Declination of Job Offer - [Your Name]
+
+Dear [Hiring Manager's Name],
+
+Thank you for extending the job offer to me. I am honored that you considered me for this position at [Company Name]. After careful consideration and much deliberation, I have decided to decline the offer. This was not an easy decision for me to make, as I was very excited about the opportunity to work with your team.
+
+However, after weighing all factors, I believe that another opportunity better aligns with my long-term career goals at this time. I sincerely appreciate the time and effort you invested in the interview process, and I hope that we may cross paths again in the future.
+
+Thank you once again for this wonderful opportunity.
+
+Best regards,
+
+[Your Name]
+
+### Casual Text Message
+
+Hey [Hiring Manager's Name],
+
+Thanks for offering me the job at [Company Name]. It was really nice of you to consider me! But after thinking about it, I've decided not to take the offer. It was a tough call because I loved the team and the work.
+
+Unfortunately, another opportunity seems like a better fit for my career right now. Thanks again for everything, and maybe we can catch up in the future?
+
+Take care,
+[Your Name]
+
+### Shakespearean Monologue
+
+Upon mine heart, 'tis with great sorrow that I pen this missive to decline the gracious offer made unto me by thine esteemed company. The thought of joining thy noble team didst stir within me a fiery spirit of anticipation and delight; yet, after much ponderous consideration and sleepless nights, I must needs forgo this path in favor of another that doth align more closely with mine own aspirations and hopes for the future.
+
+Oh, wretched man that I am! To deny such an opportunity doesst weigh heavily upon my conscience, yet methinks it best to follow the dictates of my heart and mind. I beseech thee not to hold this against me, good [Hiring Manager's Name], for 'tis a decision born of deep reflection and soul-searching.
+
+Mayhap our paths shall cross again in days to come, and shouldst that be so, I shall greet thee with joy and gladness. Until then, I remain,
+
+Thine humble servant,
+[Your Name]

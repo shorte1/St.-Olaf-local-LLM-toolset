@@ -1,0 +1,11 @@
+Model: qwen2.5:7b
+Category: context
+Prompt: Read the following text and answer the questions below it. Text: The mitochondria are membrane-bound organelles found in the cytoplasm of eukaryotic cells. They generate most of the cell's supply of adenosine triphosphate (ATP), used as a source of chemical energy. They are also involved in other tasks such as signaling, cellular differentiation, and cell death, as well as maintaining control of the cell cycle and cell growth. The mitochondrion is popularly nicknamed the powerhouse of the cell. Questions: 1) What molecule do mitochondria produce? 2) Name two functions of mitochondria besides energy production. 3) What types of cells contain mitochondria?
+========================================
+1) Mitochondria produce adenosine triphosphate (ATP), which is used as a source of chemical energy within the cell.
+
+2) Two functions of mitochondria, besides energy production, include:
+   - Signaling: They play a role in cellular communication and signaling processes.
+   - Cellular differentiation: They are involved in how cells develop into specialized types during growth.
+
+3) Mitochondria are found in eukaryotic cells. Eukaryotic cells are those that contain a nucleus and other membrane-bound organelles, including mitochondria. This includes most living organisms except for bacteria and archaea, which do not have a true nucleus or membrane-bound organelles.

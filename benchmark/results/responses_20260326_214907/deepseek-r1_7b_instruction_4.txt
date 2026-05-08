@@ -1,0 +1,52 @@
+Model: deepseek-r1:7b
+Category: instruction
+Prompt: Give me a recipe for chocolate chip cookies. Format it with an ingredients section using a bulleted list and a steps section using a numbered list. Include prep time and cook time at the top.
+========================================
+Certainly! Here's a well-organized recipe for chocolate chip cookies:
+
+---
+
+**Chocolate Chip Cookies Recipe**
+
+**Prep Time:** 5 minutes  
+**Cook Time:** 10-12 minutes  
+
+---
+
+### **Ingredients Section**
+
+- **Dry Ingredients:**
+  - 135g all-purpose flour
+  - 75g sugar (caster or granulated)
+  - 60g unsalted butter, cold and cut into cubes
+  - 2 tsp baking soda
+  - 1 tsp salt
+
+- **Wet Ingredients:**
+  - 4 large eggs, separated
+  - 80ml milk (room temperature)
+  - 3 tbsp chocolate chips, chopped (about 50g)
+
+---
+
+### **Steps Section**
+
+1. **Preheat the Oven:** Preheat your oven to 190°C (375°F). Line a baking sheet with parchment paper or line it with aluminum foil if using non-stick sheets.
+
+2. **Combine Dry Ingredients:** In a large mixing bowl, whisk together the flour, sugar, butter, baking soda, and salt until well combined.
+
+3. **Add Wet Ingredients:** In a separate bowl, beat the eggs one at a time while incorporating the milk. Gradually stir in the melted chocolate chips.
+
+4. **Mix Wet and Dry Ingredients:** Pour the wet ingredients into the dry ingredients and mix until just combined. Be careful not to overmix.
+
+5. **Fold in Chocolate Chips:** Gently fold in the chopped chocolate chips until evenly distributed.
+
+6. **Drop Cookie Dough Balls:** Drop rounded tablespoons of dough onto the prepared baking sheet, spacing them about 2-3 cm apart.
+
+7. **Bake:** Bake for 10-12 minutes, or until the edges are set and the centers are still wobbly.
+
+8. **Cool:** Allow the cookies to cool on the baking sheet for a few minutes before transferring them to a wire rack to cool completely.
+
+---
+
+Enjoy your batch of delicious chocolate chip cookies!

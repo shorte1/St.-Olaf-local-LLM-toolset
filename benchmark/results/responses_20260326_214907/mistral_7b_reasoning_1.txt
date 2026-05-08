@@ -1,0 +1,13 @@
+Model: mistral:7b
+Category: reasoning
+Prompt: A bat and a ball cost $1.10 in total. The bat costs $1.00 more than the ball. How much does the ball cost? Show your working.
+========================================
+ Let's denote the cost of the ball as x dollars and the cost of the bat as (x+1) dollars. Since the bat costs $1.00 more than the ball, we have:
+
+Ball + Bat = Total Cost
+x + (x+1) = 1.10
+2x + 1 = 1.10
+2x = 1.10 - 1 = 0.10
+x = 0.10 / 2 = $0.05
+
+So, the ball costs $0.05 and the bat costs $0.05 + $1.00 = $1.05. However, since we are dealing with money and cannot have a fractional cost for the ball, there must be an error in the problem statement. The given information does not allow us to find integer values for both ball and bat prices that satisfy the conditions stated.

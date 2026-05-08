@@ -1,0 +1,5 @@
+Model: deepseek-r1:32b
+Category: instruction
+Prompt: Summarize the plot of Romeo and Juliet in exactly 50 words, no more no less.
+========================================
+In Verona, Romeo Montague and Juliet Capulet fall in love after meeting at a masquerade ball amidst their families' feuds. They secretly marry with Friar Laurence's help. Tybalt kills Mercutio; Romeo exiled for killing Tybalt. Juliet fakes death to avoid marriage to Paris but finds Romeo dead at the tomb, leading both to die by suicide and reconcile their families.

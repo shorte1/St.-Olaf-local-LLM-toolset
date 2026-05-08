@@ -1,0 +1,46 @@
+Model: qwen2.5:7b
+Category: instruction
+Prompt: Write a formal email declining a job offer, then rewrite it as a casual text message, then rewrite it as a Shakespearean monologue.
+========================================
+### Formal Email Declining a Job Offer
+
+Subject: Decline of Employment Opportunity at [Company Name]
+
+Dear [Hiring Manager's Name],
+
+Thank you very much for the opportunity to join [Company Name] and considering me for the position of [Job Title]. After careful consideration, I have decided to decline this offer.
+
+I am grateful for the time and effort invested in my application process. The role seemed a perfect fit for my professional aspirations, and I was genuinely excited at the prospect of contributing to your team. However, after weighing all options, it became clear that other commitments will require my immediate attention.
+
+Please accept my sincere appreciation for this opportunity. Should [Company Name] have any further openings in the future or need assistance with their current projects, please do not hesitate to reach out to me.
+
+Warm regards,
+
+[Your Full Name]
+[Your Contact Information]
+
+---
+
+### Casual Text Message Declining a Job Offer
+
+Hey [Hiring Manager's Name],
+
+Thanks for the job offer at [Company Name]! It was awesome, but I've got some other stuff going on right now. Really appreciate it though. Maybe keep me in mind for future openings? 😊
+
+Take care,
+[Your Name]
+
+---
+
+### Shakespearean Monologue Declining a Job Offer
+
+Hark, fair [Hiring Manager's Name], and hearken well to my words! I do owe you and your noble company of [Company Name] a great debt of gratitude; for amongst the many valiant suitors who have sought this post, ye did extend your gracious hand. And though my heart be sore with the weight of other duties that bind me now, yet doth my soul yearn to serve such worthy cause.
+
+Tis true, the role ye offered was a beacon in my journey, and I could not help but see its promise. Yet, as the stars guide us not when they are hidden behind clouds, so too have other obligations obscured my path, making it impossible for me to traverse this road that would lead to your esteemed company.
+
+Therefore, with a heart heavy yet hopeful, I must decline this most gracious offer, though in doing so, I do not forget the kindness you have shown. Perchance, when our fates shall cross again, or if ye have any further needs for counsel or aid, know that I stand ready to serve thee once more.
+
+Farewell, dear [Hiring Manager's Name], and may fortune smile upon thee and thy company in all your endeavors!
+
+Thou hast been a true friend,
+[Your Name]

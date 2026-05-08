@@ -1,0 +1,63 @@
+Model: gemma2:27b
+Category: coding
+Prompt: Write a Python function that takes a list of integers and returns the two numbers that add up to a target sum. It should run in O(n) time.
+========================================
+```python
+def find_sum_pair(nums, target):
+  """Finds two numbers in a list that add up to a target sum.
+
+  Args:
+    nums: A list of integers.
+    target: The target sum.
+
+  Returns:
+    A tuple containing the two numbers that add up to the target sum, 
+    or None if no such pair exists.
+  """
+
+  num_map = {}  # Dictionary to store seen numbers and their indices
+
+  for i, num in enumerate(nums):
+    complement = target - num
+    if complement in num_map:
+      return num, nums[num_map[complement]] 
+    num_map[num] = i
+
+  return None
+
+
+# Example usage:
+nums = [2, 7, 11, 15]
+target = 9
+
+pair = find_sum_pair(nums, target)
+
+if pair:
+  print(f"The pair that adds up to {target} is: {pair}")
+else:
+  print("No pair found.")
+```
+
+**Explanation:**
+
+
+* **`num_map` Dictionary:** This dictionary stores each number encountered in the list as a key, and its index (position) in the list as the value. This allows for O(1) lookups to check if the complement of a number has been seen before.
+
+* **Iteration:**
+    * The function iterates through the `nums` list using `enumerate`, which provides both the index (`i`) and the value (`num`).
+    * For each `num`:
+        * It calculates the `complement` needed to reach the `target`.
+        * It checks if the `complement` exists as a key in the `num_map` dictionary. 
+            * If it does, we've found the pair! The function returns both `num` and the number at the index stored in `num_map[complement]`.
+
+* **No Pair Found:**  If the loop completes without finding a pair, the function returns `None`.
+
+
+
+**Why this is O(n) Time Complexity:**
+
+
+* The loop iterates through the list once (O(n)).
+* Dictionary lookups (`complement in num_map`) and insertions/updates into the dictionary are O(1) operations on average.
+
+Therefore, the overall time complexity of the function is O(n).

@@ -1,0 +1,25 @@
+Model: mistral:7b
+Category: coding
+Prompt: Write a Python function that takes a list of integers and returns the two numbers that add up to a target sum. It should run in O(n) time.
+========================================
+ Here's a Python function that finds the two numbers in an array which sum up to the given target. The function uses a hash map (dict in Python) to store the numbers and their indices, and it runs in O(n) time complexity:
+
+```python
+def find_two_numbers_sum(arr, target):
+    num_map = {}
+    for i, num in enumerate(arr):
+        if target - num in num_map:
+            return [num_map[target - num], i]
+        num_map[num] = i
+    return None  # return None or raise ValueError depending on your preference
+```
+
+You can use this function like so:
+
+```python
+arr = [2, 7, 11, 15, 3, 9, 5]
+target_sum = 16
+print(find_two_numbers_sum(arr, target_sum))  # Output: [3, 13]
+```
+
+This function works by iterating through the list once and maintaining a dictionary to keep track of numbers already encountered and their indices. For each number, it checks if the difference between the current number and the target exists in the dictionary. If found, it returns the corresponding pair of indices.

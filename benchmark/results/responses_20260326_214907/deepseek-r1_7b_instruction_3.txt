@@ -1,0 +1,5 @@
+Model: deepseek-r1:7b
+Category: instruction
+Prompt: Summarize the plot of Romeo and Juliet in exactly 50 words, no more no less.
+========================================
+Romeo and Juliet meet at Verona’s grand ball, caught in their feuding families’ feud. Friar Laurence intercedes with a secret marriage via potion, yet fate blinds them to true love as they take deadly poisons and die tragically on the shore of the Styx.

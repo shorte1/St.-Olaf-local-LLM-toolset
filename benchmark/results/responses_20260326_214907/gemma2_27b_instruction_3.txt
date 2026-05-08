@@ -1,0 +1,7 @@
+Model: gemma2:27b
+Category: instruction
+Prompt: Summarize the plot of Romeo and Juliet in exactly 50 words, no more no less.
+========================================
+Two young lovers from feuding families, Romeo Montague and Juliet Capulet, fall deeply in love at first sight. Their secret marriage is thwarted by their families' hatred, leading to tragic misunderstandings and ultimately, both characters' deaths.  
+
+

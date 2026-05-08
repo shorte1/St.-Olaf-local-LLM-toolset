@@ -1,0 +1,32 @@
+Model: deepseek-r1:32b
+Category: coding
+Prompt: Write a Python function that takes a list of integers and returns the two numbers that add up to a target sum. It should run in O(n) time.
+========================================
+To solve this problem, we need to write a Python function that finds two numbers in a list which add up to a specific target sum. The solution should run efficiently with a time complexity of O(n).
+
+### Approach
+The approach leverages the use of a hash map (dictionary) to store each number and its index as we iterate through the list. For each element, we calculate the complement by subtracting the current number from the target sum. If this complement is already in the dictionary, it means we have found two numbers that add up to the target. Otherwise, we add the current number to the dictionary.
+
+This method ensures that we only traverse the list once, making the solution efficient with a time complexity of O(n). The space complexity is also O(n) due to the storage requirements of the dictionary.
+
+### Solution Code
+
+```python
+def two_sum(nums, target):
+    seen = {}
+    for i, num in enumerate(nums):
+        complement = target - num
+        if complement in seen:
+            return [complement, num]
+        seen[num] = i
+    return []
+```
+
+### Explanation
+1. **Initialization**: We start by initializing an empty dictionary called `seen` to keep track of the numbers we have encountered along with their indices.
+2. **Iteration**: For each number in the list, we calculate its complement relative to the target sum.
+3. **Check Complement**: If the complement is found in the `seen` dictionary, it means we have already encountered a number that, when added to the current number, equals the target sum. We return these two numbers immediately.
+4. **Update Dictionary**: If the complement is not found, we add the current number and its index to the `seen` dictionary.
+5. **Completion**: The loop continues until all elements are processed. If no pair is found (though the problem assumes a solution exists), an empty list is returned.
+
+This approach ensures that each element is processed exactly once, making it both time-efficient and straightforward to implement.

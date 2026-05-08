@@ -1,0 +1,49 @@
+Model: deepseek-r1:7b
+Category: instruction
+Prompt: Write a formal email declining a job offer, then rewrite it as a casual text message, then rewrite it as a Shakespearean monologue.
+========================================
+### Formal Email Decline:
+
+---
+
+Dear [Hiring Manager/Recruiter],
+
+I hope this message finds you well. Thank you for extending the offer to join my team at [Company Name]. I am deeply grateful for your trust and the opportunity to contribute to such an esteemed organization.
+
+After careful consideration, I regret to inform you that I have declined the position. While I was genuinely interested in the role and its alignment with my career aspirations, I now realize that other commitments require my full attention at this time.
+
+Please understand that this decision was not made lightly, as I held the offer in high regard. I trust that you will find an ideal candidate to fill the position, and I look forward to hearing from you.
+
+Thank you once again for your understanding and consideration.
+
+Warm regards,
+
+[Your Full Name]  
+[Your Job Title]  
+[Company Name]  
+[Contact Information]
+
+---
+
+### Casual Text Message Decline:
+
+Hi [Hiring Manager/Recruiter],
+
+Thanks for offering me the job! I’m super grateful, but I’ve got some stuff going on that needs my attention. I hope you’re finding someone else to fill the position. Have a great day!
+
+Best,
+
+[Your Name]
+
+---
+
+### Shakespearean Monologue Decline:
+
+Otherapy gentle reader, I bid fairytale of farewell doth send. For in this day and age, with offers plural and opportunities multitudinous, I find my heart’s desire to be filled with sorrow. The call of [Company Name] did much to entice me, but alas, my wandering soul hath other plans.  
+
+Thee I shall not obey, nor bend to屈就 my will. Nay, let the stars alone decide this fate, and may they grant thee peace in heart’s desire. For I am bound by fate, and must tread this path prepared.  
+
+Thus do I decline, O fairytale, leaving thee to seek other tales’ spires, where knights may claim their armor’s gleam, and ladies may find their hearts’ desire. Farewell, dear [Hiring Manager/Recruiter], with all my might!
+
+Aenima mephitis,  
+[Your Name]

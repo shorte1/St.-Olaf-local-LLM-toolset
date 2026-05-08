@@ -1,0 +1,46 @@
+Model: llama3.2:3b
+Category: instruction
+Prompt: Write a formal email declining a job offer, then rewrite it as a casual text message, then rewrite it as a Shakespearean monologue.
+========================================
+**Formal Email:**
+
+Subject: Declining Job Offer for [Position]
+
+Dear [Hiring Manager's Name],
+
+I am writing to express my gratitude for the job offer extended to me for the position of [Position] at [Company Name]. I appreciate the time and effort taken by you and your team during the interview process.
+
+After careful consideration, I regret to inform you that I have decided to decline the offer. Although I was impressed by the company culture and the role's responsibilities, I have decided to pursue another opportunity that aligns more closely with my long-term career goals.
+
+Please accept my sincerest apologies for any inconvenience this may cause, and I wish the company continued success in finding a suitable candidate.
+
+Thank you again for the opportunity, and I wish you all the best.
+
+Sincerely,
+[Your Name]
+
+**Casual Text Message:**
+
+"Hey [Hiring Manager's Name], it's [Your Name]. I wanted to thank you for the job offer, but I've decided to pass on it. Another opportunity came up that's a better fit for me. Sorry to miss out on the chance to work with you guys, but I appreciate the time you took to talk to me about the role. Good luck finding someone else!"
+
+**Shakespearean Monologue:**
+
+(O, wouldst thou hear my tale of woe?)
+
+"O, fair [Hiring Manager's Name], how doth thy gentle hand offer unto me a position most divine?
+A life of service and toil, 'twas promised to mine eager heart.
+Yet, alas, I find myself in want of another dream,
+One that doth stir within my breast a fire that doth not cease.
+
+"Fie on this new opportunity, how it doth beckon me
+To leave thy noble halls and join its radiant company!
+For though thou hast shown me kindness and thy willingness to partake
+In sharing with me the burdens of thy esteemed role,
+I find myself ensnared in another's net of fortune's whims.
+
+"Forgive my rejection, kind sir or madam, for I know
+Thy heart doth ache at losing a candidate so fair and bright.
+Yet still, I must decline thy offer and bid thee adieu.
+May Fortune smile upon thee and guide thee to another worthy knight."
+
+(Exeunt)

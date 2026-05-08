@@ -1,0 +1,20 @@
+Model: mistral:7b
+Category: coding
+Prompt: Write a Python function that takes a list of integers and returns the two numbers that add up to a target sum. It should run in O(n) time.
+========================================
+ To achieve this in O(n) time complexity, we can use a hash map (or dictionary in Python) to store numbers and their indices. Here is an example function:
+
+```python
+def find_numbers(arr, target):
+    num_map = {}
+    for i, num in enumerate(arr):
+        complement = target - num
+        if complement in num_map:
+            return [num_map[complement], i]
+        num_map[num] = i
+    return None  # Return None if no pair exists with the given target sum
+```
+
+In this function, we iterate through the array once and for each number encountered, store it in a dictionary along with its index. We also keep track of the complement (target - current number). If we find the complement in the dictionary, that means we have found two numbers which add up to the target sum, so we return them as a list.
+
+The time complexity of this function is O(n) because it only iterates through the array once and performs constant-time operations for each element.

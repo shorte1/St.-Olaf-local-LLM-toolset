@@ -1,0 +1,47 @@
+Model: gemma2:27b
+Category: instruction
+Prompt: Write a formal email declining a job offer, then rewrite it as a casual text message, then rewrite it as a Shakespearean monologue.
+========================================
+## Formal Email
+
+Subject: Job Offer - [Your Name]
+
+
+Dear [Hiring Manager name],
+
+Thank you very much for offering me the position of [Job title] at [Company name]. I appreciate you taking the time to interview me and share more about this exciting opportunity.
+
+After careful consideration, I have decided to decline the offer at this time. This was not an easy decision as I was impressed by [Company name]'s culture and the team I met during the interview process. However, I have accepted another position that is a better fit for my current career goals. 
+
+I wish you all the best in finding a suitable candidate for the role.
+
+Sincerely,
+[Your Name]
+
+
+## Casual Text Message
+
+Hey [Hiring Manager name], thanks again for the offer! I really appreciate it.  Unfortunately, I'm going to have to pass this time. I accepted another job that's a better fit right now. Good luck with the search! 
+
+## Shakespearean Monologue
+
+Hark! A missive doth arrive, bearing tidings fair,
+Of fortune's smile and opportunity rare.
+A post most worthy, at [Company name] they say,
+For which my humble talents they would sway.
+
+Yet though gratitude swells within my breast,
+And admiration for their noble quest,
+My heart doth lean towards a path untrod,
+Where different winds do blow, by fate bestowed.
+
+Another stage awaits, with roles to play,
+A tapestry of dreams I must obey.
+Thus, with regret, this offer I decline,
+Hoping they find a soul whose stars align. 
+
+May fortune smile upon their future quest,
+And grant them candidates both wise and blessed.
+
+
+

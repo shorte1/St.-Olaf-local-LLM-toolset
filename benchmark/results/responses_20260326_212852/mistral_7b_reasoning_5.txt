@@ -1,0 +1,21 @@
+Model: mistral:7b
+Category: reasoning
+Prompt: You have two ropes that each take exactly one hour to burn, but they burn unevenly. How do you measure exactly 45 minutes using only these ropes and a lighter?
+========================================
+ Here's a solution based on the assumption that once lit, the burning speed of the ropes remains constant:
+
+1. Light both ropes simultaneously. Let's call them Rope A and Rope B.
+
+2. After 30 minutes, extinguish Rope A while leaving Rope B still burning. At this point, half of Rope A (30 minutes worth) would have burned out.
+
+3. Now, you have only Rope B remaining. Since both ropes take exactly one hour to burn, the unburned part of Rope B is equal to the other half of Rope A. So, you have 30 minutes + the remaining time for the second half of Rope A.
+
+4. Wait until the remaining part of Rope B burns out. At this point, the total elapsed time from starting with both ropes would be 1 hour (30 min on Rope A) + 30 minutes (from when you extinguished Rope A) + the time it took for the second half of Rope A to burn (which is equal to the time it took for Rope B to burn after you extinguished Rope A).
+
+Since both ropes take exactly one hour to burn, and you extinguished Rope A after 30 minutes, the remaining part of Rope A should also take 30 minutes to burn. Therefore, the total elapsed time equals 1 hour + 30 minutes + 30 minutes = 2 hours.
+
+5. However, you only need a period of 45 minutes. To achieve this, re-light the extinguished part of Rope A (which already burned for 30 minutes before being extinguished) right after it was lit again. This means that when you lit Rope A for the second time, it had only 30 minutes left to burn instead of a full hour.
+
+6. Wait until both ropes are completely burnt out (which should take another 45 minutes). In total, this will take 2 hours (initial burn) + 45 minutes (re-lit Rope A).
+
+So, you can measure exactly 45 minutes using these two uneven ropes and a lighter.

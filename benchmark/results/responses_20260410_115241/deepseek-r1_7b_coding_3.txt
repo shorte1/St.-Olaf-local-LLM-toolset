@@ -1,0 +1,39 @@
+Model: deepseek-r1:7b
+Category: coding
+Prompt: Write a Python function that takes a list of integers and returns the two numbers that add up to a target sum. It should run in O(n) time.
+========================================
+To solve this problem, we need to find two distinct numbers in a given list that add up to a specified target sum. The solution should be efficient enough to run in O(n) time complexity.
+
+### Approach
+The optimal approach to solve this problem efficiently is by using a hash map (dictionary). This allows us to check for the required complement of each number in constant time, making the overall algorithm linear in complexity.
+
+1. **Initialize an empty dictionary**: This will store the numbers we have seen so far as keys.
+2. **Iterate through each number** in the input list:
+   - For each number, compute its complement with respect to the target sum (i.e., `complement = target - current_number`).
+   - Check if this complement is already present in the dictionary:
+     - If it is, return the pair of numbers immediately as they sum up to the target.
+     - If not, add the current number to the dictionary and continue to the next iteration.
+3. **Handle edge cases**: If no such pair is found by the end of the loop, return `None`.
+
+This approach ensures that we only traverse the list once, making it efficient.
+
+### Solution Code
+
+```python
+def find_two_sum(nums, target):
+    seen = {}
+    for num in nums:
+        complement = target - num
+        if complement in seen:
+            return (complement, num)
+        seen[num] = True
+    return None
+```
+
+### Explanation
+- **Initialization**: We start by creating an empty dictionary called `seen` to keep track of the numbers we have encountered.
+- **Loop through each number**: For each number in the input list, calculate its complement with respect to the target sum. This is done using simple subtraction (`complement = target - num`).
+- **Check for complement**: If this complement exists in our `seen` dictionary, it means there was a previous number that, when added to the current number, equals the target sum. We immediately return this pair as a tuple.
+- **Update seen dictionary**: If the complement is not found, add the current number to the `seen` dictionary so it can be checked against future numbers.
+
+This method efficiently finds the required pair in O(n) time complexity by leveraging the hash map for quick lookups.

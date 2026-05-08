@@ -1,0 +1,81 @@
+Model: deepseek-r1:32b
+Category: coding
+Prompt: Write a REST API endpoint in Python using Flask that accepts a JSON body with a username and password, validates that neither is empty, and returns a JWT token.
+========================================
+Here's an example of a Flask endpoint that accepts username and password via JSON, validates them, and returns a JWT token:
+
+```python
+from flask import Flask, request, jsonify
+import jwt
+from datetime import datetime, timedelta
+
+app = Flask(__name__)
+app.config['SECRET_KEY'] = 'your-secret-key-here'  # Replace with your secret key
+
+@app.route('/login', methods=['POST'])
+def login():
+    try:
+        data = request.get_json()
+        
+        if not data or not data.get('username') or not data.get('password'):
+            return jsonify({'error': 'Username and password are required'}), 400
+        
+        username = data['username'].strip()
+        password = data['password'].strip()
+        
+        if not username or not password:
+            return jsonify({'error': 'Username and password cannot be empty'}), 400
+
+        # Create a payload with an expiration time
+        expire_time = datetime.utcnow() + timedelta(minutes=30)
+        payload = {
+            'username': username,
+            'exp': expire_time
+        }
+        
+        token = jwt.encode(payload, app.config['SECRET_KEY'], algorithm='HS256')
+        
+        return jsonify({'token': token}), 200
+        
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+if __name__ == '__main__':
+    app.run(debug=True)
+```
+
+This code:
+
+1. Imports required modules
+2. Creates a Flask application instance
+3. Sets up a secret key (required for JWT encoding/decoding)
+4. Defines a `/login` endpoint that accepts POST requests
+5. Gets JSON data from the request
+6. Validates that both username and password are provided and not empty
+7. Creates a payload with an expiration time
+8. Encodes the payload into a JWT token using HS256 algorithm
+9. Returns the token in the response
+
+To use this:
+
+1. Make sure you have `Flask` and `jwt` installed (`pip install flask python-jose`)
+2. Replace `'your-secret-key-here'` with your own secret key
+3. Run the application
+4. Send a POST request to `/login` with JSON body containing username and password
+
+Example curl command:
+```bash
+curl -X POST http://localhost:5000/login \
+  -H "Content-Type: application/json" \
+  -d '{"username":"test", "password":"test"}'
+```
+
+The response will contain a JWT token that you can use for subsequent authenticated requests.
+
+Note: In a production environment, you should:
+- Use HTTPS
+- Store the secret key securely (e.g., in environment variables)
+- Implement proper user authentication (this example only validates non-empty fields)
+- Set appropriate expiration times for tokens
+- Consider using refresh tokens
+- Add additional security measures like rate limiting and request validation

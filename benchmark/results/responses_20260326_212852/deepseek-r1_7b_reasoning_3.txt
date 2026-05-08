@@ -1,0 +1,42 @@
+Model: deepseek-r1:7b
+Category: reasoning
+Prompt: A lily pad doubles in size every day. It takes 48 days to cover a lake. How long does it take to cover half the lake? Show your working.
+========================================
+The problem involves a lily pad that doubles in size every day. It takes 48 days to cover the entire lake, and we need to determine how long it takes to cover half the lake.
+
+We start by noting that since the lily pad doubles in size each day, if it covers half the lake on day \( t \), it will double to cover the entire lake on day \( t + 1 \). Therefore, if it takes 48 days to cover the whole lake, it must have taken one less day (47 days) to cover half the lake.
+
+To confirm this mathematically, we use the exponential growth model. Let \( A(t) \) be the area covered by the lily pad on day \( t \). The area grows as:
+
+\[ A(t) = A_0 \cdot 2^t \]
+
+where \( A_0 \) is the initial area. Given that on day 48, the lake is fully covered:
+
+\[ A(48) = L \]
+\[ A_0 \cdot 2^{48} = L \]
+
+We need to find \( t \) such that the lily pad covers half the lake (\( L/2 \)):
+
+\[ A(t) = \frac{L}{2} \]
+\[ A_0 \cdot 2^t = \frac{L}{2} \]
+
+Substituting \( A_0 = \frac{L}{2^{48}} \) into the equation:
+
+\[ \left( \frac{L}{2^{48}} \right) \cdot 2^t = \frac{L}{2} \]
+\[ L \cdot 2^{t - 48} = \frac{L}{2} \]
+
+Dividing both sides by \( L \):
+
+\[ 2^{t - 48} = \frac{1}{2} \]
+\[ 2^{t - 48} = 2^{-1} \]
+
+Equating the exponents:
+
+\[ t - 48 = -1 \]
+\[ t = 47 \]
+
+Thus, it takes 47 days for the lily pad to cover half the lake.
+
+\[
+\boxed{47}
+\]

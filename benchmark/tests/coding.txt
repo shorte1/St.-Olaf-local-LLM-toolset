@@ -1,0 +1,5 @@
+Write a Python function that finds all prime numbers up to n using the Sieve of Eratosthenes.
+Debug this Python code and explain what is wrong: def fibonacci(n): if n == 0: return 0 elif n == 1: return 1 else: return fibonacci(n-1) + fibonacci(n-2) print(fibonacci(100))
+Write a Python function that takes a list of integers and returns the two numbers that add up to a target sum. It should run in O(n) time.
+Explain what this code does and identify any potential issues: def process(data): result = [] for i in range(len(data)): for j in range(len(data)): if data[i] + data[j] == 0: result.append((data[i], data[j])) return result
+Write a REST API endpoint in Python using Flask that accepts a JSON body with a username and password, validates that neither is empty, and returns a JWT token.

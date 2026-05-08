@@ -1,0 +1,185 @@
+model,category,prompt_num,prompt,total_time_s,time_to_first_token_s,tokens_per_second,token_count,avg_gpu_util_pct,avg_mem_used_mb,avg_power_w
+deepseek-r1:7b,reasoning,1,A bat and a ball cost $1.10 in total. The bat costs $1.00 more than the ball. How much does the ball...,4.85,3.3,90.03,437,0.0,17962.0,34.3
+deepseek-r1:7b,reasoning,2,"If it takes 5 machines 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 ...",2.66,0.71,138.71,369,0.0,18152.0,57.3
+deepseek-r1:7b,reasoning,3,A lily pad doubles in size every day. It takes 48 days to cover a lake. How long does it take to cov...,9.05,6.17,166.24,1504,0.0,18152.0,57.3
+deepseek-r1:7b,reasoning,4,Three friends split a restaurant bill. The bill is $30 so they each pay $10. The waiter realizes the...,27.73,25.75,169.44,4699,2.0,3375.0,28.2
+deepseek-r1:7b,reasoning,5,"You have two ropes that each take exactly one hour to burn, but they burn unevenly. How do you measu...",20.5,18.57,169.54,3475,0.0,1024.0,16.4
+deepseek-r1:7b,coding,1,Write a Python function that finds all prime numbers up to n using the Sieve of Eratosthenes.,20.5,16.79,170.85,3502,0.0,1024.0,16.1
+deepseek-r1:7b,coding,2,Debug this Python code and explain what is wrong: def fibonacci(n): if n == 0: return 0 elif n == 1:...,5.4,3.19,160.85,868,0.0,1024.0,15.9
+deepseek-r1:7b,coding,3,Write a Python function that takes a list of integers and returns the two numbers that add up to a t...,15.69,13.32,172.49,2707,0.0,1001.0,16.4
+deepseek-r1:7b,coding,4,Explain what this code does and identify any potential issues: def process(data): result = [] for i ...,7.87,4.71,165.68,1304,0.0,685.0,17.3
+deepseek-r1:7b,coding,5,Write a REST API endpoint in Python using Flask that accepts a JSON body with a username and passwor...,9.55,2.98,169.5,1619,0.0,685.0,16.7
+deepseek-r1:7b,knowledge,1,"Explain the difference between supervised, unsupervised, and reinforcement learning in machine learn...",8.44,5.69,164.26,1386,0.0,685.0,16.5
+deepseek-r1:7b,knowledge,2,What is the CAP theorem in distributed systems and what are its practical implications?,7.87,5.28,162.06,1276,0.0,685.0,16.6
+deepseek-r1:7b,knowledge,3,Explain how CRISPR-Cas9 gene editing works at a molecular level.,10.69,7.49,170.76,1825,0.0,685.0,16.4
+deepseek-r1:7b,knowledge,4,What were the main causes and consequences of the 2008 financial crisis?,1.12,0.15,106.23,119,0.0,685.0,16.5
+deepseek-r1:7b,knowledge,5,Explain the difference between TCP and UDP protocols and when you would use each.,4.5,2.37,154.88,697,0.0,685.0,16.4
+deepseek-r1:7b,instruction,1,"Write a haiku about autumn, then translate it to French, then explain the seasonal symbolism used.",5.06,2.69,156.46,792,0.0,685.0,16.5
+deepseek-r1:7b,instruction,2,"List the planets in our solar system by size from largest to smallest, give their diameter in km, an...",3.38,1.89,157.83,533,0.0,685.0,16.6
+deepseek-r1:7b,instruction,3,"Summarize the plot of Romeo and Juliet in exactly 50 words, no more no less.",5.05,4.25,154.11,779,0.0,685.0,16.4
+deepseek-r1:7b,instruction,4,Give me a recipe for chocolate chip cookies. Format it with an ingredients section using a bulleted ...,5.62,3.05,165.12,928,0.0,685.0,16.4
+deepseek-r1:7b,instruction,5,"Write a formal email declining a job offer, then rewrite it as a casual text message, then rewrite i...",6.27,2.91,169.4,1062,0.2,593.0,17.3
+deepseek-r1:7b,context,1,Read the following text and answer the questions below it. Text: The mitochondria are membrane-bound...,2.81,2.04,145.38,408,0.0,346.0,17.8
+deepseek-r1:7b,context,2,Read this code and answer the questions: def mystery(lst): if len(lst) <= 1: return lst pivot = lst[...,7.31,5.74,162.73,1189,0.0,346.0,16.2
+deepseek-r1:7b,context,3,"Read the following paragraph and identify: 1) the main argument, 2) any logical fallacies, 3) what e...",4.49,2.12,161.61,726,0.0,346.0,16.1
+deepseek-r1:32b,reasoning,1,A bat and a ball cost $1.10 in total. The bat costs $1.00 more than the ball. How much does the ball...,18.41,13.67,21.89,403,23.0,14580.0,102.0
+deepseek-r1:32b,reasoning,2,"If it takes 5 machines 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 ...",8.03,3.16,49.58,398,43.7,27957.0,194.5
+deepseek-r1:32b,reasoning,3,A lily pad doubles in size every day. It takes 48 days to cover a lake. How long does it take to cov...,8.0,3.57,48.22,386,43.7,27958.0,203.0
+deepseek-r1:32b,reasoning,4,Three friends split a restaurant bill. The bill is $30 so they each pay $10. The waiter realizes the...,16.03,8.89,49.53,794,45.4,27958.0,207.8
+deepseek-r1:32b,reasoning,5,"You have two ropes that each take exactly one hour to burn, but they burn unevenly. How do you measu...",128.83,122.39,49.74,6408,47.1,27959.0,230.3
+deepseek-r1:32b,coding,1,Write a Python function that finds all prime numbers up to n using the Sieve of Eratosthenes.,83.9,72.24,49.63,4164,46.7,27960.0,236.5
+deepseek-r1:32b,coding,2,Debug this Python code and explain what is wrong: def fibonacci(n): if n == 0: return 0 elif n == 1:...,20.83,7.91,50.26,1047,46.1,27960.0,233.1
+deepseek-r1:32b,coding,3,Write a Python function that takes a list of integers and returns the two numbers that add up to a t...,35.25,26.81,50.61,1784,46.5,27960.0,235.1
+deepseek-r1:32b,coding,4,Explain what this code does and identify any potential issues: def process(data): result = [] for i ...,39.5,32.4,50.64,2000,47.0,27960.0,235.2
+deepseek-r1:32b,coding,5,Write a REST API endpoint in Python using Flask that accepts a JSON body with a username and passwor...,26.71,12.37,50.63,1352,46.3,27960.0,234.1
+deepseek-r1:32b,knowledge,1,"Explain the difference between supervised, unsupervised, and reinforcement learning in machine learn...",18.17,12.62,50.09,910,45.6,27960.0,234.4
+deepseek-r1:32b,knowledge,2,What is the CAP theorem in distributed systems and what are its practical implications?,28.83,21.28,50.09,1444,46.2,27962.0,234.7
+deepseek-r1:32b,knowledge,3,Explain how CRISPR-Cas9 gene editing works at a molecular level.,25.65,16.6,50.26,1289,46.4,27962.0,234.2
+deepseek-r1:32b,knowledge,4,What were the main causes and consequences of the 2008 financial crisis?,2.67,0.23,48.03,128,38.4,27962.0,207.9
+deepseek-r1:32b,knowledge,5,Explain the difference between TCP and UDP protocols and when you would use each.,13.89,8.49,49.97,694,47.3,27962.0,234.7
+deepseek-r1:32b,instruction,1,"Write a haiku about autumn, then translate it to French, then explain the seasonal symbolism used.",16.01,9.94,49.97,800,45.1,27962.0,233.2
+deepseek-r1:32b,instruction,2,"List the planets in our solar system by size from largest to smallest, give their diameter in km, an...",20.83,16.31,50.31,1048,45.8,27962.0,234.1
+deepseek-r1:32b,instruction,3,"Summarize the plot of Romeo and Juliet in exactly 50 words, no more no less.",11.22,9.18,49.48,555,44.6,27962.0,231.5
+deepseek-r1:32b,instruction,4,Give me a recipe for chocolate chip cookies. Format it with an ingredients section using a bulleted ...,17.1,8.09,51.0,872,45.7,27962.0,234.0
+deepseek-r1:32b,instruction,5,"Write a formal email declining a job offer, then rewrite it as a casual text message, then rewrite i...",17.61,8.06,49.46,871,46.8,27962.0,234.9
+deepseek-r1:32b,context,1,Read the following text and answer the questions below it. Text: The mitochondria are membrane-bound...,5.34,4.47,46.99,251,42.5,27962.0,222.8
+deepseek-r1:32b,context,2,Read this code and answer the questions: def mystery(lst): if len(lst) <= 1: return lst pivot = lst[...,16.02,12.69,49.95,800,45.6,27962.0,232.0
+deepseek-r1:32b,context,3,"Read the following paragraph and identify: 1) the main argument, 2) any logical fallacies, 3) what e...",13.87,6.61,49.52,687,45.2,27962.0,232.3
+llama3.2:3b,reasoning,1,A bat and a ball cost $1.10 in total. The bat costs $1.00 more than the ball. How much does the ball...,3.24,2.55,51.93,168,20.7,15012.0,122.2
+llama3.2:3b,reasoning,2,"If it takes 5 machines 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 ...",1.59,0.15,195.08,311,65.0,17128.0,227.4
+llama3.2:3b,reasoning,3,A lily pad doubles in size every day. It takes 48 days to cover a lake. How long does it take to cov...,1.06,0.15,153.29,163,36.5,17128.0,213.1
+llama3.2:3b,reasoning,4,Three friends split a restaurant bill. The bill is $30 so they each pay $10. The waiter realizes the...,1.6,0.16,162.95,260,48.0,17128.0,214.3
+llama3.2:3b,reasoning,5,"You have two ropes that each take exactly one hour to burn, but they burn unevenly. How do you measu...",1.07,0.16,135.53,145,36.0,17128.0,182.1
+llama3.2:3b,coding,1,Write a Python function that finds all prime numbers up to n using the Sieve of Eratosthenes.,1.07,0.16,207.27,222,36.5,17128.0,186.7
+llama3.2:3b,coding,2,Debug this Python code and explain what is wrong: def fibonacci(n): if n == 0: return 0 elif n == 1:...,2.69,0.15,236.92,637,64.0,17128.0,251.4
+llama3.2:3b,coding,3,Write a Python function that takes a list of integers and returns the two numbers that add up to a t...,0.54,0.15,98.99,53,0.0,17128.0,248.4
+llama3.2:3b,coding,4,Explain what this code does and identify any potential issues: def process(data): result = [] for i ...,2.15,0.15,244.66,526,54.5,17128.0,225.4
+llama3.2:3b,coding,5,Write a REST API endpoint in Python using Flask that accepts a JSON body with a username and passwor...,2.15,0.15,226.02,486,58.2,17128.0,260.5
+llama3.2:3b,knowledge,1,"Explain the difference between supervised, unsupervised, and reinforcement learning in machine learn...",2.69,0.15,235.49,633,58.2,17128.0,247.9
+llama3.2:3b,knowledge,2,What is the CAP theorem in distributed systems and what are its practical implications?,2.15,0.15,196.23,422,54.2,17130.0,239.3
+llama3.2:3b,knowledge,3,Explain how CRISPR-Cas9 gene editing works at a molecular level.,2.69,0.16,255.74,688,59.8,17130.0,242.3
+llama3.2:3b,knowledge,4,What were the main causes and consequences of the 2008 financial crisis?,2.69,0.15,224.99,605,59.2,17130.0,264.4
+llama3.2:3b,knowledge,5,Explain the difference between TCP and UDP protocols and when you would use each.,2.15,0.15,217.11,467,54.2,17130.0,236.0
+llama3.2:3b,instruction,1,"Write a haiku about autumn, then translate it to French, then explain the seasonal symbolism used.",1.61,0.15,181.66,293,50.3,17130.0,232.2
+llama3.2:3b,instruction,2,"List the planets in our solar system by size from largest to smallest, give their diameter in km, an...",1.08,0.15,192.84,208,37.0,17130.0,195.8
+llama3.2:3b,instruction,3,"Summarize the plot of Romeo and Juliet in exactly 50 words, no more no less.",0.54,0.15,128.82,69,0.0,17130.0,223.3
+llama3.2:3b,instruction,4,Give me a recipe for chocolate chip cookies. Format it with an ingredients section using a bulleted ...,1.61,0.15,210.39,339,49.3,17131.0,216.9
+llama3.2:3b,instruction,5,"Write a formal email declining a job offer, then rewrite it as a casual text message, then rewrite i...",2.15,0.16,195.34,420,55.0,17132.0,245.9
+llama3.2:3b,context,1,Read the following text and answer the questions below it. Text: The mitochondria are membrane-bound...,0.54,0.16,145.55,78,0.0,17132.0,213.3
+llama3.2:3b,context,2,Read this code and answer the questions: def mystery(lst): if len(lst) <= 1: return lst pivot = lst[...,2.15,0.16,201.75,434,55.2,17132.0,225.4
+llama3.2:3b,context,3,"Read the following paragraph and identify: 1) the main argument, 2) any logical fallacies, 3) what e...",1.61,0.16,181.85,293,49.0,17132.0,216.8
+qwen2.5:7b,reasoning,1,A bat and a ball cost $1.10 in total. The bat costs $1.00 more than the ball. How much does the ball...,3.72,2.01,78.04,290,0.0,17277.0,99.5
+qwen2.5:7b,reasoning,2,"If it takes 5 machines 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 ...",2.13,0.14,148.59,316,0.0,17471.0,85.3
+qwen2.5:7b,reasoning,3,A lily pad doubles in size every day. It takes 48 days to cover a lake. How long does it take to cov...,1.59,0.13,161.77,258,0.0,17471.0,83.9
+qwen2.5:7b,reasoning,4,Three friends split a restaurant bill. The bill is $30 so they each pay $10. The waiter realizes the...,2.66,0.14,156.01,415,0.0,17471.0,82.5
+qwen2.5:7b,reasoning,5,"You have two ropes that each take exactly one hour to burn, but they burn unevenly. How do you measu...",1.6,0.13,119.68,191,0.0,17471.0,81.4
+qwen2.5:7b,coding,1,Write a Python function that finds all prime numbers up to n using the Sieve of Eratosthenes.,2.66,0.14,166.0,441,0.0,17471.0,80.7
+qwen2.5:7b,coding,2,Debug this Python code and explain what is wrong: def fibonacci(n): if n == 0: return 0 elif n == 1:...,3.19,0.13,155.76,497,0.0,17471.0,79.7
+qwen2.5:7b,coding,3,Write a Python function that takes a list of integers and returns the two numbers that add up to a t...,2.67,0.13,164.47,439,0.0,17471.0,76.3
+qwen2.5:7b,coding,4,Explain what this code does and identify any potential issues: def process(data): result = [] for i ...,3.79,0.13,171.56,650,0.0,17471.0,33.6
+qwen2.5:7b,coding,5,Write a REST API endpoint in Python using Flask that accepts a JSON body with a username and passwor...,4.33,0.13,159.27,689,0.0,17471.0,24.9
+qwen2.5:7b,knowledge,1,"Explain the difference between supervised, unsupervised, and reinforcement learning in machine learn...",3.25,0.13,143.91,467,0.0,17471.0,23.3
+qwen2.5:7b,knowledge,2,What is the CAP theorem in distributed systems and what are its practical implications?,3.25,0.13,163.11,530,0.0,17471.0,22.6
+qwen2.5:7b,knowledge,3,Explain how CRISPR-Cas9 gene editing works at a molecular level.,4.33,0.13,161.17,698,0.0,17471.0,21.6
+qwen2.5:7b,knowledge,4,What were the main causes and consequences of the 2008 financial crisis?,4.33,0.13,166.68,721,0.0,17471.0,20.8
+qwen2.5:7b,knowledge,5,Explain the difference between TCP and UDP protocols and when you would use each.,3.24,0.13,160.86,521,0.0,17471.0,19.7
+qwen2.5:7b,instruction,1,"Write a haiku about autumn, then translate it to French, then explain the seasonal symbolism used.",2.16,0.13,123.95,268,0.0,17471.0,19.5
+qwen2.5:7b,instruction,2,"List the planets in our solar system by size from largest to smallest, give their diameter in km, an...",2.7,0.13,147.26,398,0.0,17471.0,19.2
+qwen2.5:7b,instruction,3,"Summarize the plot of Romeo and Juliet in exactly 50 words, no more no less.",0.54,0.13,100.51,54,0.0,17471.0,19.0
+qwen2.5:7b,instruction,4,Give me a recipe for chocolate chip cookies. Format it with an ingredients section using a bulleted ...,2.16,0.13,148.41,321,0.0,17471.0,18.6
+qwen2.5:7b,instruction,5,"Write a formal email declining a job offer, then rewrite it as a casual text message, then rewrite i...",2.7,0.13,144.31,390,0.0,17471.0,19.1
+qwen2.5:7b,context,1,Read the following text and answer the questions below it. Text: The mitochondria are membrane-bound...,1.08,0.14,101.18,109,0.0,17471.0,19.1
+qwen2.5:7b,context,2,Read this code and answer the questions: def mystery(lst): if len(lst) <= 1: return lst pivot = lst[...,3.78,0.14,145.34,550,0.0,17471.0,18.5
+qwen2.5:7b,context,3,"Read the following paragraph and identify: 1) the main argument, 2) any logical fallacies, 3) what e...",2.16,0.14,164.11,354,0.0,17471.0,18.4
+mistral:7b,reasoning,1,A bat and a ball cost $1.10 in total. The bat costs $1.00 more than the ball. How much does the ball...,3.23,1.74,61.99,200,0.0,17587.0,32.8
+mistral:7b,reasoning,2,"If it takes 5 machines 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 ...",1.06,0.03,176.71,188,0.0,17810.0,67.7
+mistral:7b,reasoning,3,A lily pad doubles in size every day. It takes 48 days to cover a lake. How long does it take to cov...,2.66,0.04,190.35,507,0.0,17810.0,66.9
+mistral:7b,reasoning,4,Three friends split a restaurant bill. The bill is $30 so they each pay $10. The waiter realizes the...,1.6,0.04,166.49,266,0.0,17810.0,67.0
+mistral:7b,reasoning,5,"You have two ropes that each take exactly one hour to burn, but they burn unevenly. How do you measu...",1.6,0.03,173.82,278,0.0,17810.0,66.6
+mistral:7b,coding,1,Write a Python function that finds all prime numbers up to n using the Sieve of Eratosthenes.,1.6,0.03,175.8,281,0.0,17810.0,67.0
+mistral:7b,coding,2,Debug this Python code and explain what is wrong: def fibonacci(n): if n == 0: return 0 elif n == 1:...,2.67,0.04,166.21,443,0.0,17810.0,67.5
+mistral:7b,coding,3,Write a Python function that takes a list of integers and returns the two numbers that add up to a t...,1.6,0.04,146.29,234,0.0,17810.0,67.2
+mistral:7b,coding,4,Explain what this code does and identify any potential issues: def process(data): result = [] for i ...,2.67,0.04,183.84,490,0.0,17810.0,66.9
+mistral:7b,coding,5,Write a REST API endpoint in Python using Flask that accepts a JSON body with a username and passwor...,4.32,0.03,181.26,783,0.0,17810.0,32.4
+mistral:7b,knowledge,1,"Explain the difference between supervised, unsupervised, and reinforcement learning in machine learn...",1.62,0.03,196.77,319,0.0,17810.0,18.5
+mistral:7b,knowledge,2,What is the CAP theorem in distributed systems and what are its practical implications?,2.71,0.03,178.89,484,0.0,17810.0,18.1
+mistral:7b,knowledge,3,Explain how CRISPR-Cas9 gene editing works at a molecular level.,4.32,0.03,178.51,772,0.0,17810.0,17.8
+mistral:7b,knowledge,4,What were the main causes and consequences of the 2008 financial crisis?,3.79,0.03,189.65,718,0.0,17810.0,17.5
+mistral:7b,knowledge,5,Explain the difference between TCP and UDP protocols and when you would use each.,2.7,0.03,193.62,523,0.0,17810.0,17.5
+mistral:7b,instruction,1,"Write a haiku about autumn, then translate it to French, then explain the seasonal symbolism used.",1.62,0.03,138.89,225,0.0,17810.0,17.6
+mistral:7b,instruction,2,"List the planets in our solar system by size from largest to smallest, give their diameter in km, an...",2.16,0.04,172.42,373,0.0,17810.0,17.3
+mistral:7b,instruction,3,"Summarize the plot of Romeo and Juliet in exactly 50 words, no more no less.",0.54,0.03,137.21,74,0.0,17810.0,17.5
+mistral:7b,instruction,4,Give me a recipe for chocolate chip cookies. Format it with an ingredients section using a bulleted ...,2.16,0.04,177.22,383,0.0,17810.0,17.4
+mistral:7b,instruction,5,"Write a formal email declining a job offer, then rewrite it as a casual text message, then rewrite i...",3.79,0.03,179.27,679,0.0,17810.0,17.4
+mistral:7b,context,1,Read the following text and answer the questions below it. Text: The mitochondria are membrane-bound...,1.08,0.05,100.95,109,0.0,17810.0,17.5
+mistral:7b,context,2,Read this code and answer the questions: def mystery(lst): if len(lst) <= 1: return lst pivot = lst[...,1.08,0.05,165.82,179,0.0,17810.0,17.2
+mistral:7b,context,3,"Read the following paragraph and identify: 1) the main argument, 2) any logical fallacies, 3) what e...",1.08,0.04,185.36,200,0.0,17810.0,17.0
+qwen2.5:32b,reasoning,1,A bat and a ball cost $1.10 in total. The bat costs $1.00 more than the ball. How much does the ball...,8.56,4.25,24.41,209,22.7,26556.0,108.2
+qwen2.5:32b,reasoning,2,"If it takes 5 machines 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 ...",5.35,0.17,47.12,252,38.5,30808.0,189.0
+qwen2.5:32b,reasoning,3,A lily pad doubles in size every day. It takes 48 days to cover a lake. How long does it take to cov...,4.28,0.16,45.31,194,37.4,30808.0,189.4
+qwen2.5:32b,reasoning,4,Three friends split a restaurant bill. The bill is $30 so they each pay $10. The waiter realizes the...,6.41,0.18,46.3,297,39.0,30808.0,193.2
+qwen2.5:32b,reasoning,5,"You have two ropes that each take exactly one hour to burn, but they burn unevenly. How do you measu...",5.36,0.16,45.19,242,38.5,30808.0,191.1
+qwen2.5:32b,coding,1,Write a Python function that finds all prime numbers up to n using the Sieve of Eratosthenes.,8.57,0.17,49.49,424,40.0,30808.0,199.7
+qwen2.5:32b,coding,2,Debug this Python code and explain what is wrong: def fibonacci(n): if n == 0: return 0 elif n == 1:...,12.32,0.17,50.15,618,41.4,30810.0,209.8
+qwen2.5:32b,coding,3,Write a Python function that takes a list of integers and returns the two numbers that add up to a t...,8.02,0.16,47.61,382,39.8,30810.0,209.1
+qwen2.5:32b,coding,4,Explain what this code does and identify any potential issues: def process(data): result = [] for i ...,11.79,0.17,49.72,586,41.0,30810.0,211.3
+qwen2.5:32b,coding,5,Write a REST API endpoint in Python using Flask that accepts a JSON body with a username and passwor...,11.24,0.16,49.71,559,40.9,30810.0,213.8
+qwen2.5:32b,knowledge,1,"Explain the difference between supervised, unsupervised, and reinforcement learning in machine learn...",8.03,0.15,49.97,401,39.9,30810.0,213.6
+qwen2.5:32b,knowledge,2,What is the CAP theorem in distributed systems and what are its practical implications?,10.18,0.15,48.73,496,42.8,30812.0,217.7
+qwen2.5:32b,knowledge,3,Explain how CRISPR-Cas9 gene editing works at a molecular level.,12.33,0.15,50.55,623,41.1,30812.0,217.6
+qwen2.5:32b,knowledge,4,What were the main causes and consequences of the 2008 financial crisis?,12.92,0.16,49.15,635,42.7,19393.0,222.0
+qwen2.5:32b,knowledge,5,Explain the difference between TCP and UDP protocols and when you would use each.,9.63,0.15,47.99,462,40.6,13684.0,218.3
+qwen2.5:32b,instruction,1,"Write a haiku about autumn, then translate it to French, then explain the seasonal symbolism used.",4.82,0.15,50.02,241,38.2,13684.0,208.7
+qwen2.5:32b,instruction,2,"List the planets in our solar system by size from largest to smallest, give their diameter in km, an...",4.81,0.16,46.53,224,42.6,13684.0,222.7
+qwen2.5:32b,instruction,3,"Summarize the plot of Romeo and Juliet in exactly 50 words, no more no less.",1.6,0.16,43.16,69,28.7,13684.0,195.7
+qwen2.5:32b,instruction,4,Give me a recipe for chocolate chip cookies. Format it with an ingredients section using a bulleted ...,7.49,0.16,48.72,365,41.6,13684.0,222.7
+qwen2.5:32b,instruction,5,"Write a formal email declining a job offer, then rewrite it as a casual text message, then rewrite i...",9.63,0.16,48.99,472,40.2,13684.0,222.9
+qwen2.5:32b,context,1,Read the following text and answer the questions below it. Text: The mitochondria are membrane-bound...,2.67,0.21,41.19,110,34.0,13684.0,208.2
+qwen2.5:32b,context,2,Read this code and answer the questions: def mystery(lst): if len(lst) <= 1: return lst pivot = lst[...,8.57,0.19,47.16,404,39.9,13684.0,220.3
+qwen2.5:32b,context,3,"Read the following paragraph and identify: 1) the main argument, 2) any logical fallacies, 3) what e...",5.35,0.18,48.05,257,38.5,13684.0,213.5
+gemma2:27b,reasoning,1,A bat and a ball cost $1.10 in total. The bat costs $1.00 more than the ball. How much does the ball...,24.19,20.69,7.44,180,14.8,29870.0,90.4
+gemma2:27b,reasoning,2,"If it takes 5 machines 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 ...",3.24,0.18,47.19,153,73.0,31819.0,261.2
+gemma2:27b,reasoning,3,A lily pad doubles in size every day. It takes 48 days to cover a lake. How long does it take to cov...,2.16,0.17,46.28,100,66.0,31820.0,240.1
+gemma2:27b,reasoning,4,Three friends split a restaurant bill. The bill is $30 so they each pay $10. The waiter realizes the...,3.25,0.19,53.23,173,73.7,31821.0,270.3
+gemma2:27b,reasoning,5,"You have two ropes that each take exactly one hour to burn, but they burn unevenly. How do you measu...",3.79,0.18,49.07,186,75.3,31821.0,283.2
+gemma2:27b,coding,1,Write a Python function that finds all prime numbers up to n using the Sieve of Eratosthenes.,9.23,0.17,57.51,531,83.1,31821.0,286.3
+gemma2:27b,coding,2,Debug this Python code and explain what is wrong: def fibonacci(n): if n == 0: return 0 elif n == 1:...,8.13,0.18,55.94,455,84.5,31821.0,292.1
+gemma2:27b,coding,3,Write a Python function that takes a list of integers and returns the two numbers that add up to a t...,10.3,0.18,58.16,599,83.3,31821.0,292.0
+gemma2:27b,coding,4,Explain what this code does and identify any potential issues: def process(data): result = [] for i ...,8.14,0.18,56.37,459,87.1,31821.0,297.0
+gemma2:27b,coding,5,Write a REST API endpoint in Python using Flask that accepts a JSON body with a username and passwor...,12.49,0.18,56.2,702,84.1,31821.0,296.1
+gemma2:27b,knowledge,1,"Explain the difference between supervised, unsupervised, and reinforcement learning in machine learn...",9.76,0.17,56.54,552,83.1,31821.0,289.5
+gemma2:27b,knowledge,2,What is the CAP theorem in distributed systems and what are its practical implications?,8.15,0.17,56.71,462,81.9,31821.0,292.7
+gemma2:27b,knowledge,3,Explain how CRISPR-Cas9 gene editing works at a molecular level.,8.14,0.17,54.81,446,82.7,31822.0,294.9
+gemma2:27b,knowledge,4,What were the main causes and consequences of the 2008 financial crisis?,8.68,0.17,57.7,501,83.6,31823.0,286.4
+gemma2:27b,knowledge,5,Explain the difference between TCP and UDP protocols and when you would use each.,9.23,0.17,56.56,522,85.5,31823.0,293.8
+gemma2:27b,instruction,1,"Write a haiku about autumn, then translate it to French, then explain the seasonal symbolism used.",4.33,0.17,53.06,230,77.0,31823.0,280.6
+gemma2:27b,instruction,2,"List the planets in our solar system by size from largest to smallest, give their diameter in km, an...",3.25,0.17,48.87,159,74.0,31823.0,277.4
+gemma2:27b,instruction,3,"Summarize the plot of Romeo and Juliet in exactly 50 words, no more no less.",1.08,0.17,46.23,50,44.5,31823.0,214.7
+gemma2:27b,instruction,4,Give me a recipe for chocolate chip cookies. Format it with an ingredients section using a bulleted ...,5.41,0.17,57.26,310,86.6,31823.0,291.2
+gemma2:27b,instruction,5,"Write a formal email declining a job offer, then rewrite it as a casual text message, then rewrite i...",5.96,0.18,52.02,310,84.1,31823.0,294.7
+gemma2:27b,context,1,Read the following text and answer the questions below it. Text: The mitochondria are membrane-bound...,2.71,0.22,43.6,118,70.4,31823.0,259.3
+gemma2:27b,context,2,Read this code and answer the questions: def mystery(lst): if len(lst) <= 1: return lst pivot = lst[...,7.59,0.2,56.53,429,81.9,31823.0,285.2
+gemma2:27b,context,3,"Read the following paragraph and identify: 1) the main argument, 2) any logical fallacies, 3) what e...",6.5,0.19,54.28,353,82.2,31823.0,294.1
+mistral-small:22b,reasoning,1,A bat and a ball cost $1.10 in total. The bat costs $1.00 more than the ball. How much does the ball...,19.2,16.15,10.78,207,9.9,19502.0,81.3
+mistral-small:22b,reasoning,2,"If it takes 5 machines 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 ...",3.2,0.05,71.19,228,39.7,21994.0,186.7
+mistral-small:22b,reasoning,3,A lily pad doubles in size every day. It takes 48 days to cover a lake. How long does it take to cov...,1.59,0.05,53.36,85,32.0,21994.0,174.5
+mistral-small:22b,reasoning,4,Three friends split a restaurant bill. The bill is $30 so they each pay $10. The waiter realizes the...,5.87,0.06,75.64,444,43.1,21996.0,198.9
+mistral-small:22b,reasoning,5,"You have two ropes that each take exactly one hour to burn, but they burn unevenly. How do you measu...",3.2,0.05,72.45,232,39.7,21996.0,197.6
+mistral-small:22b,coding,1,Write a Python function that finds all prime numbers up to n using the Sieve of Eratosthenes.,6.95,0.05,76.88,534,44.2,21996.0,208.4
+mistral-small:22b,coding,2,Debug this Python code and explain what is wrong: def fibonacci(n): if n == 0: return 0 elif n == 1:...,6.93,0.06,73.91,512,44.2,21996.0,212.7
+mistral-small:22b,coding,3,Write a Python function that takes a list of integers and returns the two numbers that add up to a t...,5.88,0.05,74.67,439,43.4,21996.0,207.8
+mistral-small:22b,coding,4,Explain what this code does and identify any potential issues: def process(data): result = [] for i ...,9.06,0.06,76.93,697,45.0,21996.0,216.0
+mistral-small:22b,coding,5,Write a REST API endpoint in Python using Flask that accepts a JSON body with a username and passwor...,9.62,0.05,79.73,767,45.1,21996.0,221.3
+mistral-small:22b,knowledge,1,"Explain the difference between supervised, unsupervised, and reinforcement learning in machine learn...",8.02,0.05,79.7,639,45.5,21996.0,225.6
+mistral-small:22b,knowledge,2,What is the CAP theorem in distributed systems and what are its practical implications?,5.86,0.05,77.14,452,44.9,21996.0,226.6
+mistral-small:22b,knowledge,3,Explain how CRISPR-Cas9 gene editing works at a molecular level.,10.68,0.05,80.21,857,45.4,21996.0,228.6
+mistral-small:22b,knowledge,4,What were the main causes and consequences of the 2008 financial crisis?,9.59,0.05,79.01,758,47.8,21998.0,232.5
+mistral-small:22b,knowledge,5,Explain the difference between TCP and UDP protocols and when you would use each.,9.07,0.05,79.71,723,45.1,21998.0,231.2
+mistral-small:22b,instruction,1,"Write a haiku about autumn, then translate it to French, then explain the seasonal symbolism used.",3.73,0.05,75.3,281,44.1,21998.0,230.4
+mistral-small:22b,instruction,2,"List the planets in our solar system by size from largest to smallest, give their diameter in km, an...",3.75,0.05,75.5,283,41.1,21998.0,224.9
+mistral-small:22b,instruction,3,"Summarize the plot of Romeo and Juliet in exactly 50 words, no more no less.",1.06,0.05,73.44,78,24.0,21998.0,207.2
+mistral-small:22b,instruction,4,Give me a recipe for chocolate chip cookies. Format it with an ingredients section using a bulleted ...,5.87,0.05,78.58,461,46.9,21998.0,230.4
+mistral-small:22b,instruction,5,"Write a formal email declining a job offer, then rewrite it as a casual text message, then rewrite i...",6.93,0.05,76.0,527,44.2,21998.0,231.6
+mistral-small:22b,context,1,Read the following text and answer the questions below it. Text: The mitochondria are membrane-bound...,2.13,0.09,64.84,138,35.5,21998.0,218.7
+mistral-small:22b,context,2,Read this code and answer the questions: def mystery(lst): if len(lst) <= 1: return lst pivot = lst[...,8.01,0.07,75.8,607,44.5,21998.0,228.4
+mistral-small:22b,context,3,"Read the following paragraph and identify: 1) the main argument, 2) any logical fallacies, 3) what e...",5.33,0.06,75.93,405,43.2,21998.0,222.1

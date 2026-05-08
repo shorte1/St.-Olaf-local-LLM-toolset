@@ -1,0 +1,57 @@
+Model: deepseek-r1:7b
+Category: instruction
+Prompt: Write a formal email declining a job offer, then rewrite it as a casual text message, then rewrite it as a Shakespearean monologue.
+========================================
+**Formal Email Declining a Job Offer:**
+
+Subject: Re: Job Offer Declined  
+
+Dear [Recipient's Name],  
+
+I hope this message finds you well. I wanted to formally decline the job offer you were extending to me earlier. While the position aligns with my interests and goals, at this time, I feel it is not the right fit for my current schedule and personal circumstances.  
+
+I deeply appreciate your confidence in my abilities and the opportunity you provided. However, after careful consideration, I believe it is best for both of us to part ways at this juncture.  
+
+Thank you once again for your understanding, and I wish you continued success with the search for a suitable candidate.  
+
+Warm regards,  
+[Your Full Name]  
+
+---
+
+**Casual Text Message Declining a Job Offer:**
+
+Hey [Recipient's Name],
+
+Sorry to hear you're looking for a new job! Let me just say, I really enjoyed our time together and all the great times we had. But honestly, it’s not quite my thing anymore.
+
+I’ve been feeling pretty settled here for a while now, and I think it’s time for something new that could be more exciting. Plus, personal stuff is taking priority over everything else right now.  
+
+You were such a good friend, and I’ll miss you! Wishing you all the best in your search—just remember to keep the fire going if you need anything.  
+
+Take care,  
+[Your Name]  
+
+---
+
+**Shakespearean Monologue Declining a Job Offer:**
+
+O my poor mind, O heavy heart,  
+For news of employment and such  
+In lands of promise, I do mourn.  
+The offer did come soft as morning dew,  
+But fate decreed I must decline.  
+For in this hour of trial,  
+My soul doth yearn for peace.  
+
+I cannot stay to see the rise,  
+Nor bear the weight of loss so heavy.  
+For in this trying time,  
+My spirit doth take flight,  
+To seek a path new and bright.  
+
+So let it be, my heart doth sadle,  
+And this rejection do I embrace.  
+Though words may fail me, still I stand,  
+For in this moment’s end,  
+The will to soar shall never bend.

@@ -1,0 +1,48 @@
+Model: mistral:7b
+Category: instruction
+Prompt: Write a formal email declining a job offer, then rewrite it as a casual text message, then rewrite it as a Shakespearean monologue.
+========================================
+ Email:
+
+Subject: Declination of Job Offer - [Your Name]
+
+Dear [Recipient's Name],
+
+I hope this message finds you well. I am writing to express my gratitude for the job offer received from your esteemed organization, [Company Name]. The opportunity was indeed attractive and it has been a pleasure considering the prospect of working with such a reputable company.
+
+However, after careful consideration, I regret to inform you that I must decline the offer. After much introspection, I have decided to pursue a different career path that aligns more closely with my long-term goals. This decision was not an easy one and it was made only after weighing the pros and cons thoroughly.
+
+I want to take this opportunity to thank you for your time and consideration during the recruitment process. I am confident that [Company Name] will continue to flourish under your leadership and I wish the entire team all the best in their future endeavors.
+
+Once again, thank you for the opportunity. I hope our paths cross again in the future.
+
+Best Regards,
+[Your Name]
+
+---
+
+Casual Text Message:
+
+Hey [Recipient's Name],
+
+Hope you're doing great! Just wanted to reach out and say thanks for the job offer at [Company Name]. It was really flattering to be considered for such a cool gig. I've been thinking it over, and unfortunately, I'm going to have to turn it down. I've got some other stuff I need to focus on right now.
+
+I just wanted to let you know how much I appreciate the opportunity, though. [Company Name] is a great company with an awesome team, and I wish you all the best for the future. Maybe we'll work together again someday!
+
+Take care and keep in touch,
+[Your Name]
+
+---
+
+Shakespearean Monologue:
+
+Fair [Recipient's Name], mine humble self doth greet thee on this day of good cheer. I pen these lines to express my heartfelt gratitude for the noble offer bestowed upon me by thine esteemed company, [Company Name]. The prospect of joining forces with such a revered institution hath filled mine soul with joy and anticipation.
+
+Yet, alas! My humble self hath been compelled to ponder deeply on this matter, and after much deliberation, I find myself in a predicament most unfortunate: I must decline the offer extended unto me. My spirit hath led me down another path of ambition, one that aligns more closely with mine own long-term aspirations.
+
+Fear not, dear [Recipient's Name], for this decision hath not been made lightly, nor with haste or caprice. I beseech thee to accept my heartfelt thanks for the time and consideration accorded me during the process of recruitment. I am certain that [Company Name] shall continue to thrive under thy guidance and wise leadership, and I offer mine humble wishes for its continued success.
+
+May God's blessings be upon thee, dear [Recipient's Name], and may we cross paths once more in the future, when fate shall deem it so. Until then, remain ever well, and may good fortune follow thee on thy noble journey.
+
+Yours most sincerely,
+[Your Name]

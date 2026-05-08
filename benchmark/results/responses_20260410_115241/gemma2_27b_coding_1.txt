@@ -1,0 +1,46 @@
+Model: gemma2:27b
+Category: coding
+Prompt: Write a Python function that finds all prime numbers up to n using the Sieve of Eratosthenes.
+========================================
+```python
+def sieve_of_eratosthenes(n):
+  """
+  Finds all prime numbers up to n using the Sieve of Eratosthenes.
+
+  Args:
+    n: An integer representing the upper limit for finding primes.
+
+  Returns:
+    A list containing all prime numbers up to n.
+  """
+  primes = [True] * (n + 1)  # Initialize a list of booleans, assuming all numbers are prime initially
+  primes[0] = primes[1] = False # 0 and 1 are not prime
+
+  for i in range(2, int(n**0.5) + 1):
+    if primes[i]:
+      for j in range(i * i, n + 1, i):
+        primes[j] = False
+
+  return [i for i, is_prime in enumerate(primes) if is_prime]
+
+# Example usage:
+n = 50
+primes = sieve_of_eratosthenes(n)
+print(f"Prime numbers up to {n}: {primes}")
+```
+
+**Explanation:**
+
+
+1. **Initialization:**
+   - `primes` is a list of boolean values, initially set to `True` for all numbers from 0 to `n`. We assume all numbers are prime until proven otherwise.
+   - Set `primes[0]` and `primes[1]` to `False`, as they are not prime.
+
+2. **Iteration:**
+   - The outer loop iterates through numbers `i` from 2 to the square root of `n`. This is because any composite number less than or equal to `n` will have a prime factor less than or equal to its square root.
+
+3. **Marking Composites:**
+   - If `primes[i]` is `True`, meaning `i` is prime, the inner loop marks all multiples of `i` (starting from `i * i`) as `False`. These multiples are composite numbers because they are divisible by `i`.
+
+4. **Returning Primes:**
+   - Finally, we iterate through the `primes` list and return a list containing only the indices (which represent the prime numbers) where the boolean value is `True`.

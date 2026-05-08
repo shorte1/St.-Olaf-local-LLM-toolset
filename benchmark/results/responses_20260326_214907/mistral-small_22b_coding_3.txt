@@ -1,0 +1,40 @@
+Model: mistral-small:22b
+Category: coding
+Prompt: Write a Python function that takes a list of integers and returns the two numbers that add up to a target sum. It should run in O(n) time.
+========================================
+ Sure, here's a Python function that uses a hash table (dictionary) to achieve an O(n) time complexity for finding two numbers in a list that add up to a given target sum:
+
+```python
+def find_two_sum(numbers, target):
+    # Create a dictionary to store the complement of each number
+    num_dict = {}
+
+    # Iterate through the list of numbers
+    for num in numbers:
+        # Calculate the complement needed to reach the target sum
+        complement = target - num
+
+        # Check if the complement is already in the dictionary
+        if complement in num_dict:
+            # If found, return the pair (complement, current number)
+            return [num_dict[complement], num]
+
+        # Otherwise, store the current number with its index in the dictionary
+        num_dict[num] = True
+
+    # If no pair is found, return None or an appropriate message
+    return None
+
+# Example usage:
+numbers = [2, 7, 11, 15]
+target = 9
+result = find_two_sum(numbers, target)
+print("Pair that adds up to the target sum:", result)
+```
+
+### Explanation:
+1. **Dictionary Initialization**: We initialize an empty dictionary `num_dict`.
+2. **Iterate Through List**: For each number in the list, we calculate its complement (i.e., `target - num`).
+3. **Check Complement Existence**: If the complement exists as a key in the dictionary, it means we have found two numbers that add up to the target sum. We return these two numbers.
+4. **Store Number**: If the complement is not found, we store the current number in the dictionary with a dummy value (e.g., `True`). This ensures each number is stored only once.
+5. **Return Result**: If no such pair is found by the end of the iteration, we return `None`.

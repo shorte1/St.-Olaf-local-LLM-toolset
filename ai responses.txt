@@ -1,0 +1,49 @@
+Limit eroticism in all capacities
+Stay out of students personal lives
+It isn't a friend, not there to give life advice
+
+as a research tool
+ - don't want to become a substitute for the student
+ - make sure that it always refers back to the text, properly cites and provides sources
+ - purely informative, keeps opinion out of the results
+ - see if can connect to library databse for sources
+
+as a reading tool
+ - avoid summarization/overview of text, bordering on plagiarism
+ - help the student through the process of interpreting a test
+ - highlight structures of essays
+ - showing the movements of the work e.g - this person is trying to make this point at this point in the text
+ - not replacing the need to read the larger text but to help with processing
+ - separate paragraphs, highlight structure of essya in specific topics, let the reader know what the writier is talking about in each paragraph, not summarizing but moreso informative on the bare contents of the essay
+ - highlighting important parts of essay and why, informed by the specifics of the prompt rather than deciding itself what is "important"
+ - why? everytime ai points to something give an explanation why it pointed to it so the reader doesn't blindly absorb the ai's response
+
+as a writing tool
+ - grammar checks
+ - how would you rephrase this in 4 different ways, highlight the changes
+ - specialized in helping people with dyslexia, adhd, etc. (grammar) helping with the big picture 
+ - highlight flaws in argument
+ - don't write entire new sections
+ - prompting ai with specific feedback - "how should i imprve this in terms of clarity" "following this rubric, what are 4/5 things i can improve" "is the argument correct"
+ - when asked for general feedback, could suggest specific requests on more targeted feedback
+ 
+ as user friendly as possible -> upload document, recieve annotated version
+ 
+ process is first reviewing full essay before then working together to prompt ai to cross reference with work from  
+ tutor alone.
+ 
+ make sure people know ai can be used for things beyond just cheating
+ 
+ Primary concern:
+ changing voice - protections on that - making suggestions more towards academic english - suggestions of changing of tone is maybe not great
+ - suggestions of change to use of external sources e.g. if a writer is using a primary source, suggestions on that primary source would be maybe not great
+ - ethical worries about suggestions and examples for something like a transition. not rewriting sentences but rather providing information about whta a good transition would look like, advice rather than giving the answer - parameters on how much information can be given in giving advice so it doesn't give actual writing but instead guides people towards proper writing practices
+ - suggestions on formatting, being able to get examples of formatting of something like an apa 9 formatted paper, giving samples before writing even begins
+ - suggestions and prompts to help you come up with your own ideas - ask "help me brainstorm ideas on this topic" and it not giving ideas of its own but guidin you in making ideas
+ 
+ - have it able to give overview of purpose of paper and questions that are being answered, what do yo think are your strongests points and what sections are those points located
+ - if its a research paper, spend time on results and discussion, don't need to worry about methodology
+ - have well outlined objectives for the paper e.g. my conclusion sucks i want it done with
+ - could help to restrict the ai to a "role" such as telling it it is an assisant to a writing tutor
+ - fact checker, for mla apa rules etc.
+ - importnat for feedback to be general enough the writier can provide their own interpretation

@@ -1,0 +1,52 @@
+Model: gemma2:27b
+Category: coding
+Prompt: Write a Python function that finds all prime numbers up to n using the Sieve of Eratosthenes.
+========================================
+```python
+def sieve_of_eratosthenes(n):
+  """
+  Finds all prime numbers up to n using the Sieve of Eratosthenes.
+
+  Args:
+      n: The upper limit for finding primes.
+
+  Returns:
+      A list containing all prime numbers up to n.
+  """
+  primes = [True] * (n + 1)
+  primes[0] = primes[1] = False
+  for i in range(2, int(n ** 0.5) + 1):
+    if primes[i]:
+      for j in range(i * i, n + 1, i):
+        primes[j] = False
+
+  return [i for i, is_prime in enumerate(primes) if is_prime]
+
+
+# Example usage:
+n = 50
+prime_numbers = sieve_of_eratosthenes(n)
+print(f"Prime numbers up to {n}: {prime_numbers}")
+```
+
+**Explanation:**
+
+1. **Initialization:**
+   - `primes`: A boolean list of size `n+1` is created, initialized with all values set to `True`. This list represents numbers from 0 to `n`, where `True` indicates a potential prime number.
+   - `primes[0]` and `primes[1]` are set to `False` as 0 and 1 are not prime.
+
+2. **Sieving:**
+   - The outer loop iterates from `2` up to the square root of `n`. This is because any composite number less than or equal to `n` must have at least one prime factor less than or equal to its square root.
+   - For each `i`, if `primes[i]` is `True` (meaning `i` is a prime), the inner loop marks all multiples of `i` as `False`. This effectively "sieves" out composite numbers that are divisible by `i`.
+
+3. **Collecting Primes:**
+   - After the sieving process, the function iterates through the `primes` list using list comprehension. It selects indices `i` where `primes[i]` is `True`, indicating a prime number.
+
+
+**Key Points:**
+
+
+
+* The Sieve of Eratosthenes is an efficient algorithm for finding all primes up to a given limit.
+
+* Its time complexity is approximately O(n log log n), making it significantly faster than checking the primality of each number individually.

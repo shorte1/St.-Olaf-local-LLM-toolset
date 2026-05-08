@@ -1,0 +1,48 @@
+Model: gemma2:27b
+Category: coding
+Prompt: Debug this Python code and explain what is wrong: def fibonacci(n): if n == 0: return 0 elif n == 1: return 1 else: return fibonacci(n-1) + fibonacci(n-2) print(fibonacci(100))
+========================================
+The provided code correctly calculates Fibonacci numbers but suffers from a major performance issue due to its recursive nature. Let me explain the problem and how to fix it:
+
+**The Problem: Exponential Time Complexity**
+
+* **Redundant Calculations:** The recursive approach recalculates the same Fibonacci numbers multiple times. For example, to calculate `fibonacci(5)`, you need `fibonacci(4)` and `fibonacci(3)`.  But calculating `fibonacci(4)` also requires `fibonacci(3)`, leading to unnecessary repetition. This redundancy grows exponentially as `n` increases.
+
+* **Stack Overflow:** For larger values of `n` (like 100), the depth of recursion becomes very large, potentially exceeding Python's recursion limit and resulting in a "RecursionError: maximum recursion depth exceeded" error.
+
+**Solution: Memoization or Iterative Approach**
+
+1. **Memoization:** Store previously calculated Fibonacci numbers in a dictionary (or list) to avoid recalculating them. This technique drastically improves performance.
+
+```python
+def fibonacci(n, memo={}):
+  if n == 0:
+    return 0
+  elif n == 1:
+    return 1
+  if n not in memo:
+    memo[n] = fibonacci(n - 1, memo) + fibonacci(n - 2, memo)
+  return memo[n]
+
+print(fibonacci(100))
+```
+
+2. **Iterative Approach:** Use a loop to calculate Fibonacci numbers iteratively, storing the previous two values and updating them in each step. This avoids recursion altogether.
+
+```python
+def fibonacci(n):
+  a, b = 0, 1
+  for _ in range(n):
+    a, b = b, a + b
+  return a
+
+print(fibonacci(100))
+```
+
+
+
+**Explanation of the Solutions:**
+
+* **Memoization:** The `memo` dictionary stores Fibonacci numbers as they are calculated. Before performing the recursive calls, we check if the result for `n` is already in `memo`. If it is, we directly return it, skipping the redundant calculations.
+
+* **Iterative Approach:** This method uses two variables (`a` and `b`) to hold the previous two Fibonacci numbers. In each iteration of the loop, we update `a` and `b` to progress through the sequence. This approach is much more efficient than recursion for larger values of `n`.

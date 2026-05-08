@@ -1,0 +1,14 @@
+Model: llama3.2:3b
+Category: coding
+Prompt: Write a Python function that takes a list of integers and returns the two numbers that add up to a target sum. It should run in O(n) time.
+========================================
+def two_sum(nums, target):
+    num_map = {}
+    
+    for num in nums:
+        complement = target - num
+        if complement in num_map:
+            return [complement, num]
+        num_map[num] = True
+    
+    return None

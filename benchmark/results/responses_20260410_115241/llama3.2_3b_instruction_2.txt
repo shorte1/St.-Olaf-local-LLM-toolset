@@ -1,0 +1,29 @@
+Model: llama3.2:3b
+Category: instruction
+Prompt: List the planets in our solar system by size from largest to smallest, give their diameter in km, and mark which ones have rings.
+========================================
+Here are the planets in our solar system listed by size from largest to smallest, along with their diameters in kilometers, and whether they have rings:
+
+1. Jupiter - Diameter: 142,984 km
+ * Has rings: Yes ( four main rings and a halo ring)
+
+2. Saturn - Diameter: 116,460 km
+ * Has rings: Yes (seven main rings and numerous smaller ringlets)
+
+3. Uranus - Diameter: 51,118 km
+ * Has rings: Yes (13 main rings and many smaller ringlets)
+
+4. Neptune - Diameter: 49,528 km
+ * Has rings: Yes (five main rings and numerous smaller ringlets)
+
+5. Earth - Diameter: 12,742 km
+ * Has rings: No
+
+6. Venus - Diameter: 12,104 km
+ * Has rings: No
+
+7. Mars - Diameter: 6,794 km
+ * Has rings: No
+
+8. Mercury - Diameter: 4,879 km
+ * Has rings: No

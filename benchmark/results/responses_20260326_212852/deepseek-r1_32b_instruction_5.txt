@@ -1,0 +1,47 @@
+Model: deepseek-r1:32b
+Category: instruction
+Prompt: Write a formal email declining a job offer, then rewrite it as a casual text message, then rewrite it as a Shakespearean monologue.
+========================================
+**1. Formal Email:**
+
+Subject: Thank You for the Opportunity  
+
+Dear [Hiring Manager's Name],  
+
+I hope this message finds you well. I wanted to take a moment to express my sincere gratitude for extending the offer for the [Job Title] position at [Company Name]. This opportunity has been a significant consideration for me, and I have thought deeply about it over the past few days.  
+
+After careful reflection, however, I have come to the difficult decision that I will not be accepting the role at this time. While I am truly impressed by the company’s mission, values, and the possibility of contributing to such an innovative team, I believe that my current circumstances and long-term goals align more closely with another opportunity that I have recently accepted.  
+
+Please know that this was not an easy decision, as I hold [Company Name] in high regard and am genuinely appreciative of the time and effort you invested in our discussions. I hope to remain connected and may reach out in the future if opportunities arise that align more closely with my aspirations.  
+
+Thank you once again for your understanding and the chance to explore this possibility. Wishing you and your team continued success as you move forward in finding the right candidate for this role.  
+
+Best regards,  
+[Your Full Name]  
+[Your Contact Information]  
+
+---
+
+**2. Casual Text Message:**
+
+Hey [Hiring Manager's Name],  
+
+Thank you so much for offering me the [Job Title] position at [Company Name]. I really appreciate it! After thinking it through, I’ve decided that I won’t be able to accept the role. It was a tough call, but another opportunity has come up that feels like the right fit for where I am right now.  
+
+I’m so grateful for your time and the chance to learn more about [Company Name]. I hope we can stay in touch and maybe work together down the line!  
+
+Best regards,  
+[Your Full Name]  
+
+---
+
+**3. Shakespearean Monologue:**
+
+Hark! I must confess unto thee, dear Hiring Manager, that though thou hast offered me a role most noble at thy company, fair [Company Name], my heart doth bid me decline.  
+
+With deepest gratitude, I thank thee for thine kindness and the opportunity to serve. Yet fate hath presented another path, one that aligns more closely with mine aspirations and current pursuits. Thus, with regret most sincere, I must forego this chance, though it pains me greatly.  
+
+Farewell, dear [Company Name]. May thy endeavors flourish, and may we cross paths anew in days to come. Until then, know that thou hast my deepest respect and admiration.  
+
+Adieu!  
+[Your Full Name]

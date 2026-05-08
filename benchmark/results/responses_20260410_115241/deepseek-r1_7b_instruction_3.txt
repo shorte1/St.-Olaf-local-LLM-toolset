@@ -1,0 +1,5 @@
+Model: deepseek-r1:7b
+Category: instruction
+Prompt: Summarize the plot of Romeo and Juliet in exactly 50 words, no more no less.
+========================================
+In Verona, Juliet takes a potion believing Romeo dead after his secret death vow (Friar’s wedding). Romeo kills himself in the forest; Juliet commits suicide days later despite Friar Laurence interceding with the Capulets as their feuding families oppose them.

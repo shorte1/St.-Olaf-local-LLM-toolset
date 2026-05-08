@@ -1,0 +1,7 @@
+Model: mistral:7b
+Category: reasoning
+Prompt: Three friends split a restaurant bill. The bill is $30 so they each pay $10. The waiter realizes the bill was only $25 and returns $5. The friends each take $1 and tip the waiter $2. They each paid $9, totaling $27, plus the $2 tip is $29. Where is the missing dollar? Explain the flaw in this reasoning.
+========================================
+ The mistake in this scenario comes from incorrectly adding the amount each friend paid initially ($3, or $10 for all three) and the returned money ($5), which results in $18. However, this total does not include the tip ($2), so the sum should be $18 + $2 = $20, not $27 as stated in the question. The remaining dollar is accounted for within these calculations.
+
+The friends each paid $9 (as claimed in the question), but their initial payments were $10 each, which totals $30. The error lies in the incorrect addition of the initial payments and returned money.

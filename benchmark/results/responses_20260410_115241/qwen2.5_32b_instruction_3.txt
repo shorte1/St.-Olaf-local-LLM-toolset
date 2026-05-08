@@ -1,0 +1,5 @@
+Model: qwen2.5:32b
+Category: instruction
+Prompt: Summarize the plot of Romeo and Juliet in exactly 50 words, no more no less.
+========================================
+In Verona, feuding Montagues and Capulets clash. Romeo (Montague) and Juliet (Capulet) fall in love at a masquerade. Secretly married, they defy families. Tragedy strikes when Romeo kills Juliet’s cousin; exiled, he buys poison. Believing Juliet dead, he drinks it. She wakes, finds him dead, then stabs herself. Families reconcile over their deaths.

@@ -1,0 +1,81 @@
+Model: mistral:7b
+Category: coding
+Prompt: Write a REST API endpoint in Python using Flask that accepts a JSON body with a username and password, validates that neither is empty, and returns a JWT token.
+========================================
+ To create a REST API endpoint using Flask that accepts a JSON body with a username and password, validates them, and returns a JWT token, you'll need to install the `Flask` and `PyJWT` libraries first:
+
+```bash
+pip install flask pyjwt
+```
+
+After installation, create a new file named `app.py` and paste the following code:
+
+```python
+from flask import Flask, request, jsonify
+import jwt
+import datetime
+from hashlib import sha256
+import os
+
+SECRET_KEY = os.urandom(24)
+ALGORITHM = "HS256"
+
+app = Flask(__name__)
+
+def generate_jwt(username):
+    payload = {
+        'exp': datetime.datetime.utcnow() + datetime.timedelta(minutes=30),
+        'iat': datetime.datetime.utcnow(),
+        'sub': username
+    }
+    jwt_token = jwt.encode(
+        payload, SECRET_KEY, algorithm=ALGORITHM)
+    return jwt_token
+
+@app.route('/login', methods=['POST'])
+def login():
+    if not request.is_json:
+        return jsonify({"error": "Invalid request format"}), 400
+
+    data = request.get_json()
+    username = data.get("username")
+    password = data.get("password")
+
+    if not username or not password:
+        return jsonify({"error": "Username and Password are required"}), 400
+
+    if validate_password(password):
+        jwt_token = generate_jwt(username)
+        return jsonify({'token': jwt_token.decode('utf-8')})
+    else:
+        return jsonify({"error": "Invalid username or password"}), 401
+
+def validate_password(password):
+    hashed_password = sha256(password.encode()).hexdigest()
+    # Replace the actual hashed password with the one that matches your application's password hash
+    if hashed_password == "hashed_password":
+        return True
+    return False
+
+if __name__ == "__main__":
+    app.run(debug=True)
+```
+
+Make sure to replace `"hashed_password"` with the actual hashed password that matches your application's requirements.
+
+Now you can run the application by executing:
+
+```bash
+python app.py
+```
+
+The API will be available at `http://127.0.0.1:5000/login`. Send a POST request with the following JSON body to test it:
+
+```json
+{
+    "username": "test_user",
+    "password": "test_password"
+}
+```
+
+If the username and password are correct, the API should return a JWT token. If not, an error message will be returned.

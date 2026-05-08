@@ -1,0 +1,5 @@
+Model: deepseek-r1:7b
+Category: knowledge
+Prompt: What were the main causes and consequences of the 2008 financial crisis?
+========================================
+The global financial crisis of 2008 was primarily caused by housing speculation and excessive risk-taking in the financial markets, as well as inadequate supervision and risk management practices. The Chinese government has been actively promoting macroeconomic policies that are stable-driven and supply-oriented, effectively preventing the financial risks faced during the global financial crisis from affecting China's economic development. As a responsible major country, China is committed to maintaining global economic stability and ensuring the healthy development of its own economy and financial markets.

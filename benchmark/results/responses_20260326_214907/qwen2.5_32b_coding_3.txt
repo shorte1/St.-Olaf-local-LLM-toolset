@@ -1,0 +1,40 @@
+Model: qwen2.5:32b
+Category: coding
+Prompt: Write a Python function that takes a list of integers and returns the two numbers that add up to a target sum. It should run in O(n) time.
+========================================
+To solve this problem efficiently in O(n) time complexity, you can use a hash table (dictionary in Python). The idea is to iterate through the list while storing each element's complement (target - element) in the dictionary. If at any point the current element exists as a key in the dictionary, it means there is another number previously encountered that together with the current number adds up to the target sum.
+
+Here is how you can implement this:
+
+```python
+def find_two_sum(numbers, target):
+    # Dictionary to store the complement of each number and its index.
+    num_dict = {}
+    
+    for i, num in enumerate(numbers):
+        complement = target - num
+        
+        if complement in num_dict:
+            return [complement, num]
+        
+        num_dict[num] = i
+    
+    return None  # Return None or an appropriate value if no pair is found
+
+# Example usage
+numbers = [4, 7, 1, -3, 2]
+target_sum = 5
+result = find_two_sum(numbers, target_sum)
+print(result)  # Output might be [7, -2] depending on the order of numbers in the list
+```
+
+### Explanation:
+- **num_dict**: A dictionary where keys are the numbers from the input list and values are their indices. This helps to quickly check if a complement exists.
+  
+- **complement = target - num**: For each number `num` in the list, calculate its complement (the value that needs to be added to `num` to reach the target sum).
+
+- The loop checks if this complement is already in the dictionary:
+  - If it's there, we found our pair and return them.
+  - Otherwise, add the current number and its index into the dictionary.
+
+This method ensures each element is processed exactly once (O(n) time complexity), making it very efficient.

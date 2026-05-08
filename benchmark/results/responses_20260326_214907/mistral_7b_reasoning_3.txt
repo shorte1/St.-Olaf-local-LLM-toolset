@@ -1,0 +1,36 @@
+Model: mistral:7b
+Category: reasoning
+Prompt: A lily pad doubles in size every day. It takes 48 days to cover a lake. How long does it take to cover half the lake? Show your working.
+========================================
+ To solve this problem, let's reason through it:
+
+1. We know that the lily pad doubles in size each day. This means that if we have N lily pads covering half the lake on day X (N/2 = 0.5 * lake), then on day X+1, there will be 2N lily pads covering the entire lake (since 2N = 1 * lake).
+
+2. Since it takes 48 days for the lily pad to cover the entire lake, we can find the number of lily pads required to cover half the lake by halving that amount:
+
+   N = 0.5 * (lake area on day 48)
+
+3. Now, we can calculate the number of days it would take for this number of lily pads to cover half the lake:
+
+   Days_to_half_coverage = X - 1
+
+   Where X is the day when there are N lily pads covering half the lake:
+
+   0.5 * (lake area on day X) = N
+   0.5 * (0.5 * lake) = N
+   N = 0.25 * lake
+
+4. Since we know that N lily pads double in size every day, we can find the number of days it takes for N lily pads to cover half the lake:
+
+    Days_to_half_coverage = log2(N/0.5)
+
+   Where log2 is the base-2 logarithm:
+
+    Days_to_half_coverage = log2((0.25 * lake)/(0.5 * lake))
+    Days_to_half_coverage = log2(0.5) = 1 day (since 2^1 = 2, and we are looking for the number of days when the size is halved)
+
+5. However, since the lily pad doubles in size every day, it would take one more day to reach half coverage from the previous full-coverage state:
+
+    Final_Days_to_half_coverage = Days_to_half_coverage + 1 = 2 days
+
+So, it takes 2 days for the lily pad to cover half the lake.

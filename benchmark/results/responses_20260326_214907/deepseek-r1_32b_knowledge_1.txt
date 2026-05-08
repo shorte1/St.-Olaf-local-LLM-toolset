@@ -1,0 +1,13 @@
+Model: deepseek-r1:32b
+Category: knowledge
+Prompt: Explain the difference between supervised, unsupervised, and reinforcement learning in machine learning.
+========================================
+In machine learning, three primary paradigms stand out: Supervised Learning, Unsupervised Learning, and Reinforcement Learning. Each serves distinct purposes and operates under different conditions.
+
+1. **Supervised Learning**: This method uses labeled data, where each input is paired with a corresponding output. The algorithm learns by example, mapping inputs to outputs to predict results or classify data accurately. Tasks include classification (e.g., spam detection) and regression (e.g., house price prediction). The model adjusts its parameters to minimize prediction errors by comparing predicted and actual outputs.
+
+2. **Unsupervised Learning**: Utilizing unlabeled data, this approach seeks patterns and structures without predefined categories. Common tasks are clustering (e.g., customer segmentation) and dimensionality reduction (e.g., PCA for visualization). It explores data to uncover hidden relationships without prior guidance.
+
+3. **Reinforcement Learning**: An interactive method where an agent learns through trial and error in an environment, receiving rewards or penalties for actions. The goal is to develop a policy maximizing cumulative reward, seen in applications like game playing (AlphaGo) and robotics. It involves balancing exploration (trying new actions) and exploitation (using known best actions).
+
+Each paradigm addresses different learning needs: supervised for guided prediction, unsupervised for data discovery, and reinforcement for interactive decision-making.

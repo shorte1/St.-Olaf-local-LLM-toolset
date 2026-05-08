@@ -1,0 +1,15 @@
+Model: mistral:7b
+Category: knowledge
+Prompt: Explain how CRISPR-Cas9 gene editing works at a molecular level.
+========================================
+ CRISPR-Cas9 is a revolutionary tool in genetic engineering, allowing for precise modification of DNA sequences within an organism's genome. It was initially discovered as an adaptive immune system in bacteria to protect against viral infections, but its applications have since expanded significantly. Here's a step-by-step breakdown of how CRISPR-Cas9 works at the molecular level:
+
+1. **Designing guide RNA (gRNA):** The first step involves designing a gRNA molecule that acts as a "guide" to navigate Cas9 protein to the specific DNA sequence targeted for editing. This gRNA consists of two parts: a short, 20-base pair target sequence called the protospacer, and a scaffold sequence that allows it to bind with Cas9.
+
+2. **Assembling the CRISPR complex:** In the cell, a pre-crRNA transcript is processed to form small CRISPR RNAs (crRNAs) and transactivating crRNAs (tracrRNAs). These are then fused with Cas9 protein to form the active CRISPR-Cas9 complex. In gene editing applications, instead of natural crRNA and tracrRNA components, a single synthetic guide RNA (sgRNA) is used which combines the functions of both crRNAs and tracrRNAs.
+
+3. **Target recognition and cleavage:** The CRISPR-Cas9 complex, guided by the sgRNA, binds to its complementary DNA sequence in the target gene. The Cas9 protein then undergoes a conformational change that brings two non-complementary ends of the DNA double helix close together, forming a "DNA double-strand break" (DSB).
+
+4. **Repair mechanism:** Once the DSB has occurred, cells have two primary mechanisms for repairing it: non-homologous end joining (NHEJ) and homology-directed repair (HDR). NHEJ is error-prone and often leads to small insertions or deletions (indels) at the site of the DSB. HDR, on the other hand, is more precise and involves using a template for repair – usually a donor DNA sequence provided by the researcher containing the desired mutation.
+
+5. **Gene modification:** The result of either NHEJ or HDR leads to a permanent alteration in the target gene, thereby modifying its function or disrupting its expression. This can be used for various purposes such as correcting genetic diseases, introducing new traits, or studying gene function.

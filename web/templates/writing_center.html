@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Writing Center</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 700px;
+            margin: 40px auto;
+            padding: 0 20px;
+            background: #f5f5f5;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        h1 { color: #333; margin: 0; }
+        .user-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            color: #666;
+            font-size: 14px;
+        }
+        a { color: #007bff; text-decoration: none; font-size: 14px; }
+        a:hover { text-decoration: underline; }
+        .nav-links {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 24px;
+            font-size: 14px;
+        }
+        .upload-box {
+            background: white;
+            border: 2px dashed #ccc;
+            border-radius: 8px;
+            padding: 48px;
+            text-align: center;
+            cursor: pointer;
+            transition: border-color 0.2s;
+        }
+        .upload-box:hover { border-color: #007bff; }
+        .upload-box.dragover {
+            border-color: #007bff;
+            background: #f0f7ff;
+        }
+        .upload-icon { font-size: 48px; margin-bottom: 16px; }
+        .upload-box h2 {
+            color: #333;
+            margin-bottom: 8px;
+            font-size: 1.2em;
+        }
+        .upload-box p {
+            color: #666;
+            margin-bottom: 20px;
+            font-size: 0.9em;
+        }
+        #file-input { display: none; }
+        .upload-btn {
+            padding: 10px 24px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .upload-btn:hover { background: #0056b3; }
+        .mode-tabs {
+            display: flex;
+            gap: 6px;
+            margin-top: 24px;
+            flex-wrap: wrap;
+        }
+        .mode-tab {
+            padding: 7px 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background: #f5f5f5;
+            font-size: 0.85em;
+            cursor: pointer;
+            color: #555;
+            transition: all 0.15s;
+            user-select: none;
+        }
+        .mode-tab:hover { border-color: #007bff; color: #007bff; background: #f0f7ff; }
+        .mode-tab.active { background: #007bff; color: white; border-color: #007bff; }
+        .mode-description {
+            margin-top: 10px;
+            font-size: 0.82em;
+            color: #888;
+            font-style: italic;
+        }
+        .query-section {
+            margin-top: 16px;
+            text-align: left;
+        }
+        .query-section label {
+            display: block;
+            font-size: 0.9em;
+            color: #555;
+            margin-bottom: 6px;
+        }
+        .query-section textarea {
+            width: 100%;
+            height: 80px;
+            padding: 10px;
+            font-size: 0.9em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        .query-section textarea:focus {
+            outline: none;
+            border-color: #007bff;
+        }
+        .submit-section {
+            margin-top: 16px;
+            text-align: center;
+        }
+        .progress-box {
+            display: none;
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 32px;
+            text-align: center;
+        }
+        .progress-steps {
+            margin: 20px 0;
+            text-align: left;
+            display: inline-block;
+        }
+        .step {
+            padding: 6px 0;
+            color: #999;
+            font-size: 0.95em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .step.active { color: #007bff; }
+        .step.done { color: #28a745; }
+        .step-icon { width: 20px; text-align: center; }
+        .error-box {
+            display: none;
+            background: #f8d7da;
+            border: 1px solid #dc3545;
+            border-radius: 8px;
+            padding: 20px;
+            color: #721c24;
+            margin-top: 20px;
+        }
+        .spinner {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border: 2px solid #007bff;
+            border-top-color: transparent;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        #previous-reviews {
+            margin-top: 30px;
+        }
+        #previous-reviews h2 {
+            font-size: 1em;
+            color: #666;
+            margin-bottom: 12px;
+        }
+        .review-item {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 12px 16px;
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .review-item-info {
+            flex: 1;
+        }
+        .review-item-name {
+            font-weight: bold;
+            font-size: 0.95em;
+        }
+        .review-item-date {
+            color: #999;
+            font-size: 0.8em;
+        }
+        .review-item-actions {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+        .btn-view {
+            padding: 6px 14px;
+            background: #007bff;
+            color: white;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 0.85em;
+        }
+        .btn-view:hover { background: #0056b3; }
+        .btn-delete {
+            padding: 6px 10px;
+            background: #dc3545;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 0.85em;
+            cursor: pointer;
+        }
+        .btn-delete:hover { background: #b02a37; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Writing Center</h1>
+        <div class="user-info">
+            <span>{{ email }}</span>
+            <a href="/logout">Logout</a>
+        </div>
+    </div>
+
+    <div class="nav-links">
+        <a href="/">← Chat</a>
+        <a href="/reading-center">Reading Center</a>
+    </div>
+
+    <div class="upload-box" id="upload-box"
+         ondragover="handleDragOver(event)"
+         ondragleave="handleDragLeave(event)"
+         ondrop="handleDrop(event)"
+         onclick="handleUploadBoxClick(event)">
+        <div class="upload-icon">📄</div>
+        <h2>Upload a document for review</h2>
+        <p>Drag and drop or click to select a file<br>
+           Supported formats: .txt, .pdf, .docx</p>
+        <button class="upload-btn" onclick="event.stopPropagation(); document.getElementById('file-input').click()">
+            Choose File
+        </button>
+        <input type="file" id="file-input" accept=".txt,.pdf,.docx" onchange="handleFileSelect(event)">
+        <div id="selected-file" style="display:none; margin-top:16px;">
+            <div style="color:#333; font-size:0.9em; margin-bottom:12px;">
+                Selected: <strong id="selected-filename"></strong>
+                <span onclick="clearFile(event)" style="color:#dc3545; cursor:pointer; margin-left:8px;">✕</span>
+            </div>
+            <div onclick="event.stopPropagation()">
+                <div class="mode-tabs">
+                    <div class="mode-tab active" onclick="setMode('general')">General Review</div>
+                    <div class="mode-tab" onclick="setMode('rephrase')">Rephrase</div>
+                    <div class="mode-tab" onclick="setMode('rubric')">Rubric Check</div>
+                    <div class="mode-tab" onclick="setMode('brainstorm')">Brainstorm</div>
+                </div>
+                <div class="mode-description" id="mode-description">
+                    Full annotation of the paper — strengths, argument, clarity, grammar.
+                </div>
+                <input type="hidden" id="mode-input" value="general">
+                <div class="query-section">
+                    <label id="query-label" for="query-input">
+                        Optional: focus instructions
+                        <span id="query-hint" style="color:#999; font-weight:normal;">(e.g. "focus on argument structure" or "check APA citations")</span>
+                    </label>
+                    <textarea id="query-input"
+                        placeholder="Leave blank for general feedback..."
+                        onclick="event.stopPropagation()"></textarea>
+                </div>
+            </div>
+            <div class="submit-section">
+                <button class="upload-btn" onclick="event.stopPropagation(); submitFile()">
+                    Submit for Review
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="progress-box" id="progress-box">
+        <h2 style="color:#333; margin-bottom:8px;">Reviewing your document</h2>
+        <p style="color:#666; font-size:0.9em;" id="filename-display"></p>
+        <div class="progress-steps">
+            <div class="step" id="step-extract">
+                <span class="step-icon">⏳</span>
+                Extracting text
+            </div>
+            <div class="step" id="step-analyze">
+                <span class="step-icon">⏳</span>
+                Analyzing with writing consultant
+            </div>
+            <div class="step" id="step-render">
+                <span class="step-icon">⏳</span>
+                Rendering annotated document
+            </div>
+        </div>
+    </div>
+
+    <div class="error-box" id="error-box">
+        <strong>Error:</strong> <span id="error-message"></span>
+        <br><br>
+        <a href="/writing-center">Try again</a>
+    </div>
+
+    <div id="previous-reviews" style="display:none;">
+        <h2>Previous Reviews</h2>
+        <div id="reviews-list"></div>
+    </div>
+
+    <script>
+        let selectedFile = null;
+
+        const MODE_CONFIG = {
+            general: {
+                description: "Full annotation of the paper — strengths, argument, clarity, grammar.",
+                label: "Optional: focus instructions",
+                hint: '(e.g. "focus on argument structure" or "check APA citations")',
+                placeholder: "Leave blank for general feedback...",
+                required: false
+            },
+            rephrase: {
+                description: "Paste a passage and get 4 alternative phrasings that preserve your voice.",
+                label: "Passage to rephrase (required)",
+                hint: "Paste the exact sentence or paragraph you want rephrased.",
+                placeholder: "Paste the passage here...",
+                required: true
+            },
+            rubric: {
+                description: "Paste your rubric or assignment prompt and get feedback mapped to each criterion.",
+                label: "Rubric or assignment prompt (required)",
+                hint: "Paste your rubric, grading criteria, or assignment instructions.",
+                placeholder: "Paste your rubric here...",
+                required: true
+            },
+            brainstorm: {
+                description: "Get Socratic questions to help you develop your own ideas — no ideas given for you.",
+                label: "Optional: focus area",
+                hint: "Describe a specific section or argument you want to think through.",
+                placeholder: "Leave blank to get questions about the whole paper...",
+                required: false
+            }
+        };
+
+        function setMode(mode) {
+            document.getElementById('mode-input').value = mode;
+            const cfg = MODE_CONFIG[mode];
+            document.getElementById('mode-description').textContent = cfg.description;
+            document.getElementById('query-label').childNodes[0].textContent = cfg.label + ' ';
+            document.getElementById('query-hint').textContent = cfg.hint;
+            document.getElementById('query-input').placeholder = cfg.placeholder;
+            document.querySelectorAll('.mode-tab').forEach(t => t.classList.remove('active'));
+            event.target.classList.add('active');
+        }
+
+        function handleUploadBoxClick(e) {
+            if (!selectedFile) {
+                document.getElementById('file-input').click();
+            }
+        }
+
+        function handleDragOver(e) {
+            e.preventDefault();
+            document.getElementById('upload-box').classList.add('dragover');
+        }
+
+        function handleDragLeave(e) {
+            document.getElementById('upload-box').classList.remove('dragover');
+        }
+
+        function handleDrop(e) {
+            e.preventDefault();
+            document.getElementById('upload-box').classList.remove('dragover');
+            const file = e.dataTransfer.files[0];
+            if (file) showSelectedFile(file);
+        }
+
+        function handleFileSelect(e) {
+            const file = e.target.files[0];
+            if (file) showSelectedFile(file);
+        }
+
+        function showSelectedFile(file) {
+            selectedFile = file;
+            document.getElementById('selected-file').style.display = 'block';
+            document.getElementById('selected-filename').textContent = file.name;
+        }
+
+        function clearFile(e) {
+            e.stopPropagation();
+            selectedFile = null;
+            document.getElementById('selected-file').style.display = 'none';
+            document.getElementById('file-input').value = '';
+            document.getElementById('query-input').value = '';
+        }
+
+        function submitFile() {
+            if (selectedFile) uploadFile(selectedFile);
+        }
+
+        function setStepActive(stepId) {
+            document.getElementById(stepId).classList.add('active');
+            document.getElementById(stepId).querySelector('.step-icon').innerHTML =
+                '<div class="spinner"></div>';
+        }
+
+        function setStepDone(stepId) {
+            document.getElementById(stepId).classList.remove('active');
+            document.getElementById(stepId).classList.add('done');
+            document.getElementById(stepId).querySelector('.step-icon').innerHTML = '✓';
+        }
+
+        async function uploadFile(file) {
+            const uploadBox = document.getElementById('upload-box');
+            const progressBox = document.getElementById('progress-box');
+            const errorBox = document.getElementById('error-box');
+
+            uploadBox.style.display = 'none';
+            progressBox.style.display = 'block';
+            document.getElementById('filename-display').textContent = file.name;
+
+            const mode = document.getElementById('mode-input').value;
+            const query = document.getElementById('query-input').value.trim();
+            const cfg = MODE_CONFIG[mode];
+
+            if (cfg.required && !query) {
+                progressBox.style.display = 'none';
+                uploadBox.style.display = 'block';
+                alert(`${cfg.label.replace(' (required)', '')} is required for ${mode} mode.`);
+                return;
+            }
+
+            const formData = new FormData();
+            formData.append('document', file);
+            formData.append('query', query);
+            formData.append('mode', mode);
+
+            try {
+                const response = await fetch('/writing-center/upload', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                if (response.status === 401) {
+                    window.location.href = '/login';
+                    return;
+                }
+
+                const reader = response.body.getReader();
+                const decoder = new TextDecoder();
+
+                while (true) {
+                    const { done, value } = await reader.read();
+                    if (done) break;
+
+                    const text = decoder.decode(value);
+                    const lines = text.trim().split('\n');
+
+                    for (const line of lines) {
+                        const trimmed = line.trim();
+                        if (!trimmed) continue;
+                        if (trimmed.startsWith('Extracting')) {
+                            setStepActive('step-extract');
+                        } else if (trimmed.startsWith('Analyzing')) {
+                            setStepDone('step-extract');
+                            setStepActive('step-analyze');
+                        } else if (trimmed.startsWith('Rendering')) {
+                            setStepDone('step-analyze');
+                            setStepActive('step-render');
+                        } else if (trimmed.startsWith('done:')) {
+                            setStepDone('step-render');
+                            const reviewId = trimmed.substring(5).trim();
+                            window.location.href = `/writing-center/review/${reviewId}`;
+                        } else if (trimmed.startsWith('error:')) {
+                            const msg = trimmed.split(':').slice(1).join(':').trim();
+                            progressBox.style.display = 'none';
+                            errorBox.style.display = 'block';
+                            document.getElementById('error-message').textContent = msg;
+                        }
+                    }
+                }
+
+            } catch (error) {
+                progressBox.style.display = 'none';
+                errorBox.style.display = 'block';
+                document.getElementById('error-message').textContent = error.message;
+            }
+        }
+
+        async function deleteReview(reviewId, element) {
+            if (!confirm('Delete this review? This cannot be undone.')) return;
+
+            const response = await fetch(`/writing-center/review/${reviewId}/delete`, {
+                method: 'POST'
+            });
+
+            if (response.ok) {
+                const item = element.closest('.review-item');
+                item.remove();
+                const list = document.getElementById('reviews-list');
+                if (list.children.length === 0) {
+                    document.getElementById('previous-reviews').style.display = 'none';
+                }
+            }
+        }
+
+        window.onload = async function() {
+            const res = await fetch('/writing-center/reviews');
+            const reviews = await res.json();
+
+            if (reviews.length > 0) {
+                document.getElementById('previous-reviews').style.display = 'block';
+                const list = document.getElementById('reviews-list');
+                reviews.forEach(r => {
+                    const div = document.createElement('div');
+                    div.className = 'review-item';
+                    div.innerHTML = `
+                        <div class="review-item-info">
+                            <div class="review-item-name">📄 ${r.filename}</div>
+                            <div class="review-item-date">${r.created}</div>
+                        </div>
+                        <div class="review-item-actions">
+                            <a href="/writing-center/review/${r.id}" class="btn-view">View</a>
+                            <button class="btn-delete" onclick="deleteReview('${r.id}', this)">✕</button>
+                        </div>
+                    `;
+                    list.appendChild(div);
+                });
+            }
+        }
+    </script>
+</body>
+</html>

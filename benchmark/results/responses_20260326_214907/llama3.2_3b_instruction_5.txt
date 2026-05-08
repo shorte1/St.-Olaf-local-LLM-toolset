@@ -1,0 +1,44 @@
+Model: llama3.2:3b
+Category: instruction
+Prompt: Write a formal email declining a job offer, then rewrite it as a casual text message, then rewrite it as a Shakespearean monologue.
+========================================
+**Formal Email**
+
+Subject: Declining Job Offer for [Position]
+
+Dear [Hiring Manager's Name],
+
+I am writing to express my sincere gratitude for the job offer extended to me for the position of [Position] at [Company Name]. I was thrilled to learn about this opportunity and appreciate the time you took to speak with me about the role.
+
+However, after careful consideration, I regret to inform you that I have decided to decline the offer. While I am excited about the company's mission and values, I have chosen to pursue another opportunity that aligns more closely with my career goals and personal aspirations.
+
+Please know that my decision is in no way a reflection on the company or the position itself. I appreciate the professionalism and courtesy shown during our conversations, and I wish the organization continued success in finding a suitable candidate.
+
+Thank you again for the offer, and I wish you all the best in your search.
+
+Sincerely,
+[Your Name]
+
+**Casual Text Message**
+
+"Hey [Hiring Manager's Name], just wanted to say thanks for the job offer, but I've decided to go with another opportunity. Not a bad fit for me, hope you find someone great for the role! Best"
+
+**Shakespearean Monologue**
+
+"Oh, fairest employer, thou hast extended unto me
+A token of thy esteem, a badge of honor's might.
+'Twas a call to join thy noble company,
+And don my cloak with dignity and light.
+
+But, alas, fair sir, I must decline thy offer's sweet
+Invitation. For though thy words were honeyed and bright,
+My heart doth beat for another pursuit, a path
+That beckons me to follow where it shall lead in flight.
+
+Pray, know that my rejection hath no ill intent,
+For thou art a company of great virtue and bent.
+Thy mission and values shine like beacons bright,
+Guiding thee towards excellence, shining with delight.
+
+Farewell, fair sir, may Fortune smile upon thy way,
+And may another candidate's star rise to seize the day."

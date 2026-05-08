@@ -1,0 +1,24 @@
+Model: llama3.2:3b
+Category: coding
+Prompt: Write a Python function that takes a list of integers and returns the two numbers that add up to a target sum. It should run in O(n) time.
+========================================
+def find_target_sum(nums, target):
+    num_set = set()
+    
+    for num in nums:
+        if target - num in num_set:
+            return [target - num, num]
+        
+        num_set.add(num)
+    
+    return None  # Return None if no solution is found
+
+# Example usage
+nums = [2, 7, 11, 15]
+target = 9
+result = find_target_sum(nums, target)
+
+if result:
+    print("Numbers that add up to the target:", result)
+else:
+    print("No numbers in the list add up to the target.")

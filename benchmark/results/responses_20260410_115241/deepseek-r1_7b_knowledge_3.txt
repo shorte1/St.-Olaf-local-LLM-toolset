@@ -1,0 +1,19 @@
+Model: deepseek-r1:7b
+Category: knowledge
+Prompt: Explain how CRISPR-Cas9 gene editing works at a molecular level.
+========================================
+CRISPR-Cas9 is a powerful molecular tool used for precise gene editing. Here's a step-by-step explanation of how it works at the molecular level:
+
+1. **Design of Guide RNA**: The process begins with designing a guide RNA (gRNA) that matches the specific DNA sequence to be edited. The gRNA pairs with the target DNA through complementary base pairing.
+
+2. **Introduction into Cells**: Scientists introduce the Cas9 protein and the designed gRNA into target cells, typically using vectors like plasmids or viral particles.
+
+3. **Targeting and Cutting**: Inside the cell, the gRNA binds to the target DNA sequence. The Cas9 enzyme, guided by the gRNA, recognizes a specific PAM (Protospacer Adjacent Motif) sequence adjacent to the target site. Cas9 acts as an endonuclease, making a double-strand break in the DNA at this site.
+
+4. **DNA Repair Mechanisms**: After the double-strand break, the cell employs its DNA repair mechanisms:
+   - **Non-Homologous End Joining (NHEJ)**: This error-prone process joins the broken ends without a template, often resulting in insertions or deletions (indels) at the break site.
+   - **Homology-Directed Repair (HDR)**: During S phase of the cell cycle, HDR uses a sister chromatid as a template for precise repair, ensuring accurate gene editing.
+
+5. **Control and Precision**: The precision of the edit depends on the cell type and the presence of additional regulatory elements like dCas9 or sgRNA modifications. Techniques such as using Cas9 nickase (Cas9n) can achieve single-strand cuts, enhancing control by avoiding double-strand breaks altogether.
+
+In summary, CRISPR-Cas9 leverages gRNA to guide Cas9 to a specific DNA target, creating a double-strand break that is repaired through cell-specific mechanisms, leading to targeted gene editing.

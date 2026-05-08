@@ -1,0 +1,5 @@
+Model: qwen2.5:7b
+Category: instruction
+Prompt: Summarize the plot of Romeo and Juliet in exactly 50 words, no more no less.
+========================================
+Romeo and Juliet, from rival families, secretly marry. Tragedy ensues: Tybalt kills Mercutio, Romeo retaliates; Juliet fakes death; Romeo, believing her dead, kills himself; she awakens, finds him, then dies.

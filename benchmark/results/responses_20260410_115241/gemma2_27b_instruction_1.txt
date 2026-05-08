@@ -1,0 +1,28 @@
+Model: gemma2:27b
+Category: instruction
+Prompt: Write a haiku about autumn, then translate it to French, then explain the seasonal symbolism used.
+========================================
+## Autumn Haiku
+
+Crimson leaves descend,
+Whispering on cool breezes,
+Winter slumber nears.
+
+
+## French Translation
+
+Feuilles rouges tombent,
+Soufflées par un vent frais,
+L'hiver approche.
+
+
+
+## Seasonal Symbolism
+
+This haiku utilizes several common autumnal symbols:
+
+* **Crimson leaves:** The vibrant red color of leaves turning is a quintessential sign of autumn. This signifies the transition and eventual death of nature before winter.
+* **Descending leaves:** Falling leaves represent letting go, change, and the passage of time. 
+* **Cool breezes:** Autumn air often brings a refreshing coolness after the heat of summer, foreshadowing the approaching winter chill.
+
+Together these images paint a picture of autumn's bittersweet beauty - a season of decline but also preparation for renewal in spring.

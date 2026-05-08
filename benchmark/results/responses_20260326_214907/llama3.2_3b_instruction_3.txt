@@ -1,0 +1,5 @@
+Model: llama3.2:3b
+Category: instruction
+Prompt: Summarize the plot of Romeo and Juliet in exactly 50 words, no more no less.
+========================================
+In Verona, two feuding families' hatred fuels a doomed romance between Romeo Montague and Juliet Capulet. They marry in secret, but their love is discovered, leading to tragic consequences. Impulsive decisions and fate ultimately seal the lovers' fate, resulting in the deaths of the star-crossed couple amidst a city's bitter feud.

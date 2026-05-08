@@ -1,0 +1,5 @@
+Model: deepseek-r1:7b
+Category: instruction
+Prompt: Summarize the plot of Romeo and Juliet in exactly 50 words, no more no less.
+========================================
+Romeo and Juliet's story begins with feuding Capulets and Montagues. They meet at a ball, secretly marrying despite knowing it's doomed. Friar Laurence delivers Juliet's death sentence after learning of Romeo's banishment, while Tybalt kills Romeo. Both choose eternal love over death, ending their lives tragically in Shakespeare's tragedy.

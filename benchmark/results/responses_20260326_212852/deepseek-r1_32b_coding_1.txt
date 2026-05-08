@@ -1,0 +1,41 @@
+Model: deepseek-r1:32b
+Category: coding
+Prompt: Write a Python function that finds all prime numbers up to n using the Sieve of Eratosthenes.
+========================================
+To solve this problem, we need to find all prime numbers up to a given number \( n \) using the Sieve of Eratosthenes algorithm. This algorithm efficiently marks non-prime numbers by iteratively marking the multiples of each prime starting from 2.
+
+### Approach
+The Sieve of Eratosthenes is an ancient and efficient method for finding all primes up to a specified integer \( n \). The steps involved in this approach are as follows:
+
+1. **Initialize a Boolean List**: Create a list `sieve` where each index represents whether the number is prime or not. Initially, set all entries to `True`, except for indices 0 and 1, which are set to `False` since they are not primes.
+
+2. **Mark Non-Primes**: Starting from the first prime number (2), iterate through each number. For each number \( i \) that is still marked as a prime (`sieve[i]` is `True`), mark all its multiples starting from \( i^2 \) up to \( n \) as non-prime.
+
+3. **Extract Primes**: After processing, the indices of the list that remain marked as `True` are the prime numbers.
+
+### Solution Code
+```python
+def sieve_of_eratosthenes(n):
+    if n < 2:
+        return []
+    # Initialize sieve with True values; index represents the number
+    sieve = [True] * (n + 1)
+    sieve[0], sieve[1] = False, False  # 0 and 1 are not primes
+
+    for i in range(2, int(n ** 0.5) + 1):
+        if sieve[i]:  # If i is still considered a prime
+            # Mark all multiples of i starting from i^2 as non-prime
+            for j in range(i * i, n + 1, i):
+                sieve[j] = False
+
+    # Extract the primes from the sieve
+    primes = [i for i, is_prime in enumerate(sieve) if is_prime]
+    return primes
+```
+
+### Explanation
+- **Initialization**: The list `sieve` is created with \( n+1 \) elements, all set to `True`. Indices 0 and 1 are explicitly set to `False`.
+- **Marking Multiples**: For each number starting from 2 up to the square root of \( n \), if the number is still marked as a prime (`sieve[i]` is `True`), all its multiples (starting from \( i^2 \)) are marked as non-prime.
+- **Extracting Primes**: After processing, the indices that remain `True` in the `sieve` list are collected into the result list of primes.
+
+This approach efficiently marks non-prime numbers and ensures that each number is processed optimally, making it one of the most efficient ways to find all primes up to a given limit.

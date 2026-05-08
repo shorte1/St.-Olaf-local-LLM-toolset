@@ -1,0 +1,21 @@
+Model: mistral:7b
+Category: reasoning
+Prompt: A lily pad doubles in size every day. It takes 48 days to cover a lake. How long does it take to cover half the lake? Show your working.
+========================================
+ Let's reason through this problem:
+
+1. The lily pad doubles in size each day, so after n days, it has grown to 2^n lily pads.
+
+2. On the 48th day, the total number of lily pads (covering the entire lake) is 2^{48}.
+
+3. To cover half the lake, we need half that amount, which is 2^{48}/2 = 2^{47} lily pads.
+
+4. Now, instead of counting the days for 2^47 lily pads to form, we can compare this number with the initial size of one lily pad on day 1:
+
+   - One lily pad on day 1 is equivalent to 2^0 (since it's just one lily pad).
+
+5. To find out how many days it takes for 2^47 lily pads, we need to find the number of times we can double that initial single lily pad to reach 2^47:
+
+   - That is, the number of days needed = log2(2^47) = 47 days.
+
+So, it takes 47 days for the lily pads to cover half the lake.

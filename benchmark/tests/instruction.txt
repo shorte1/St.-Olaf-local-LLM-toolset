@@ -1,0 +1,5 @@
+Write a haiku about autumn, then translate it to French, then explain the seasonal symbolism used.
+List the planets in our solar system by size from largest to smallest, give their diameter in km, and mark which ones have rings.
+Summarize the plot of Romeo and Juliet in exactly 50 words, no more no less.
+Give me a recipe for chocolate chip cookies. Format it with an ingredients section using a bulleted list and a steps section using a numbered list. Include prep time and cook time at the top.
+Write a formal email declining a job offer, then rewrite it as a casual text message, then rewrite it as a Shakespearean monologue.

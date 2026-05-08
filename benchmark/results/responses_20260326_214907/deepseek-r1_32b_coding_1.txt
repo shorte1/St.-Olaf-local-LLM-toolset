@@ -1,0 +1,36 @@
+Model: deepseek-r1:32b
+Category: coding
+Prompt: Write a Python function that finds all prime numbers up to n using the Sieve of Eratosthenes.
+========================================
+To find all prime numbers up to a given number \( n \) using the Sieve of Eratosthenes algorithm in Python, follow these steps:
+
+### Approach
+The Sieve of Eratosthenes is an efficient algorithm to find all primes up to a specified integer. The approach involves iteratively marking the multiples of each prime starting from 2. Here's a step-by-step breakdown:
+
+1. **Initialization**: Create a boolean list `is_prime` where each index represents whether the number is prime. Initially, set all entries to `True`, except for indices 0 and 1 which are not primes.
+2. **Mark Non-Primes**: For each number starting from 2 up to the square root of \( n \), if the number is still marked as prime, mark all its multiples as non-prime. This starts from the square of the number (to optimize performance) and increments by the number itself.
+3. **Collect Results**: After processing, collect all indices that are still marked as `True` in the boolean list; these indices represent prime numbers.
+
+### Solution Code
+```python
+import math
+
+def sieve_of_eratosthenes(n):
+    if n < 2:
+        return []
+    is_prime = [True] * (n + 1)
+    is_prime[0], is_prime[1] = False, False
+    for i in range(2, math.isqrt(n) + 1):
+        if is_prime[i]:
+            for j in range(i*i, n+1, i):
+                is_prime[j] = False
+    primes = [num for num, prime in enumerate(is_prime) if prime]
+    return primes
+```
+
+### Explanation
+- **Initialization**: The list `is_prime` is created with \( n + 1 \) elements, all set to `True`. Indices 0 and 1 are explicitly set to `False` as they are not primes.
+- **Marking Multiples**: For each integer \( i \) starting from 2 up to the integer square root of \( n \), if \( i \) is still marked as prime, all its multiples (starting from \( i^2 \)) are marked as non-prime. This step efficiently eliminates non-prime numbers.
+- **Result Collection**: Finally, the function collects all indices where `is_prime` remains `True`, which correspond to the prime numbers up to \( n \).
+
+This approach ensures that we efficiently find all prime numbers up to \( n \) with a time complexity of \( O(n \log \log n) \), making it one of the most efficient ways to find primes for smaller ranges.

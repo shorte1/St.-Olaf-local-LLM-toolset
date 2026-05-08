@@ -1,0 +1,42 @@
+Model: deepseek-r1:32b
+Category: reasoning
+Prompt: If it takes 5 machines 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 widgets? Show your working.
+========================================
+Let's solve this problem step by step:
+
+**Given:**
+- **5 machines** can produce **5 widgets** in **5 minutes**.
+
+**Step 1: Determine the Production Rate per Machine**
+
+First, find out how many widgets one machine can produce in one minute.
+
+\[
+\text{Widgets per machine per minute} = \frac{5 \text{ widgets}}{5 \text{ machines} \times 5 \text{ minutes}} = \frac{5}{25} = 0.2
+\]
+
+So, **each machine** produces **0.2 widgets per minute**.
+
+**Step 2: Calculate the Time for 100 Machines to Make 100 Widgets**
+
+Now, we want to find out how long it takes for **100 machines** to produce **100 widgets**.
+
+Using the production rate:
+
+\[
+\text{Total time} = \frac{\text{Number of widgets}}{\text{Number of machines} \times \text{Widgets per machine per minute}}
+\]
+
+Plugging in the values:
+
+\[
+\text{Total time} = \frac{100}{100 \times 0.2} = \frac{100}{20} = 5 \text{ minutes}
+\]
+
+**Final Answer:**
+
+It would take **100 machines** just as long as it takes **5 machines** to make the corresponding number of widgets when scaling up proportionally.
+
+\[
+\boxed{5\,\text{minutes}}
+\]

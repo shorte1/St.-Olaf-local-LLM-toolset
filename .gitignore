@@ -1,0 +1,9 @@
+instance/llm.db                                                                                       
+*.db                                                                                                  
+.env                                                                                                  
+__pycache__/                                                                                          
+*.pyc                                                                                                 
+reviews/                                                                                              
+reading_reviews/
+ollama.tar
+benchmark.zip

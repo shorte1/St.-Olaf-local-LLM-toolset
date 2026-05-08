@@ -1,0 +1,23 @@
+Model: mistral:7b
+Category: knowledge
+Prompt: Explain how CRISPR-Cas9 gene editing works at a molecular level.
+========================================
+ CRISPR-Cas9 is a revolutionary tool for genome editing, allowing scientists to precisely modify DNA sequences in various organisms, including bacteria, plants, animals, and even human cells. This system was originally derived from the immune system of bacterial species and has been engineered for gene editing purposes. Here's an overview of how CRISPR-Cas9 works at a molecular level:
+
+1. Guide RNA synthesis: The CRISPR-Cas9 system consists of three main components – Cas9 (a nuclease enzyme), guide RNA (crRNA, tracrRNA fused into a single guide RNA), and target DNA. The guide RNA acts as a molecular map, directing the Cas9 protein to the specific site in the DNA that needs modification or editing. The guide RNA is designed with a unique sequence called the protospacer adjacent motif (PAM) that recognizes a specific DNA sequence near the targeted site.
+
+2. Target DNA recognition: Once the guide RNA-Cas9 complex is synthesized, it moves to the nucleus of the cell where the DNA resides. The Cas9 protein binds to the PAM sequence on the target DNA, and the guide RNA complementary base pairs with the adjacent DNA sequence (the protospacer).
+
+3. Formation of a DNA-RNA hybrid: The binding of the guide RNA to the target DNA forms a DNA-RNA hybrid structure. This hybrid acts as a scaffold for Cas9 to cleave the double-stranded DNA at the targeted site.
+
+4. Cleavage of target DNA: Upon binding, Cas9 cuts both strands of the double helix at the targeted site using its nuclease activity. The break created by Cas9 initiates the repair process or induces cell death if the damage is too severe for the cell to repair.
+
+5. Repair mechanisms and gene editing: There are two primary pathways for repairing the broken DNA strands: non-homologous end joining (NHEJ) and homology-directed repair (HDR).
+
+   a) NHEJ is an error-prone mechanism that directly reconnects the broken ends of the DNA strand, often leading to small insertions or deletions (indels) at the target site. These indels can disrupt the function of the targeted gene, thereby silencing it or introducing a mutation. This method is commonly used for gene knockout studies in organisms like bacteria and mammalian cells.
+
+   b) HDR is an accurate repair mechanism that utilizes a template to restore the broken DNA strands. A donor DNA template with the desired genetic modification can be provided, allowing precise alterations at the target site. This method is preferred for gene knock-in experiments or correcting specific mutations in genes associated with diseases.
+
+6. Selection of edited cells: After CRISPR-Cas9 editing, cells are typically screened to identify those that have undergone successful gene modification. This can be done using various selection methods like antibiotic resistance markers (for bacteria) or fluorescent protein reporters (for mammalian cells).
+
+In summary, the CRISPR-Cas9 system enables scientists to precisely edit genes by directing Cas9 nuclease to a specific site in the DNA. The targeted breakage of the DNA initiates repair mechanisms, leading to gene knockout or gene knock-in events depending on the chosen repair pathway and the presence of a donor template. This powerful tool has opened up new possibilities for genetic research and therapeutic applications.

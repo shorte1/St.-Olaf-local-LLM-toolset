@@ -1,0 +1,48 @@
+Model: qwen2.5:7b
+Category: instruction
+Prompt: Write a formal email declining a job offer, then rewrite it as a casual text message, then rewrite it as a Shakespearean monologue.
+========================================
+### Formal Email Declining a Job Offer
+
+Subject: Decline of Employment Offer
+
+Dear Mr./Ms. [Last Name],
+
+I hope this message finds you well.
+
+Thank you very much for considering me for the position at [Company Name]. I am writing to formally decline your offer and express my gratitude for the opportunity and the confidence in my abilities that you have shown.
+
+While I am excited about the direction of the company and the potential impact I could make, after careful consideration, I believe it is best for both parties if I continue to focus on [current/next position]. I appreciate the skills and experiences this role would have provided me. Please keep me informed of any future openings that may align with my career goals.
+
+Thank you once again for your understanding, and I wish you continued success in all endeavors.
+
+Warm regards,
+
+[Your Name]
+
+---
+
+### Casual Text Message
+
+Hey [Name],
+
+Thanks so much for the offer! 🙏 After giving it some thought, I think I'll pass on this one. It was a great opportunity, but I need to focus on my current role right now. Let me know if anything else comes up that matches up with what I'm looking for. Thanks again!
+
+Best,
+[Your Name]
+
+---
+
+### Shakespearean Monologue
+
+Fair Sir or Madam of [Company Name],
+
+By the grace of fortune and the light of your gracious offer, I do stand here to cast aside the mantle of opportunity you so generously bestowed upon me. Though the thought of joining thy esteemed company fills my heart with joy and promise of advancement, the winds of fate have guided me otherwise.
+
+I do tender my sincerest gratitude for the honour of consideration and the confidence you have shown in my abilities; yet, after much deliberation, I must decline this proffered hand. It is not because of any lack of desire or ambition, but rather a strategic alignment with my current path which requires my utmost attention.
+
+Though this decision may come as a surprise, I trust it will be met with the understanding and respect that such an offer deserves. May your company continue to thrive and prosper in all its endeavors.
+
+Yours humbly,
+
+[Your Name]

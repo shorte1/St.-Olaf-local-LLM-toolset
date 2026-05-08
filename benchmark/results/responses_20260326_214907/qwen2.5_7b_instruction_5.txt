@@ -1,0 +1,37 @@
+Model: qwen2.5:7b
+Category: instruction
+Prompt: Write a formal email declining a job offer, then rewrite it as a casual text message, then rewrite it as a Shakespearean monologue.
+========================================
+**Formal Email:**
+Subject: Declining Job Offer
+
+Dear [Hiring Manager's Name],
+
+Thank you for the opportunity to consider the position of [Position] at [Company Name]. After careful consideration and review of all aspects, including the role responsibilities and career goals, I have decided to decline your offer. While the role presented an excellent opportunity that aligned with my professional interests, I believe there are other avenues where I can contribute more effectively.
+
+Thank you once again for the confidence placed in me. I appreciate the time and consideration given during this process.
+
+Warm regards,
+
+[Your Name]
+
+---
+
+**Casual Text Message:**
+Hey [Hiring Manager's Name],
+
+Thanks for the job offer, but I'm going to have to pass on it. The role was cool, but I think there are better matches out there for me right now. Appreciate you considering me!
+
+Take care,
+[Your Name]
+
+---
+
+**Shakespearean Monologue:**
+Good [Hiring Manager's Name], in the realm of my noble heart and aspirations, a bountiful offer hath been laid before me—yea, an opportunity to join thine esteemed company as [Position] at [Company Name]. Yet, as I pondered upon this gift with due deliberation, it came to pass that certain considerations did weigh heavy in my soul. 
+
+It is true, the role presented itself as a noble path, yet I must needs confess that it doth not align perfectly with mine own ambitions and wherefore I find myself compelled to decline thine generous offer. There be many other fields where mine abilities may serve more fittingly, as I seek out new horizons wherein I can better contribute.
+
+Therefore, in this moment of parting, I extend my thanks for the honor you have bestowed upon me. Though my path now lies elsewhere, your company's name shall remain dear to my heart. Farewell!
+
+[Your Name]

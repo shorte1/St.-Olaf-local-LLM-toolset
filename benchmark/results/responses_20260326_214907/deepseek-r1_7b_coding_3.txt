@@ -1,0 +1,34 @@
+Model: deepseek-r1:7b
+Category: coding
+Prompt: Write a Python function that takes a list of integers and returns the two numbers that add up to a target sum. It should run in O(n) time.
+========================================
+To solve this problem, we need to find two numbers in a given list that add up to a specified target sum. The solution must run efficiently with a time complexity of O(n).
+
+### Approach
+The key idea is to use a hash map (dictionary) to keep track of the numbers we have encountered as we iterate through the list. For each number, we calculate its complement (the difference between the target sum and the current number). If this complement has already been seen before, it means we have found our pair and can return them immediately. If not, we add the current number to the dictionary and continue.
+
+This approach ensures that we only traverse the list once, making the time complexity O(n), where n is the length of the input list.
+
+### Solution Code
+
+```python
+def two_sum(nums, target):
+    seen = {}
+    for num in nums:
+        complement = target - num
+        if complement in seen:
+            return (complement, num)
+        seen[num] = True
+    return None
+```
+
+### Explanation
+1. **Initialization**: We start by initializing an empty dictionary called `seen` to keep track of the numbers we have encountered.
+2. **Iteration**: For each number in the list:
+   - Calculate its complement as `target - num`.
+   - Check if this complement exists in the `seen` dictionary.
+     - If it does, return the pair (complement, current number) immediately since these two numbers add up to the target.
+     - If it doesn't, add the current number to the `seen` dictionary.
+3. **Completion**: If we finish iterating through the list without finding any such pair, return `None`.
+
+This method efficiently finds the required pair in linear time and handles various edge cases, including negative numbers and duplicate values, ensuring correctness and optimal performance.

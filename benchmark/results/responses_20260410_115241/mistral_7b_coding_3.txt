@@ -1,0 +1,18 @@
+Model: mistral:7b
+Category: coding
+Prompt: Write a Python function that takes a list of integers and returns the two numbers that add up to a target sum. It should run in O(n) time.
+========================================
+ Here's a Python function named `find_numbers_sum` that finds two numbers in a list which add up to a given target sum in O(n) time complexity:
+
+```python
+def find_numbers_sum(numbers, target):
+    num_dict = {}
+    for number in numbers:
+        complement = target - number
+        if complement in num_dict:
+            return number, complement
+        num_dict[number] = True
+    return None
+```
+
+This function uses a dictionary to store the numbers we've already seen. For each number, it calculates the complement (target - number) and checks if it exists in the dictionary. If it does, that means we have found two numbers whose sum equals the target. The time complexity is O(n) as we are iterating through the list once and looking up values in the dictionary in constant time.

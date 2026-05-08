@@ -1,0 +1,25 @@
+Model: deepseek-r1:32b
+Category: knowledge
+Prompt: Explain how CRISPR-Cas9 gene editing works at a molecular level.
+========================================
+CRISPR-Cas9 gene editing is a revolutionary tool that allows scientists to make precise modifications to DNA. Here's how it works at a molecular level:
+
+1. **Origin and Function**: CRISPR stands for Clustered Regularly Interspaced Short Palindromic Repeats, found in bacterial genomes as part of their immune system. Cas9 is an enzyme that acts as molecular scissors to cut DNA.
+
+2. **Natural Immune Mechanism**: When bacteria encounter a virus, they incorporate snippets of viral DNA into their CRISPR regions. These sequences are transcribed into CRISPR RNA (crRNA), which pairs with Cas9 and tracrRNA to form a complex. This complex identifies and destroys the virus by cutting its DNA.
+
+3. **Engineered System**: In gene editing, scientists design a guide RNA (gRNA) that matches a specific DNA sequence they wish to target. The gRNA is typically a combination of crRNA and tracrRNA for simplicity.
+
+4. **Delivery into Cells**: Cas9 and the engineered gRNA are introduced into cells using delivery methods like vectors or plasmids.
+
+5. **Targeting DNA**: Once inside, the Cas9-gRNA complex searches for complementary DNA sequences. The RNA guides Cas9 to the target location where it binds.
+
+6. **DNA Cutting**: Cas9 cuts both strands of the DNA at the targeted site, creating a double-strand break (DSB).
+
+7. **Cell Repair Mechanisms**: The cell repairs the DSB using two main pathways:
+   - **Non-Homologous End Joining (NHEJ)**: This quick repair often introduces insertions or deletions (indels), disrupting gene function.
+   - **Homology-Directed Repair (HDR)**: Using a provided donor DNA template, HDR allows precise editing, such as inserting specific genes or correcting mutations.
+
+8. **Applications**: CRISPR-Cas9 is used in research and medicine for applications like gene therapy, modifying organisms, and studying gene function.
+
+This system's precision and versatility make it invaluable in advancing genetic research and potential therapeutic interventions.

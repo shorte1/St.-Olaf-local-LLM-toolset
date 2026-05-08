@@ -1,0 +1,17 @@
+Model: mistral:7b
+Category: instruction
+Prompt: Write a haiku about autumn, then translate it to French, then explain the seasonal symbolism used.
+========================================
+ Original haiku:
+
+Whispers of gold,
+Autumn's breath in crisp air,
+Harvest time unfolds.
+
+Translation to French:
+
+Souffles d'or,
+Le souffle automnal dans l'air frais,
+Le temps des récoltes s'épanouit.
+
+In this haiku, autumn is personified as a whisperer, emphasizing the quiet and gentle nature of the season. The gold color represents the changing leaves, while the crisp air suggests the coolness that often accompanies autumn in many regions. The "harvest time" refers to the agricultural activities associated with the end of summer, such as gathering crops before winter arrives. This haiku captures some common symbols of autumn, including its beauty, tranquility, and bounty.

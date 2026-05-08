@@ -1,0 +1,40 @@
+Model: mistral-small:22b
+Category: coding
+Prompt: Write a Python function that finds all prime numbers up to n using the Sieve of Eratosthenes.
+========================================
+ Certainly! The Sieve of Eratosthenes is an ancient algorithm used to find all prime numbers up to any given limit. Below is a Python function that implements this algorithm:
+
+```python
+def sieve_of_eratosthenes(n):
+    if n < 2:
+        return []
+
+    # Initialize the sieve array with True values
+    is_prime = [True] * (n + 1)
+    is_prime[0] = is_prime[1] = False  # We know 0 and 1 are not primes
+
+    p = 2
+    while (p * p <= n):
+        if (is_prime[p] == True):
+            # Updating all multiples of p to False indicating they are not prime
+            for i in range(p * p, n + 1, p):
+                is_prime[i] = False
+        p += 1
+
+    # Collecting all prime numbers
+    prime_numbers = [p for p in range(2, n + 1) if is_prime[p]]
+    return prime_numbers
+
+# Example usage:
+n = 30
+print(f"Prime numbers up to {n}: {sieve_of_eratosthenes(n)}")
+```
+
+### Explanation:
+1. **Initialization**: We create a list `is_prime` of size \( n+1 \) and initialize all entries as `True`. The indices of this list represent numbers from 0 to \( n \).
+2. **Known Non-Primes**: We set the entries for index 0 and 1 to `False` because 0 and 1 are not prime numbers.
+3. **Marking Non-Primes**: Starting with the first prime number, 2, we mark all of its multiples as `False`. We continue this process with the next number that is still marked as `True`, which must be a prime.
+4. **Efficiency Improvement**: We only need to go up to \( \sqrt{n} \) because any composite number \( n \) must have at least one factor less than or equal to \( \sqrt{n} \).
+5. **Collecting Primes**: Finally, we collect all indices that are still marked as `True`, which correspond to prime numbers.
+
+This function efficiently finds and returns a list of all prime numbers up to the given number \( n \).

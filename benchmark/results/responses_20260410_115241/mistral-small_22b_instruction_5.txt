@@ -1,0 +1,41 @@
+Model: mistral-small:22b
+Category: instruction
+Prompt: Write a formal email declining a job offer, then rewrite it as a casual text message, then rewrite it as a Shakespearean monologue.
+========================================
+ **Formal Email:**
+
+Subject: Declination of Job Offer - [Your Name]
+
+Dear [Hiring Manager's Name],
+
+I hope this email finds you well. I am writing to formally decline the job offer for the position of [Job Title] at [Company Name], which was extended to me on [Date].
+
+After careful consideration and much deliberation, I have decided that this opportunity is not the best fit for me at this time. This decision was difficult to make, as I greatly appreciated the chance to interview with your team and learn more about the exciting projects you are working on.
+
+I want to express my gratitude for the time and effort you invested in considering my application. I am truly honored that you thought of me for this role. Should future opportunities arise where you think our goals might align better, I would welcome the chance to revisit the possibility of joining your team.
+
+Thank you once again for your understanding.
+
+Best regards,
+[Your Name]
+
+---
+
+**Casual Text Message:**
+
+Hey [Hiring Manager's Name], it's [Your Name]. Just wanted to let you know that I won't be able to take the job offer for the [Job Title] position. It was a tough call, but I don't think it's the right fit for me at this time. Thanks again for considering my application and for all the effort you put into the interview process. If something else comes up in the future that might be a better match, I'd love to chat about it. Cheers!
+
+---
+
+**Shakespearean Monologue:**
+
+Upon mine honor, [Hiring Manager's Name], I write to thee with heavy heart and somber spirit, for I must decline the offer of employment thou hast extended unto me for the post of [Job Title] at thy esteemed establishment.
+
+In quiet solitude, I pondered deep upon this opportunity, weighing its worth against my own desires and ambitions. Alas, I find that it doth not sit well with mine soul, and thus I cannot in good conscience accept thy generous offer.
+
+Yet, let me not forget to express my gratitude for the time and care thou hast bestowed upon this process. To be considered for such a position by one as thyself is truly an honor, and I shall cherish it always. Shouldst another chance arise where our paths might cross once more, I should be most eager to discuss it further.
+
+Fare thee well, kind sir or madam, and may thy company continue to flourish and prosper.
+
+Thine humbly,
+[Your Name]

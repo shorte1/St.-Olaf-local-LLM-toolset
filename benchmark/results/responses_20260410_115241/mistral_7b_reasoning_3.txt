@@ -1,0 +1,21 @@
+Model: mistral:7b
+Category: reasoning
+Prompt: A lily pad doubles in size every day. It takes 48 days to cover a lake. How long does it take to cover half the lake? Show your working.
+========================================
+ Let's break this down:
+
+1. The lily pad doubles in size each day, so we can express the area (A) covered by the lily pad on the nth day as 2^n square units.
+
+2. On the 48th day, the entire lake (L) is covered, which means A = L. So, we have the equation: 2^{48} = L.
+
+3. Let H be half of the original lake's area, so H = L/2. Now we want to find out when the lily pad covers an area equal to H (half of the lake).
+
+4. The time it takes for the lily pad to cover H can be found by solving the equation 2^n = H (since A = 2^n and H < L, implying that the lake is not fully covered yet).
+
+5. Taking the logarithm base 2 of both sides gives us n = log_2(H).
+
+6. To find out how many days it takes for the lily pad to cover half the lake, we calculate the number of days needed: n = log_2(L/2) = log_2(L) - log_2(2) = log_2(L) - 1 (since log_2(2) = 1).
+
+7. Since we know that 2^48 covers the entire lake, log_2(L) = 48, so n = 48 - 1 = 47 days.
+
+Therefore, it takes 47 days for the lily pad to cover half of the lake.

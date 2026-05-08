@@ -1,0 +1,48 @@
+Model: deepseek-r1:32b
+Category: instruction
+Prompt: Give me a recipe for chocolate chip cookies. Format it with an ingredients section using a bulleted list and a steps section using a numbered list. Include prep time and cook time at the top.
+========================================
+**Chocolate Chip Cookies Recipe**
+
+**Prep Time:** 20 minutes  
+**Cook Time:** 10 minutes (total of 30 minutes)
+
+**Ingredients:**
+- 1 cup softened unsalted butter
+- ¾ cup granulated sugar
+- ¾ cup brown sugar, packed
+- 2 large eggs
+- 2 teaspoons vanilla extract
+- 2½ cups all-purpose flour
+- 1 teaspoon baking soda
+- ½ teaspoon baking powder
+- ½ teaspoon salt
+- 2 cups semisweet chocolate chips
+- 1 cup chopped walnuts (optional)
+
+**Instructions:**
+
+1. **Preheat the Oven:** Preheat your oven to 375°F (190°C). Line baking sheets with parchment paper or lightly grease them.
+
+2. **Cream Butter and Sugars:** In a large mixing bowl, beat the softened butter, granulated sugar, and brown sugar together until creamy using an electric mixer on medium speed.
+
+3. **Add Eggs and Vanilla:** Beat in the eggs one at a time, ensuring each is fully incorporated before adding the next. Mix in the vanilla extract.
+
+4. **Combine Dry Ingredients:** In another bowl, whisk together 2½ cups of flour, baking soda, baking powder, and salt. Sift if necessary to ensure no lumps remain.
+
+5. **Mix Wet and Dry Ingredients:** Gradually add the dry ingredients to the wet mixture, mixing until just combined. Be careful not to overmix to avoid tough cookies.
+
+6. **Fold in Mix-ins:** Gently fold in the chocolate chips and walnuts using a spatula to ensure they are evenly distributed without overmixing.
+
+7. **Scoop Dough:** Using a cookie scoop or spoon, portion the dough onto the prepared baking sheets, spacing them about 2 inches apart to allow spreading.
+
+8. **Bake:** Bake for 9-11 minutes until golden brown around the edges but still soft in the center.
+
+9. **Cool:** Let cookies cool on the baking sheets for a few minutes before transferring to a wire rack to cool completely.
+
+**Tips:**
+- For optimal texture, ensure butter is at room temperature.
+- Adjust add-ins as desired; walnuts can be omitted or replaced with other nuts.
+- Store cooled cookies in an airtight container to maintain freshness.
+
+Enjoy your soft and chewy chocolate chip cookies!

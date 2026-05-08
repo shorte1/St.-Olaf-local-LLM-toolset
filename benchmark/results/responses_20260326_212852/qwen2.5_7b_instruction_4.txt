@@ -1,0 +1,32 @@
+Model: qwen2.5:7b
+Category: instruction
+Prompt: Give me a recipe for chocolate chip cookies. Format it with an ingredients section using a bulleted list and a steps section using a numbered list. Include prep time and cook time at the top.
+========================================
+### Chocolate Chip Cookies
+
+**Prep Time: 20 minutes**
+**Cook Time: 10-12 minutes**
+
+#### Ingredients:
+- 3/4 cup (150g) unsalted butter, softened
+- 1 1/2 cups (250g) granulated sugar
+- 3/4 cup (150g) packed brown sugar
+- 1 large egg
+- 1 teaspoon vanilla extract
+- 2 1/2 cups (328g) all-purpose flour
+- 1 teaspoon baking soda
+- 1/2 teaspoon salt
+- 2 cups (240 chips) semisweet chocolate chips
+
+#### Steps:
+1. Preheat your oven to 375°F (190°C). Line a baking sheet with parchment paper or a silicone mat.
+2. In a large mixing bowl, cream together the softened butter and both sugars until light and fluffy, about 2-3 minutes using an electric mixer.
+3. Beat in the egg and vanilla extract until well combined.
+4. In a separate bowl, whisk together the flour, baking soda, and salt.
+5. Gradually add the dry ingredients to the wet mixture, mixing just until incorporated. Do not overmix.
+6. Stir in the chocolate chips evenly throughout the dough.
+7. Drop rounded spoonfuls of dough onto the prepared baking sheet, spacing them about 2 inches apart.
+8. Bake for 10-12 minutes or until the edges are golden brown and the centers are set but still slightly soft.
+9. Allow cookies to cool on the baking sheet for a few minutes before transferring to a wire rack to cool completely.
+
+Enjoy your homemade chocolate chip cookies!

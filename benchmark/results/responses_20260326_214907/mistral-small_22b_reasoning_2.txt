@@ -1,0 +1,23 @@
+Model: mistral-small:22b
+Category: reasoning
+Prompt: If it takes 5 machines 5 minutes to make 5 widgets, how long would it take 100 machines to make 100 widgets? Show your working.
+========================================
+ Let's break down the problem step by step.
+
+1. **Initial Information:**
+   - It takes 5 machines 5 minutes to make 5 widgets.
+
+2. **Determine the rate per machine:**
+   - Since 5 machines take 5 minutes to produce 5 widgets, each machine produces 1 widget in 5 minutes.
+
+3. **Extend this rate to 100 machines:**
+   - If one machine produces 1 widget in 5 minutes, then 100 machines would produce 100 widgets in the same time period (since each of the 100 machines is producing 1 widget).
+
+4. **Conclusion:**
+   - Therefore, it would take 100 machines 5 minutes to make 100 widgets.
+
+To summarize:
+- Each machine produces 1 widget in 5 minutes.
+- 100 machines would thus produce 100 widgets in 5 minutes.
+
+So the answer is 5 minutes.

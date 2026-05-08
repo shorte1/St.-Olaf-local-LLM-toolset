@@ -1,0 +1,97 @@
+Model: deepseek-r1:7b
+Category: coding
+Prompt: Write a REST API endpoint in Python using Flask that accepts a JSON body with a username and password, validates that neither is empty, and returns a JWT token.
+========================================
+Here's how you can create a REST API endpoint using Flask to validate username and password and return a JWT token:
+
+```python
+from flask import Flask, request, jsonify, render_template, redirect, url_for, session
+import json
+import werkzeug.security as wkd
+from werkzeug.security import generate_password_hash, check_password_function
+import hashlib
+
+app = Flask(__name__)
+app.secret_key = 'your-secret-key'  # In production, use a secure key
+
+# Initialize flask-talisman for CORS and session management
+from flask_talisman import Talisman
+talisman = Talisman(app)
+
+@app.route('/api/login', methods=['POST'])
+def login():
+    data = request.json
+    username = data.get('username')
+    password = data.get('password')
+
+    # Validate request
+    if not username or not password:
+        return jsonify({'error': 'Username and password are required'}), 400
+
+    try:
+        user = database.get_user(username)  # You need to implement your database here
+        password hashes are compared using check_password function
+        if not wkd.check_password(password, user['password_hash']):
+            raise ValueError("Invalid username or password")
+
+        session.permanent = True
+        session.add(user)
+        db.commit()
+        
+        # Generate JWT token with username and expiration time
+        token = render_template('token.html', 
+                              username=user['username'],
+                              expires=user.get('expires'))
+        return jsonify({'access_token': token.decode('utf-8'), 'expires_in': user.get('expires')}), 200
+
+    except Exception as e:
+        print(f"Error authenticating user: {e}")
+        return jsonify({'error': str(e)}), 401
+
+@app.route('/api/login', methods=['POST'])
+@talisman.cORS()
+def login_cors():
+    return login()
+
+if __name__ == '__main__':
+    from flask_login import login_required, logout_user
+    @app.route('/')
+    @login_required
+    def home():
+        logout_user()
+        return redirect(url_for('login'))
+
+    app.run()
+```
+
+**Notes:**
+
+1. **Database Integration**: You need to implement a database layer for storing users and their hashed passwords. The above example assumes an in-memory SQLite database.
+
+2. **Token Generation**: The token is generated using the `token.html` template, which you should create at your project root.
+
+3. **Security**:
+   - Use a strong secret key (in production, use HTTPS in VS Code or similar tools).
+   - Implement additional security measures like rate limiting and CSRF protection if needed.
+   - Never commit the secret key to version control.
+
+4. **CORS**: The Flask-Talisman extension is used for handling cross-origin requests.
+
+5. **Error Handling**: The API returns proper HTTP error responses with descriptive messages.
+
+6. **Authentication Protection**: Use `flask_login.login_required` decorator to ensure only authenticated users can access protected routes.
+
+**Steps to Run:**
+
+1. Install required packages:
+   ```bash
+   pip install flask flask-talisman werkzeug
+   ```
+
+2. Create the templates directory and add your `token.html` file there.
+
+3. Use an ORM like SQLAlchemy for database management, or implement custom database handling as needed.
+
+4. Set up proper environment variables if required (e.g., for production use).
+
+This example provides a basic implementation that you can extend with additional features depending on your requirements.

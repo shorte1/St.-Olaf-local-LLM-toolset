@@ -1,0 +1,34 @@
+Model: deepseek-r1:32b
+Category: coding
+Prompt: Write a Python function that takes a list of integers and returns the two numbers that add up to a target sum. It should run in O(n) time.
+========================================
+To solve this problem, we need to find two distinct integers in a list that add up to a given target sum. The solution must run efficiently in O(n) time complexity.
+
+### Approach
+The approach leverages the use of a hash map (dictionary) to store each number as we iterate through the list. This allows us to check for the complement (i.e., the difference between the target and the current number) in constant time, ensuring an overall linear time complexity.
+
+1. **Initialize a dictionary**: This will keep track of each number encountered along with its index.
+2. **Iterate through the list**: For each element, compute its complement by subtracting the element from the target sum.
+3. **Check for the complement**: If the complement exists in the dictionary, return the two numbers (the current element and its complement).
+4. **Store the current number**: If the complement is not found, add the current number to the dictionary with its index.
+
+This method ensures that we only traverse the list once, making it efficient with a time complexity of O(n).
+
+### Solution Code
+
+```python
+def two_sum(nums, target):
+    seen = {}
+    for i, num in enumerate(nums):
+        complement = target - num
+        if complement in seen:
+            return (complement, num)
+        seen[num] = i
+```
+
+### Explanation
+- **Initialization**: We start by creating an empty dictionary `seen` to keep track of the numbers we have encountered.
+- **Iteration and Complement Check**: For each number in the list, we calculate its complement. If this complement is already in our dictionary, it means we have found two numbers that add up to the target sum, so we return them immediately.
+- **Updating Dictionary**: If the complement is not found, we add the current number to our dictionary and continue iterating through the list.
+
+This approach efficiently finds the required pair of numbers using a single pass through the list, ensuring optimal performance.
