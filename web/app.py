@@ -22,6 +22,7 @@ db = SQLAlchemy(app)
 
 OLLAMA_URL = "http://localhost:11435/api/generate"
 MODEL = "deepseek-r1:32b"
+API_MODEL = "qwen2.5:32b"
 ALLOWED_DOMAIN = "@stolaf.edu"
 
 # ============================================================
@@ -620,7 +621,7 @@ def api_generate():
 
     try:
         response = requests.post(OLLAMA_URL,
-            json={"model": MODEL, "prompt": prompt},
+            json={"model": API_MODEL, "prompt": prompt},
             stream=True,
             timeout=300
         )
@@ -629,7 +630,7 @@ def api_generate():
             if line:
                 full_response += json.loads(line).get('response', '')
 
-        return jsonify({'response': full_response, 'model': MODEL})
+        return jsonify({'response': full_response, 'model': API_MODEL})
 
     except Exception as e:
         return jsonify({'error': str(e)}), 500
@@ -651,7 +652,7 @@ def api_generate_stream():
     def generate():
         try:
             response = requests.post(OLLAMA_URL,
-                json={"model": MODEL, "prompt": prompt},
+                json={"model": API_MODEL, "prompt": prompt},
                 stream=True,
                 timeout=300
             )
