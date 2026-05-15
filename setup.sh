@@ -3,30 +3,80 @@ set -e
 
 REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 WEB_DIR="$REPO_DIR/web"
+VENV_DIR="$REPO_DIR/venv"
 SYSTEMD_DIR="$HOME/.config/systemd/user"
-GUNICORN="$(which gunicorn 2>/dev/null || echo '')"
 
-# Validate environment
-if [ -z "$GUNICORN" ]; then
-    echo "Error: gunicorn not found. Install it with: pip install gunicorn"
-    exit 1
+# Create venv if it doesn't exist
+if [ ! -d "$VENV_DIR" ]; then
+    echo "Creating virtual environment at $VENV_DIR..."
+    python3 -m venv "$VENV_DIR"
 fi
 
+# Install gunicorn into the venv if not already present
+if [ ! -f "$VENV_DIR/bin/gunicorn" ]; then
+    echo "Installing gunicorn into virtual environment..."
+    "$VENV_DIR/bin/pip" install --quiet gunicorn
+fi
+
+GUNICORN="$VENV_DIR/bin/gunicorn"
+
 if [ ! -f "$REPO_DIR/.env" ]; then
-    echo "Error: .env file not found. Copy .env.example to .env and fill in your values."
-    exit 1
+    echo "No .env found — creating one from .env.example..."
+    cp "$REPO_DIR/.env.example" "$REPO_DIR/.env"
 fi
 
 source "$REPO_DIR/.env"
 
 if [ -z "$SECRET_KEY" ] || [ "$SECRET_KEY" = "replace-with-generated-secret-key" ]; then
-    echo "Error: SECRET_KEY is not set in .env"
-    exit 1
+    SECRET_KEY="$(python3 -c 'import secrets; print(secrets.token_hex(24))')"
+    sed -i "s|^SECRET_KEY=.*|SECRET_KEY=$SECRET_KEY|" "$REPO_DIR/.env"
+    echo "Generated SECRET_KEY and saved to .env"
 fi
 
 if [ -z "$ADMIN_KEY" ] || [ "$ADMIN_KEY" = "replace-with-generated-admin-key" ]; then
-    echo "Error: ADMIN_KEY is not set in .env"
+    ADMIN_KEY="$(python3 -c 'import secrets; print(secrets.token_urlsafe(24))')"
+    sed -i "s|^ADMIN_KEY=.*|ADMIN_KEY=$ADMIN_KEY|" "$REPO_DIR/.env"
+    echo "Generated ADMIN_KEY and saved to .env"
+fi
+
+PODMAN="/usr/bin/podman"
+
+if [ ! -x "$PODMAN" ]; then
+    echo "Error: podman not found at $PODMAN"
     exit 1
+fi
+
+# Check that this user has subuid/subgid ranges (required for rootless containers)
+if ! grep -q "^$USER:" /etc/subuid 2>/dev/null || ! grep -q "^$USER:" /etc/subgid 2>/dev/null; then
+    echo ""
+    echo "Error: rootless podman requires UID/GID mappings for '$USER'."
+    echo "An admin must run the following once on this machine:"
+    echo ""
+    echo "  sudo usermod --add-subuids 100000-165535 --add-subgids 100000-165535 $USER"
+    echo ""
+    echo "Then re-run this setup script."
+    exit 1
+fi
+
+# Migrate podman storage to current user namespace (safe to run repeatedly)
+"$PODMAN" system migrate
+
+# Create named network if missing
+if ! "$PODMAN" network exists ollama-internal-network 2>/dev/null; then
+    echo "Creating podman network: ollama-internal-network"
+    "$PODMAN" network create ollama-internal-network
+fi
+
+# Create named volume if missing
+if ! "$PODMAN" volume exists ollama 2>/dev/null; then
+    echo "Creating podman volume: ollama"
+    "$PODMAN" volume create ollama
+fi
+
+# Pull image if not already present
+if ! "$PODMAN" image exists docker.io/ollama/ollama 2>/dev/null; then
+    echo "Pulling docker.io/ollama/ollama (this may take a while)..."
+    "$PODMAN" pull docker.io/ollama/ollama
 fi
 
 mkdir -p "$SYSTEMD_DIR"
@@ -77,9 +127,15 @@ EOF
 systemctl --user daemon-reload
 systemctl --user enable ollama-container.service llm-web.service
 
+echo "Starting ollama-container..."
+systemctl --user start ollama-container.service
+
+echo "Starting llm-web..."
+systemctl --user start llm-web.service
+
+loginctl enable-linger "$USER"
+
 echo ""
-echo "Service files written to $SYSTEMD_DIR"
-echo "Run the following to start:"
-echo "  systemctl --user start ollama-container.service"
-echo "  systemctl --user start llm-web.service"
-echo "  loginctl enable-linger \$USER"
+echo "Setup complete. Services are running."
+echo "  ollama-container: systemctl --user status ollama-container.service"
+echo "  llm-web:          systemctl --user status llm-web.service"
